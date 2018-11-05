@@ -15,7 +15,6 @@ module.exports = {
         icon: "src/images/icon.jpg", // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -67,5 +66,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    'gatsby-plugin-offline'
   ],
 }
