@@ -1,0 +1,24 @@
+$blue: #0061D4;
+
+.this {
+  // Single column design  
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 1em;
+
+  // Syntax highlighting
+
+  :global(.gatsby-highlight-code-line) {
+    background-color: #feb;
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+  }
+
+  :not(pre) > code[class*="language-"] {
+    display: inline-block;
+    padding: inherit 3em !important;
+  }
+}
