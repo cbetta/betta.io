@@ -18,7 +18,6 @@ $blue: #0061D4;
   }
 
   :not(pre) > code[class*="language-"] {
-    display: inline-block;
-    padding: inherit 3em !important;
+    white-space: pre-line;
   }
 }
