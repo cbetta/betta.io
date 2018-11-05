@@ -67,6 +67,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-force-trailing-slashes`,
-    `gatsby-plugin-offline`
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        navigateFallbackWhitelist: [],
+      }
+    }
   ],
 }
