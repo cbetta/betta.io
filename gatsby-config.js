@@ -7,7 +7,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Cristiano Betta",
-        short_name: "Cristiano Betta",
+        short_name: "Betta",
         start_url: "/",
         background_color: "#333",
         theme_color: "#333",
