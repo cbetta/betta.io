@@ -214,7 +214,7 @@ Change your DNS record to point to new DNS target. This time you can set the TTL
 
 Once you have done this verify your `https` works by visiting your site. You can verify your certificate is indeed provided by LetsEncrypt.
 
-![LetsEncrypt certificate](..../images/blog/2016/letsencrypt-sinatra/certificate.png)
+![LetsEncrypt certificate](../images/blog/2016/letsencrypt-sinatra/certificate.png)
 
 ## Enforce SSL
 
@@ -259,7 +259,7 @@ heroku addons:open scheduler
 
 On the scheduler we add a new job. We add a little check to ensure we only run this once a month, as LetsEncrypt will otherwise rate limit you.
 
-![Heroku Scheduler](..../images/blog/2016/letsencrypt-sinatra/scheduler.gif)
+![Heroku Scheduler](../images/blog/2016/letsencrypt-sinatra/scheduler.gif)
 
 The command we filled in is the following.
 
