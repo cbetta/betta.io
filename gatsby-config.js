@@ -12,7 +12,7 @@ module.exports = {
         background_color: "#333",
         theme_color: "#333",
         display: "minimal-ui",
-        icon: "src/images/icon.jpg", // This path is relative to the root of the site.
+        icon: "src/images/icon.jpg",
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -60,12 +60,12 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-typography`,
+    //   options: {
+    //     pathToConfigModule: `src/utils/typography`,
+    //   },
+    // },
     `gatsby-plugin-force-trailing-slashes`,
     {
       resolve: `gatsby-plugin-offline`,

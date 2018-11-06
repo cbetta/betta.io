@@ -18,22 +18,24 @@ const query = graphql`
 
 let render = children => {
   return data => (
-    <Grid container className={style.this}>
-      <AppBar position="static" color="default">
-        <Toolbar>
-          <Typography component={Link} variant="h6" to={`/`}>
-            {data.site.siteMetadata.title}
-          </Typography>
-          <Typography component={Link} variant="h6" to={`/about`}>
-            About
-          </Typography>
-        </Toolbar>
-      </AppBar>
+    <div className={style.this}>
+      <Grid container>
+        <AppBar position="static" color="default">
+          <Toolbar>
+            <Typography component={Link} variant="h6" to={`/`}>
+              {data.site.siteMetadata.title}
+            </Typography>
+            <Typography component={Link} variant="h6" to={`/about`}>
+              About
+            </Typography>
+          </Toolbar>
+        </AppBar>
 
-      <Grid item>
-        {children}
+        <Grid item xs={12}>
+          {children}
+        </Grid>
       </Grid>
-    </Grid>
+    </div>
   )
 }
 

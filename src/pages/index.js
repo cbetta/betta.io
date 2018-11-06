@@ -6,6 +6,8 @@ import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import * as Icons from '@material-ui/icons' 
+import Typography from '@material-ui/core/Typography'
+import Grid from '@material-ui/core/Grid'
 
 const Icon = ({ type }) => {
   let Component = Icons[type]
@@ -15,20 +17,20 @@ const Icon = ({ type }) => {
 
 export default ({ data }) => (
   <Layout>
-    <h1>{ data.site.siteMetadata.title }</h1>
     <List>
-      <h4>{ data.allMarkdownRemark.totalCount } Posts</h4>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <ListItem key={node.id} button component={Link} to={node.fields.slug}>
-          <ListItemIcon>
-            <Icon type={ node.frontmatter.icon } />
-          </ListItemIcon>
-          <ListItemText 
-            primary={node.frontmatter.title}
-            secondary={node.frontmatter.date} />
-          
-        </ListItem>
-      ))}
+      <Grid item xs={12}>
+        <Typography variant='h4'>{ data.allMarkdownRemark.totalCount } Posts</Typography>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <ListItem key={node.id} button component={Link} to={node.fields.slug}>
+            <ListItemIcon>
+              <Icon type={ node.frontmatter.icon } />
+            </ListItemIcon>
+            <ListItemText 
+              primary={node.frontmatter.title}
+              secondary={node.frontmatter.date} />
+          </ListItem>
+        ))}
+      </Grid>
     </List>
   </Layout>
 )
