@@ -2,7 +2,7 @@
 title: "Survey: Hackathons and Open Source"
 date: 2016-05-10
 tags: hackdays
-icon: comments outline
+icon: QuestionAnswerOutlined
 ---
 
 >  TL;DR - I ran a Twitter Poll with interesting but insignificant results. Now I'm running a more extensive survey to see if I can get some more results. <strike>You should fill in the survey!</strike>

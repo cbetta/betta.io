@@ -4,7 +4,7 @@ title: "Your mini-Heroku with Dokku and Dokkufy"
 date: 2014-08-05
 comments: true
 tags: ruby, gems, dokku
-icon: code
+icon: Code
 ---
 
 I've always enjoyed [Heroku](http://heroku.com) but there are plenty of reasons both monetary and practical not to use it. I always liked the deployment method through Git though.

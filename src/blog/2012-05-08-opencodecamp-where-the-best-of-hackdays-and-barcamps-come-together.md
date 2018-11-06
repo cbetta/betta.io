@@ -4,7 +4,7 @@ title: "OpenCodeCamp - Where the best of HackDays and BarCamps come together"
 date: 2012-05-08
 comments: true
 tags: events, hackdays
-icon: comments outline
+icon: ForumOutlined
 ---
 
 **<TL;DR>**

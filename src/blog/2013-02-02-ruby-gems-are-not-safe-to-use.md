@@ -4,7 +4,7 @@ title: "Ruby gems are still not safe to use"
 date: 2013-02-02
 comments: true
 tags: ruby, gems
-icon: diamond
+icon: CommentOutlined
 ---
 
 In the light of the recent [Rubygems.org](http://rubygems.org) security compromise the community has been looking at ways to make Rubygems.org and Ruby gems in general more secure. The project is still ongoing and feel free to help them out on #rubygems on Freenode, but here is a highlight of what I think are some of the main issues.

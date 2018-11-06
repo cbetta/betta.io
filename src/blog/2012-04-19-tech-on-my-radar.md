@@ -4,7 +4,7 @@ title: "Tech on my radar"
 date: 2012-04-19
 comments: true
 tags: information, ruby
-icon: rss
+icon: DevicesOtherOutlined
 ---
 
 Here are just some interesting gems and other software that have caught my attention recently:

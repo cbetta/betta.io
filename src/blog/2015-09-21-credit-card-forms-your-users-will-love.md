@@ -3,7 +3,7 @@ title: Credit Card Forms Your Users Will Love!
 date: 2015-09-21
 tags: credit cards, javascript, braintree
 image: blog/2015/vzero-card-type.gif
-icon: code
+icon: CreditCard
 ---
 
 > This post was originally first posted on

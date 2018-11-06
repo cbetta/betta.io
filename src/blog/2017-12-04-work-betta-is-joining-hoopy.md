@@ -2,7 +2,7 @@
 title: Work Betta is partnering with Hoopy!
 date: 2017-12-04
 tags: information, developer experience
-icon: newspaper
+icon: NewReleasesOutlined
 ---
 
 I've been in Developer Relations for a few years now, initially while I was at PayPal and more recently through my own company, [Work Betta](https://betta.io). One of the main things I've learned about this industry is that it takes a team to do it well, and the number of different fields of expertise required is pretty mind-boggling.

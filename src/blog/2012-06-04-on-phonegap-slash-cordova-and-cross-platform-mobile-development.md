@@ -3,7 +3,7 @@ title: "On PhoneGap/Cordova and cross platform mobile development"
 date: 2012-06-04
 comments: true
 tags: mobile, hackdays
-icon: code
+icon: CommentOutlined
 ---
 
 So last weekend I was at [Over The Air 2012](http://overtheair.org/) - on of my favorite regular Hack days - and for the first time I decided to actually try and make a "native" mobile app.

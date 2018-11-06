@@ -4,7 +4,7 @@ title: "Reading list - Week 40"
 date: 2013-10-05
 comments: true
 tags: reading, ruby
-icon: rss
+icon: RssFeed
 ---
 
 ## [UK IEPC 2013](http://github.com/ukiepc2013)

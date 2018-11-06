@@ -4,7 +4,7 @@ title: "What I miss about HackDays"
 date: 2012-04-29
 comments: true
 tags: events, hackdays
-icon: comment outline
+icon: CommentOutlined
 ---
 
 I've been attending HackDays since 2007 when I travelled to Alexandra Palace for the first [HackDay organised by Yahoo and the BBC](http://upcoming.yahoo.com/event/173371/LONDON/London/Yahoo-BBC-Hackday-2007/Alexandra-Palace/). I was a n00b at that time (some might say I still am, #shakesfist) and I had no idea what to build. At the time I was trying to learn how to use web frameworks and at the HackDay I got my first exposures to APIs, Django, Rails, OpenID and much more. I don't think I made anything that weekend, but damn did I learn a lot!

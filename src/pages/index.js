@@ -1,25 +1,35 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemText from '@material-ui/core/ListItemText'
+import ListItemIcon from '@material-ui/core/ListItemIcon'
+import * as Icons from '@material-ui/icons' 
+
+const Icon = ({ type }) => {
+  let Component = Icons[type]
+  if (Component === undefined) { Component = Icons['Code'] }
+  return <Component />
+}
 
 export default ({ data }) => (
   <Layout>
     <h1>{ data.site.siteMetadata.title }</h1>
-    <div>
+    <List>
       <h4>{ data.allMarkdownRemark.totalCount } Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
-          <Link to={node.fields.slug}>
-            <h3>
-              {node.frontmatter.title}{" "}
-              <span>
-                — {node.frontmatter.date}
-              </span>
-            </h3>
-          </Link>
-        </div>
+        <ListItem key={node.id} button component={Link} to={node.fields.slug}>
+          <ListItemIcon>
+            <Icon type={ node.frontmatter.icon } />
+          </ListItemIcon>
+          <ListItemText 
+            primary={node.frontmatter.title}
+            secondary={node.frontmatter.date} />
+          
+        </ListItem>
       ))}
-    </div>
+    </List>
   </Layout>
 )
 
@@ -37,7 +47,8 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM D, YYYY")
+            icon
           }
           fields {
             slug

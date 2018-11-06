@@ -4,7 +4,7 @@ title: "Some notes on Puppet"
 date: 2012-11-12
 comments: true
 tags: puppet, servers
-icon: code
+icon: CommentOutlined
 ---
 
 I've been playing with [Puppet](http://puppetlabs.com/) recently in order to finally teach myself a bit about server management. I decided for Puppet because... well... I didn't have time to play with [Chef](http://www.opscode.com/chef/) yet.

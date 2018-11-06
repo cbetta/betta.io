@@ -2,7 +2,7 @@
 title: Minimum Viable Samples
 date: 2016-04-10
 tags: devrel
-icon: code
+icon: Code
 ---
 
 > TL;DR - Code samples are important for teaching developers how to use a technology. Use the Minimum Viable Sample checklist below to avoid common mistakes.

@@ -4,7 +4,7 @@ title: "Hacks / Products - A discussion on responsibility"
 date: 2012-11-12
 comments: true
 tags: hackdays, events
-icon: comments outline
+icon: ForumOutlined
 ---
 
 **<TL;DR>**

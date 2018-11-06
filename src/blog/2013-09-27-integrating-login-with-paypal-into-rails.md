@@ -5,7 +5,7 @@ date: 2013-09-27
 comments: true
 tags: ruby, paypal, login, tutorial
 published: true
-icon: diamond
+icon: CreditCard
 ---
 
 Earlier this year PayPal launched the new [Log In with PayPal](https://developer.paypal.com/webapps/developer/docs/integration/direct/log-in-with-paypal/) experience worldwide. Integrating it into Rails is very straightforward with the help of [Omniauth](https://github.com/intridea/omniauth) so I thought I'd show how with a little tutorial.

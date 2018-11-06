@@ -2,7 +2,7 @@
 title: The cost of using ZipCar
 date: 2017-01-05
 tags: information
-icon: car
+icon: DirectionsCarOutlined
 ---
 
 About a year ago I tweeted about my [ZipCar](https://zipcar.co.uk) usage in 2015, and as I was doing my accounting I realised I should do a similar thing for 2016.

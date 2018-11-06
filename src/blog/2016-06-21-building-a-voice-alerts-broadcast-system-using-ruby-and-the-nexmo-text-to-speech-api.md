@@ -2,7 +2,7 @@
 title: Building a Voice Alerts Broadcast System using Sinatra and the Nexmo Text-to-Speech API
 date: 2016-06-21
 tags: nexmo, tutorial
-icon: phone
+icon: RecordVoiceOverOutlined
 ---
 
 > This post was originally first posted on
