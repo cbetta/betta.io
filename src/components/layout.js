@@ -22,6 +22,7 @@ let render = children => {
         defaultTitle={ data.site.siteMetadata.title }
         titleTemplate={ `%s - ${ data.site.siteMetadata.title }`}>
         <meta name="description" content={ data.site.siteMetadata.description } />
+        <html lang='en-US' />
       </Helmet>
       <div className={style.this}>
         <div className={style.body}>
