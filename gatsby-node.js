@@ -9,7 +9,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     let name = parent.name.replace(/\d\d\d\d-\d\d-\d\d-/, '')
     let date = new Date(node.frontmatter.date).toISOString().substr(0,10).replace(/-/g, "/")
     
-    console.log(node)
     createNodeField({
       node,
       name: `slug`,
