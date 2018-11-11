@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Cristiano Betta'
+    title: 'Cristiano Betta, Developer Advocate at Box and Developer Experience enthousiast',
+    name: 'Cristiano Betta',
+    description: "I'm a Senior Developer Advocate at Box, and a Developer Experience enthousiast. In the past I've helped companies to improve their developer onboarding, documentation, and tooling. My current role is to help grow the Box Platform into international markets"
   },
   plugins: [
     {
