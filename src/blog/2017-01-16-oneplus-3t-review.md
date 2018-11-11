@@ -2,7 +2,7 @@
 title: OnePlus 3T Review
 date: 2017-01-16
 tags: gear
-icon: PhoneAndroid
+icon: Smartphone
 ---
 
 ![OnePlus 3T](../images/blog/2017/oneplus-3t-review/oneplus-3t.jpg)

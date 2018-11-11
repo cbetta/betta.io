@@ -3,7 +3,7 @@ title: The Hack Code of Conduct
 date: 2015-11-20
 tags: code of conduct, devrel
 image: blog/2015/hack-code-of-conduct-1.png
-icon: GroupOutlined
+icon: FileText
 ---
 > This post was originally first posted on
   [Braintree's Strongly Typed](https://www.braintreepayments.com/blog/the-hack-code-of-conduct/) blog on November 6th 2015.

@@ -4,7 +4,7 @@ title: "The joy and pain of using Jekyll"
 date: 2013-08-21
 comments: true
 tags: jekyll
-icon: CommentOutlined
+icon: MessageCircle
 ---
 
 I've been tempted to write a bit about Static Site Generators (SSGs) for a while now, mainly because I love them. I've been using [Jekyll](http://jekyllrb.com/) for various projects for a while now and I love it. The simplified hosting, higher security, and general hackability are just a few pros that make it worth it.

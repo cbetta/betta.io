@@ -3,7 +3,7 @@ title: Add terms & conditions validation to Omniauth Identity
 date: 2012-04-12
 comments: true
 tags: rails, omniauth, ruby
-icon: Code
+icon: Terminal
 ---
 
 [Omniauth Identity](https://github.com/intridea/omniauth-identity) is a great

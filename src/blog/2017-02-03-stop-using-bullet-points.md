@@ -2,7 +2,7 @@
 title: Stop using bullet points
 date: 2017-02-03
 tags: presentations
-icon: FormatListBulleted
+icon: List
 ---
 
 I got bit annoyed last year at [DevRelCon London](https://london-2016.devrel.net/) when I noticed that so many truly talented people were using so many bullet points in such horrible ways.

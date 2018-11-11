@@ -2,7 +2,7 @@
 title: Understanding Developers
 date: 2017-02-23
 tags: developer experience
-icon: PeopleOutlined
+icon: Users
 ---
 <!--
 >Guides, tutorials, quick starts, get started guides, samples, demos, snippets, sample apps, demonstrations and overviews.

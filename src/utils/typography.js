@@ -12,20 +12,20 @@ export default new Typography({
   googleFonts: [
     {
       name: 'Lato',
-      styles: ['300']
+      styles: ['300', '400']
     }
   ],
   overrideThemeStyles:  ({ rhythm }, options) => ({
     'h1': {
       paddingBottom: rhythm(1),
       marginBottom: rhythm(1),
-      fontWeight: 300
+      fontWeight: 400
     }, 
     'h2': {
       paddingBottom: rhythm(1),
       marginTop: rhythm(2),
       marginBottom: rhythm(1),
-      fontWeight: 300
+      fontWeight: 400
     },
     'h3': {
       fontWeight: 400

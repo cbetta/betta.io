@@ -10374,6 +10374,11 @@ react-hot-loader@^4.1.0:
     react-lifecycles-compat "^3.0.4"
     shallowequal "^1.0.2"
 
+react-icons@^3.1.0-beta.1:
+  version "3.1.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.1.0-beta.1.tgz#2b91e4eefa05dd663517bf459182bd8f00406fae"
+  integrity sha512-+tutr5xkerFe/UtKk8/esKu37UeSy9RqgBv4gBwAKK9TK1BBK08Hfs15oYYVeHHvM95GM8hwz62jeOp4IvETKA==
+
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"

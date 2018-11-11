@@ -2,7 +2,7 @@
 title: Building a Customer Service Chat App with Rails 5 Action Cable and SMS
 date: 2016-08-18
 tags: nexmo, tutorial
-icon: TextsmsOutlined
+icon: MessageSquare
 ---
 
 > This post was originally first posted on

@@ -2,7 +2,7 @@
 title: Two Factor Authentication in Rails with Devise and Nexmo Verify
 date: 2016-06-07
 tags: nexmo, tutorial
-icon: TextsmsOutlined
+icon: MessageSquare
 ---
 
 > This post was originally first posted on

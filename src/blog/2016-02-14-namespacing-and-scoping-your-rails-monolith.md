@@ -2,7 +2,7 @@
 title: Namespacing and scoping your Rails monolith
 date: 2016-02-14
 tags: ruby, rails, tutorial
-icon: Code
+icon: Terminal
 ---
 
 It can be overkill to start every new Rails project as a bunch of microservices. Instead I tend to use this design pattern to separate concerns within my app into specific namespaces and scopes.

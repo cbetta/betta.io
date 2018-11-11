@@ -2,7 +2,7 @@
 title: Building an Interactive Delivery Notifications System using Express and the Nexmo SMS API
 date: 2016-10-31
 tags: nexmo, tutorial
-icon: TextsmsOutlined
+icon: MessageSquare
 ---
 
 > This post was originally first posted on
