@@ -146,6 +146,7 @@ module.exports = {
     `gatsby-plugin-netlify`,
     `gatsby-plugin-netlify-cache`,
     `gatsby-plugin-subfont`,
+    `gatsby-plugin-force-trailing-slashes`,
     `gatsby-plugin-sass`,
   ],
 }
