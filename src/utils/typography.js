@@ -9,15 +9,6 @@ export default new Typography({
   headerFontFamily: ['Lato', 'sans-serif'],
   bodyWeight: 300,
   headerWeight: 400,
-  googleFonts: [
-    {
-      name: 'Lato',
-      styles: [
-        '300',
-        '400'
-      ],
-    },
-  ],
   overrideThemeStyles:  ({ rhythm }, options) => ({
     'h1': {
       paddingBottom: rhythm(1),

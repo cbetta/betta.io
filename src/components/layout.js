@@ -1,7 +1,9 @@
 import React from "react"
 import { StaticQuery, Link, graphql } from "gatsby"
 import style from "./layout.module.scss"
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet"
+
+import 'typeface-lato'
 
 const query = graphql`
   query {
