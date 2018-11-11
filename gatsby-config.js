@@ -4,6 +4,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography.js`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Cristiano Betta",
@@ -60,12 +66,6 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-typography`,
-    //   options: {
-    //     pathToConfigModule: `src/utils/typography`,
-    //   },
-    // },
     `gatsby-plugin-force-trailing-slashes`,
     {
       resolve: `gatsby-plugin-offline`,
