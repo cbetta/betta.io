@@ -5,18 +5,6 @@ module.exports = {
     description: "I'm a Senior Developer Advocate at Box, and a Developer Experience enthousiast. In the past I've helped companies to improve their developer onboarding, documentation, and tooling. My current role is to help grow the Box Platform into international markets"
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: "Cristiano Betta",
-        short_name: "Betta",
-        start_url: "/",
-        background_color: "#333",
-        theme_color: "#333",
-        display: "minimal-ui",
-        icon: "src/images/icon.jpg",
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -66,6 +54,18 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography.js`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Cristiano Betta",
+        short_name: "Betta",
+        start_url: "/",
+        background_color: "#333",
+        theme_color: "#333",
+        display: "minimal-ui",
+        icon: "src/images/icon.jpg",
       },
     },
     `gatsby-plugin-force-trailing-slashes`,
