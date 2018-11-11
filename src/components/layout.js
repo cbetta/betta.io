@@ -2,6 +2,8 @@ import React from "react"
 import { StaticQuery, Link, graphql } from "gatsby"
 import style from "./layout.module.scss"
 import { Helmet } from "react-helmet";
+import { TypographyStyle, GoogleFont } from 'react-typography'
+import typography from '../utils/typography'
 
 const query = graphql`
   query {
@@ -21,6 +23,8 @@ let render = children => {
        <Helmet
         defaultTitle={ data.site.siteMetadata.title }
         titleTemplate={ `%s - ${ data.site.siteMetadata.title }`}>
+        <TypographyStyle typography={typography} />
+        <GoogleFont typography={typography} />
         <meta name="description" content={ data.site.siteMetadata.description } />
         <html lang='en-US' />
       </Helmet>
