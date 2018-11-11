@@ -25,6 +25,7 @@ let render = children => {
         titleTemplate={ `%s - ${ data.site.siteMetadata.title }`}>
         <meta name="description" content={ data.site.siteMetadata.description } />
         <html lang='en-US' />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
       </Helmet>
       <div className={style.this}>
         <div className={style.body}>
