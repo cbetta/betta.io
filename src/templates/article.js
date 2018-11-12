@@ -1,7 +1,11 @@
 import React from "react"
-import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet";
+
+import Layout from "../components/layout"
+import Icon from "../components/Icon"
+
+import { style } from "./article.module.scss"
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -12,8 +16,14 @@ export default ({ data }) => {
         <title>{post.frontmatter.title}</title>
         <meta name="description" content={ post.excerpt } />
       </Helmet>
-      <div>
-        <h1>{post.frontmatter.title}</h1>
+      <div className={ style }>
+        <h1>
+          <Icon type={ post.frontmatter.icon } />
+          {post.frontmatter.title}
+          <small>
+            { post.timeToRead } minute read
+          </small>
+        </h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -25,8 +35,10 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       excerpt
+      timeToRead
       frontmatter {
         title
+        icon
       }
     }
   }
