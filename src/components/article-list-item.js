@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import style from "./article-list-item.module.scss"
-import Icon from "../components/Icon"
+import Icon from "../components/icon"
 
 export default ({ timeToRead, fields, frontmatter }) => (
   <Link to={ fields.slug } className={style.this}>

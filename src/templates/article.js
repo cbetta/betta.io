@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Helmet } from "react-helmet";
 
 import Layout from "../components/layout"
-import Icon from "../components/Icon"
+import Icon from "../components/icon"
 
 import { style } from "./article.module.scss"
 

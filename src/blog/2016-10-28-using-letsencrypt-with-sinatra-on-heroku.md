@@ -143,7 +143,7 @@ Wait for your DNS to resolve, give it a try in the browser and ensure your domai
 
 Next run the following command to add some environment variables to Heroku.
 
-```sh
+```bash
 heroku config:add ACME_DOMAIN=test123.betta.io
 heroku config:add ACME_EMAIL=test@betta.io
 heroku config:add HEROKU_APP=intense-ridge-63161
