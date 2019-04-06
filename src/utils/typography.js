@@ -3,7 +3,7 @@ import theme from 'typography-theme-github'
 
 export default new Typography({
   ...theme,
-  baseFontSize: "18px",
+  baseFontSize: "16px",
   headerColor: '#151E25',
   baseLineHeight: 1.75,
   headerFontFamily: ['Lato', 'sans-serif'],
