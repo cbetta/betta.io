@@ -1,1 +1,1 @@
-require("prism-github/prism-github.css")
+require('./src/css/prism.css')

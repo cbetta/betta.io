@@ -1,7 +1,9 @@
 import React from "react"
 import { StaticQuery, Link, graphql } from "gatsby"
-import style from "./layout.module.scss"
-import { Helmet } from "react-helmet"
+
+import Head from './Head'
+
+import style from "./Layout.module.scss"
 
 import 'typeface-lato'
 
@@ -18,17 +20,6 @@ export default ({ children }) => (
     ))}
   />
 )
-
-const Head = ({ site: { siteMetadata} }) => (
-  <Helmet
-    defaultTitle={ siteMetadata.title }
-    titleTemplate={ `%s - ${ siteMetadata.title }`}>
-    <meta name="description" content={ siteMetadata.description } />
-    <html lang='en-US' />
-    <link rel="preconnect" href="https://www.google-analytics.com" />
-  </Helmet>
-)
-
 
 const Layout = ({ site: { siteMetadata}, children }) => (
   <div className={style.this}>

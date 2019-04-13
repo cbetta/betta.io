@@ -1,12 +1,12 @@
 import React from "react"
 import { graphql } from 'gatsby'
 
-import Layout from "../layouts/layout"
-import ArticleList from "../components/article-list"
+import Layout from "../layouts/Layout"
+import List from "../components/blog/List"
 
 export default ({ data }) => (
   <Layout>
-    <ArticleList data={data} />
+    <List data={data} />
   </Layout>
 )
 
