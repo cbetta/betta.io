@@ -19,6 +19,7 @@ export default ({ data: { markdownRemark: article } }) => (
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
       htmlAst
       excerpt
       timeToRead

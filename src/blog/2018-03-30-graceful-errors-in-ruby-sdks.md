@@ -123,10 +123,10 @@ end
 ```
 
 ```bash
-Unable to fetch page: [401] {"code"=>20003, "detail"=>"Your AccountSid \
-or AuthToken was incorrect.", "message"=>"Authenticate", \
+Unable to fetch page: [401] {"code"=>20003, "detail"=>"Your AccountSid 
+or AuthToken was incorrect.", "message"=>"Authenticate", 
 "more_info"=>"https://www.twilio.com/docs/errors/20003", "status"=>401}
-```~
+```
 
 What's really cool here is that the API returns a link to the docs, in this case
 the documentation for the [20003 error](https://www.twilio.com/docs/errors/20003)

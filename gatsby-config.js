@@ -1,10 +1,7 @@
+const siteMetadata = require('./site-metadata.json')
+
 module.exports = {
-  siteMetadata: {
-    siteUrl: 'https://new.betta.io',
-    title: 'Cristiano Betta, Developer Advocate at Box and Developer Experience enthousiast',
-    name: 'Cristiano Betta',
-    description: "I'm a Senior Developer Advocate at Box, and a Developer Experience enthousiast. In the past I've helped companies to improve their developer onboarding, documentation, and tooling. My current role is to help grow the Box Platform into international markets"
-  },
+  siteMetadata,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -13,6 +10,7 @@ module.exports = {
         path: `${__dirname}/src/blog`,
       },
     },
+    'blog-create-pages',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -29,7 +27,23 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
+        gfm: true,
+        commonmark: true,
         plugins: [
+          'gatsby-remark-component',
+          'gatsby-remark-autolink-headers',
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 850,
+              linkImagesToOriginal: true,
+              showCaptions: true,
+              // sizeByPixelDensity: true,
+              withWebp: true,
+              tracedSVG: true,
+              quality: 100
+            },
+          },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
@@ -40,20 +54,12 @@ module.exports = {
               noInlineHighlight: false,
             },
           },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 780,
-              linkImagesToOriginal: true,
-              showCaptions: true,
-              sizeByPixelDensity: true,
-              withWebp: true
-            },
-          },
           "gatsby-remark-copy-linked-files"
         ],
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
@@ -61,8 +67,6 @@ module.exports = {
         showSpinner: false,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-plugin-manifest`,

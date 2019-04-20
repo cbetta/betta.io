@@ -1,7 +1,11 @@
 import React from "react"
 
+import { style } from './Message.module.scss'
+
 const Message = ({ children }) => (
-  <h1>{ children }</h1>
+  <div className={ style }>
+    { children }
+  </div>
 )
 
 export default Message

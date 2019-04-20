@@ -7,7 +7,7 @@ draft: true
 ---
 
 > A 5 minute on-stage code-demo beats a slide deck every time <br>
-> <em>- Developers at every hackathon ever </em>
+> __- Developers at every hackathon ever__
 
 In my previous post I layed out [a framework for understanding developers](/2017/02/23/understanding-developers/). In it I provided a way for us to place any developer on spectrum separated by:
 

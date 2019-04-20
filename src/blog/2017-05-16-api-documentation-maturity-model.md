@@ -25,13 +25,7 @@ Often, this level of documentation exists out of __mostly reference__ documentat
 
 At the next level the documentation is fleshed out into separate documentation types. Often this will fall into some variation of Reference, Get Started Guides, Tutorials, Guides, and [Exploration](/blog/2017/03/12/defining-the-developer-journey/) documentation.
 
-<div class="ui segment" markdown='1'>
-  <div class="ui bottom attached label">
-    How <a href='https://developer.virgilsecurity.com/'>Virgil Security</a>, <a href='http://developer.braintreepayments.com'>Braintree</a>, and <a href='http://twilio.com/docs'>Twilio</a> divide their documentation into different types.
-  </div>
-  ![Example documentation levels](../images/blog/2017/maturity-model/ia.png){:.ui.bordered.medium.centered.image}
-</div>
-
+![HowVirgil Security, Braintree, and Twilio divide their documentation into different types](../images/blog/2017/maturity-model/ia.png)
 
 By providing a better information architecture in the documentation it becomes easier for developers to find the right documentation for them. As I pointed out [in a previous post](http://localhost:4567/blog/2017/05/15/api-documentation-maturity-model/), the developer journey consists of a few different steps and allowing developers to find the right step for them is essential to a great experience.
 
@@ -43,12 +37,7 @@ In essence, level 1 documentation __reduces complexity__ by dividing the documen
 
 At the next level, the documentation is standardised to provide well defined building blocks for the product. Often this involve splitting previously large parts of the documentation into smaller, more focussed parts which will will have their own standardised, human-readable URLs. Deciding what granularity is appropriate here is probably the hardest part and is very dependent on the product and its core use cases.
 
-<div class="ui segment" markdown='1'>
-  <div class="ui bottom attached label">
-    How <a href='https://twilio.com/docs'>Twilio</a> has split their core building blocks into unique pages.
-  </div>
-  ![Twilio building blocks](../images/blog/2017/maturity-model/blocks.png){:.ui.bordered.fluid.image}
-</div>
+![How Twilio has split their core building blocks into unique pages.](../images/blog/2017/maturity-model/blocks.png)
 
 Not all work done at this level is visible to outsiders. Many companies put a lot of effort into standardising code samples and URL schemes so they can be re-used across the documentation and even be integrated into the onboarding experience. The benefit of this is that common mistakes can be easily prevented.
 
@@ -60,12 +49,7 @@ In essence, level 2 documentation __removes unnecessary variation by increasing 
 
 In the final level we can use the increased structure and reusability of the documentation to turn a strict hierarchy into a fully functional web of documentation. Before this level, the documentation already supported linear navigation through well defined paths.
 
-<div class="ui segment" markdown='1'>
-  <div class="ui bottom attached label">
-    How <a href='https://stripe.com/docs/quickstart'>Stripe</a> links out to related content at the end of pretty much every page.
-  </div>
-  ![Stripe cross references](../images/blog/2017/maturity-model/cross-reference.png){:.ui.bordered.fluid.image}
-</div>
+![How <Stripe links out to related content at the end of pretty much every page.](../images/blog/2017/maturity-model/cross-reference.png)
 
 Now, by linking across documentation type and building blocks exploration has been increased massively. At the one hand, providing links that move into more/less indepth topics allow developers to find the level of documentation that best matches their experience level. An example of this would be to add a link on a guide to the reference documentation of the same topic.
 
@@ -82,7 +66,3 @@ Even though this is just a first draft, I think works out quite well. As [Martin
 3. Introduce discoverabilty
 
 I want to reiterate that this maturity model is not something that should be used to judge documentation, rather more interestingly I think it can be used to provide a clear path for improvements. As each level builds on top of the strengths of the previous ones it can be used as a guide on how to incrementaly improve any documentation.
-
-
-
-

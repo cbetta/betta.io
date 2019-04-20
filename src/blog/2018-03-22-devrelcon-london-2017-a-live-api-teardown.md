@@ -5,13 +5,9 @@ tags: developer experience, developer onboarding
 icon: Video
 ---
 
-This post is a transcript up of a talk given at [DevRelCon London 2017](london-2017.devrel.net). This article was first posted on the [DevRel.net](https://devrel.net/developer-experience/live-api-teardown) blog.
-{:.ui.message}
+<Message> This post is a transcript up of a talk given at [DevRelCon London 2017](london-2017.devrel.net). This article was first posted on the [DevRel.net](https://devrel.net/developer-experience/live-api-teardown) blog. </Message>
 
-<div class="ui embed" data-source='youtube' data-id="4X6iPGnV9jI" data-placeholder="<%= image_path '/images/slides/live/live.001.jpeg' %>
-"></div>
-
-<br/>
+<Youtube id='4X6iPGnV9jI'></Youtube>
 
 ## Transcript
 
