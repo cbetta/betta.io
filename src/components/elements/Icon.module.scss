@@ -1,0 +1,13 @@
+.style {
+  &[data-color=green] {
+    color: green;
+  }
+
+  &[data-color=red] {
+    color: red;
+  }
+
+  &[data-color=orange] {
+    color: orange;
+  }
+}

@@ -3,6 +3,7 @@ title: "DevRelCon London 2017 - A Live API Teardown"
 date: 2018-03-22
 tags: developer experience, developer onboarding
 icon: Video
+migrated: true
 ---
 
 <Message> This post is a transcript up of a talk given at [DevRelCon London 2017](london-2017.devrel.net). This article was first posted on the [DevRel.net](https://devrel.net/developer-experience/live-api-teardown) blog. </Message>

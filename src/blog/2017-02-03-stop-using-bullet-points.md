@@ -3,13 +3,15 @@ title: Stop using bullet points
 date: 2017-02-03
 tags: presentations
 icon: List
+migrated: true
 ---
 
 I got bit annoyed last year at [DevRelCon London](https://london-2016.devrel.net/) when I noticed that so many truly talented people were using so many bullet points in such horrible ways.
 
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">For a group of public speakers I have to say the slides have been a bit dry at <a href="https://twitter.com/hashtag/DevRelCon?src=hash">#DevRelCon</a> so far. Lots of bullet points.</p>&mdash; 🇪🇺🇬🇧 Cristiano (@cbetta) <a href="https://twitter.com/cbetta/status/806474900244484096">December 7, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+> For a group of public speakers I have to say the slides have been a bit dry at [#DevRelCon](https://twitter.com/hashtag/DevRelCon?src=hash) so far. Lots of bullet points.
+> 
+> _Cristiano (@cbetta)_ [December 7, 2016](https://twitter.com/cbetta/status/806474900244484096)
 
 I have to admit I was being a bit rude, for which I apologise. I also wasn't being very constructive, so let's fix that.
 
@@ -17,14 +19,14 @@ I have to admit I was being a bit rude, for which I apologise. I also wasn't bei
 
 When we talk about bullet points we often think about the symbol preceding a sentence. That symbol is actually just the ___"bullet"___ and there are a few variations:
 
+||
+|---|
 | &#8226; Bullet |
 | &#8227; Triangular bullet |
 | &#9702; White bullet |
 | &#8259; Hyphen |
-{:.ui.table.top.attached.unstackable}
 
-See [Wikipedia](https://en.wikipedia.org/wiki/Bullet_(typography)) for more details
-{:.ui.message.bottom.attached}
+<Message> See [Wikipedia](https://en.wikipedia.org/wiki/Bullet_(typography)) for more details </Mssage>
 
 It is actually the __entire sentence__ that accompanies the symbol that makes up a __bullet point__. The bullet attracts specific attention to these often short sentences.
 

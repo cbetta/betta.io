@@ -3,6 +3,7 @@ title: "Developer Onboarding: Heroku"
 date: 2018-02-27
 tags: developer experience, developer onboarding
 icon: Instagram
+migrated: true
 ---
 
 <Message> This is the sixth in a series of articles focussing on reviewing [Developer API Onboarding](https://betta.io/blog/categories/developer-onboarding/). In this post I'm looking at the API onboarding offered by [Heroku](https://heroku.com/). </Message>

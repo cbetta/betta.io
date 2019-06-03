@@ -3,6 +3,7 @@ title: The Documentation Maturity Model
 date: 2017-05-16
 tags: developer experience
 icon: FileText
+migrated: true
 ---
 
 I've recently been introduced to the [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html), a simple idea that breaks down the principal elements of a REST API into 3 levels: Resources, HTTP Verbs, and Hypermedia Controls.

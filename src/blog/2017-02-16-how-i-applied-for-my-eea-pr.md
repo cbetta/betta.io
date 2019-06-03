@@ -3,10 +3,10 @@ title: How I got my document certifying permanent residence, or EEA(PR)
 date: 2017-02-16
 tags: information
 icon: FilePlus
+migrated: true
 ---
 
-__TL;DR:__ I recently applied for my ["document certifying permanent residence"](https://www.gov.uk/government/publications/apply-for-a-document-certifying-permanent-residence-or-permanent-residence-card-form-eea-pr) for people from the European Economic Area (EEA) living in the UK. The following is a description of what exact documents I sent them, and how long the process took.
-{:.ui.message}
+<Message> __TL;DR:__ I recently applied for my ["document certifying permanent residence"](https://www.gov.uk/government/publications/apply-for-a-document-certifying-permanent-residence-or-permanent-residence-card-form-eea-pr) for people from the European Economic Area (EEA) living in the UK. The following is a description of what exact documents I sent them, and how long the process took. </Message>
 
 ## Why apply?
 

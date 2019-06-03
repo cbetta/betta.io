@@ -3,10 +3,12 @@ title: "The Developer Experience Journey: Exploration"
 date: 2017-03-12
 tags: developer experience
 icon: Map
+migrated: true
 ---
 
-> A 5 minute on-stage code-demo beats a slide deck every time <br>
-> <em>- Developers at every hackathon ever </em>
+> A 5 minute on-stage code-demo beats a slide deck every time
+>
+> _Developers at every hackathon ever_
 
 In my previous post I layed out [a framework for understanding developers](/blog/2017/02/23/understanding-developers/). In it I provided a way for you to categorize a developer by:
 
@@ -19,40 +21,23 @@ In this article I want to take a deeper look at how a developer can go from unex
 
 ## The 4 Step Journey
 
-<div class="ui five mini unstackable steps">
-  <div class="step">
-    <div class="content">
-      <div class="title">Exploration</div>
-    </div>
-  </div>
-  <div class="step">
-    <div class="content">
-      <div class="title">Getting Started</div>
-    </div>
-  </div>
-  <div class="step">
-    <div class="content">
-      <div class="title">Guidance</div>
-    </div>
-  </div>
-  <div class="step">
-    <div class="content">
-      <div class="title">Reference</div>
-    </div>
-  </div>
-</div>
+A developer experience can be split into a 4 step journey, starting at a level of low motivation and low experience, and slowly building up to full expert level. 
 
-A developer experience can be split into a 4 step journey, starting at a level of low motivation and low experience, and slowly building up to full expert level. In this article we will look at how we can help developers make their first step: Exploration.
+1. Exploration
+2. Getting started
+3. Guidance
+4. Reference
+
+In this article we will look at how we can help developers make their first step: Exploration.
+
 
 ### The art of the 5 minute confidence demo
 
 If you've ever seen companies like [Twilio](https://www.twilio.com/) present on stage then you know they do a few things very well. One of these is their on-stage demonstration.
 
-<div class="ui segment" markdown='1'>
-  <div class="ui bottom attached label">Mike Elsmore, then Developer Advocate at IBM doing one of his on stage live code demos.</div>
-  ![Mike at Work](/images/blog/2017/developer-journey/mike-at-work.png){:.ui.bordered.rounded.fluid.image}
-</div>
+![Miek at work](../images/blog/2017/developer-journey/mike-at-work.png)
 
+> Mike Elsmore, then Developer Advocate at IBM doing one of his on stage live code demos.
 
 Within just 5 minutes they are able to show an interactive demo of their application, using live code and their product in action. They show you their product without you needing to do any coding yourself.
 
@@ -79,10 +64,8 @@ So how do we translate this magic to an only developer experience?
 ## Exploration documentation
 
 
-<div class='ui message' markdown='1'>
-__Before:__ _No motivation / No experience_<br>
-__After:__ _Low motivation / No experience_
-</div>
+<Message> __Before:__ _No motivation / No experience_<br>
+__After:__ _Low motivation / No experience_ </Message>
 
 When translate this confidence building to a developer product, a successful exploration of the product should be possible within a few seconds, ideally under 60. This __1-minute comprehension__ of your product's capabilities ensures that developers who visit your developer portal will be able to understand:
 
@@ -93,9 +76,7 @@ When translate this confidence building to a developer product, a successful exp
 
 A good example of this is [Twilio's SMS API demo](https://www.twilio.com/sms/api), where they pair some sample code for sending an SMS side-by-side with a form to send an SMS.
 
-<div class="ui segment" markdown='1'>
-  <%= dx_image 'twilio', '4', 'Twilio SMS' %>
-</div>
+![Twilio SMS](../images/dx/twilio/twilio-4.png)
 
 These demos are great as they combine code, sample output, and an interactive demo without really requiring the user to do any acctual development. In Twilio's example I __could__ run the code in my preferred language, but I could also just add my phone number to the form and send a sample SMS.
 

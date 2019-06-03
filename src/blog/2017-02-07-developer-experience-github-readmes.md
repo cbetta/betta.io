@@ -3,6 +3,7 @@ title: "Developer Experience: GitHub READMEs"
 date: 2017-02-07
 tags: developer experience, developer onboarding, dx highlights
 icon: Github
+migrated: true
 ---
 
 The `README.md` for a project on GitHub is often the first thing developers see when they encounter your product. The README for a library can be the starting point in a developers relation with your product. These text files serve both as a technical guide to your library and as marketing material for your product. So what should be in a README and what is better avoided?
@@ -14,23 +15,21 @@ For this article I've done a little survey across the [SendGrid](https://github.
 |                                | SendGrid | Pusher   | Stripe   | Twilio   |
 |--------------------------------|----------|----------|----------|----------|
 | Repo name                       | `sendgrid-ruby`                | `pusher-http-ruby`              | `stripe-ruby`                   | `twilio-ruby`                   |
-| Build status badge              | __&#x2713;__{:.color.bg.green} | __&#x2713;__{:.color.bg.green}  | __&#x2713;__{:.color.bg.green}  | __&#x2713;__{:.color.bg.green}  |
-| Library version badge           | __&#x2717;__{:.color.bg.red}   | __&#x2717;__{:.color.bg.red}    | __&#x2717;__{:.color.bg.red}    | __&#x2713;__{:.color.bg.green}  |
+| Build status badge              | <Icon type='CheckSquare' color='green'> | <Icon type='CheckSquare' color='green'>  | <Icon type='CheckSquare' color='green'>  | <Icon type='CheckSquare' color='green'>  |
+| Library version badge           | <Icon type='AlertCircle' color='red'>   | <Icon type='AlertCircle' color='red'>    | <Icon type='AlertCircle' color='red'>    | <Icon type='CheckSquare' color='green'>  |
 | Introduction                    | 129 words                      | 0 words                         | 100 words                       | 19 words                        |
-| Install instructions            | __&#x2713;__{:.color.bg.green} | __&#x2713;__{:.color.bg.green}  | __&#x2713;__{:.color.bg.green}  | __&#x2713;__{:.color.bg.green}  |
-| Installation requirements       | __&#x2713;__{:.color.bg.green} | __&#x2717;__{:.color.bg.red}    | __&#x2713;__{:.color.bg.green}  | __&#x2713;__{:.color.bg.green}  |
-| Get Started samples             | __&#x2713;__{:.color.bg.green} | __&#x2713;__{:.color.bg.green}  | __&#x2713;__{:.color.bg.green}  | __&#x2713;__{:.color.bg.green}  |
-| Link to docs                    | __&#x2713;__{:.color.bg.green} | __&#x2713;__{:.color.bg.green}  | __&#x2713;__{:.color.bg.green}  | __&#x2713;__{:.color.bg.green}  |
-| Link to Ruby specific docs      | __&#x2717;__{:.color.bg.red}   | __&#x2717;__{:.color.bg.red}    | __&#x2713;__{:.color.bg.green}  | __&#x2713;__{:.color.bg.green}  |
-| Link to API credentials         | __&#x2713;__{:.color.bg.green} | __&#x2717;__{:.color.bg.orange} | __&#x2717;__{:.color.bg.orange} | __&#x2717;__{:.color.bg.red}    |
-| Link to support                 | __&#x2713;__{:.color.bg.green} | __&#x2713;__{:.color.bg.green}  | __&#x2717;__{:.color.bg.red}    | __&#x2713;__{:.color.bg.green}  |
-| A [LICENSE](https://help.github.com/articles/licensing-a-repository/) file                  | __&#x2713;__{:.color.bg.green} | __&#x2713;__{:.color.bg.green}  | __&#x2713;__{:.color.bg.green}  | __&#x2713;__{:.color.bg.green}  |
-| A [CHANGELOG](http://keepachangelog.com/) file                | __&#x2713;__{:.color.bg.green} | __&#x2713;__{:.color.bg.green}  | __&#x2717;__{:.color.bg.red}    | __&#x2713;__{:.color.bg.green}  |
-| A [CONTRIBUTING](https://github.com/blog/1184-contributing-guidelines) file             | __&#x2713;__{:.color.bg.green} | __&#x2717;__{:.color.bg.red}    | __&#x2717;__{:.color.bg.red}    | __&#x2717;__{:.color.bg.red}  |
-{:.ui.table.unstackable.compact.small}
+| Install instructions            | <Icon type='CheckSquare' color='green'> | <Icon type='CheckSquare' color='green'>  | <Icon type='CheckSquare' color='green'>  | <Icon type='CheckSquare' color='green'>  |
+| Installation requirements       | <Icon type='CheckSquare' color='green'> | <Icon type='AlertCircle' color='red'>    | <Icon type='CheckSquare' color='green'>  | <Icon type='CheckSquare' color='green'>  |
+| Get Started samples             | <Icon type='CheckSquare' color='green'> | <Icon type='CheckSquare' color='green'>  | <Icon type='CheckSquare' color='green'>  | <Icon type='CheckSquare' color='green'>  |
+| Link to docs                    | <Icon type='CheckSquare' color='green'> | <Icon type='CheckSquare' color='green'>  | <Icon type='CheckSquare' color='green'>  | <Icon type='CheckSquare' color='green'>  |
+| Link to Ruby specific docs      | <Icon type='AlertCircle' color='red'>   | <Icon type='AlertCircle' color='red'>    | <Icon type='CheckSquare' color='green'>  | <Icon type='CheckSquare' color='green'>  |
+| Link to API credentials         | <Icon type='CheckSquare' color='green'> | <Icon type='Circle' color='orange'> | <Icon type='Circle' color='orange'> | <Icon type='AlertCircle' color='red'>    |
+| Link to support                 | <Icon type='CheckSquare' color='green'> | <Icon type='CheckSquare' color='green'>  | <Icon type='AlertCircle' color='red'>    | <Icon type='CheckSquare' color='green'>  |
+| A [LICENSE](https://help.github.com/articles/licensing-a-repository/) file                  | <Icon type='CheckSquare' color='green'> | <Icon type='CheckSquare' color='green'>  | <Icon type='CheckSquare' color='green'>  | <Icon type='CheckSquare' color='green'>  |
+| A [CHANGELOG](http://keepachangelog.com/) file                | <Icon type='CheckSquare' color='green'> | <Icon type='CheckSquare' color='green'>  | <Icon type='AlertCircle' color='red'>    | <Icon type='CheckSquare' color='green'>  |
+| A [CONTRIBUTING](https://github.com/blog/1184-contributing-guidelines) file             | <Icon type='CheckSquare' color='green'> | <Icon type='AlertCircle' color='red'>    | <Icon type='AlertCircle' color='red'>    | <Icon type='AlertCircle' color='red'>  |
 
-__Clarification:__ I'd like to make it clear that I am not saying any of these README's are good or bad. I think all of them have good things and bad things, which have probably come about for very good reasons.
-{:.ui.message}
+<Message> __Clarification:__ I'd like to make it clear that I am not saying any of these README's are good or bad. I think all of them have good things and bad things, which have probably come about for very good reasons. </Message>
 
 ## README template
 
@@ -55,15 +54,14 @@ A reasonable template for a README, as much as there can be one, would be:
   * to the developer dashboard
   * to support channels
 
-Do you prefer to learn by example? Have a look at this [Example README](https://github.com/workbetta/example-readme) I've put together for you. Make sure to read the [`WHAT_IS_THIS.md`](https://github.com/workbetta/example-readme/blob/master/WHAT_IS_THIS.md) for more information.
-{:.ui.message}
+<Message> Do you prefer to learn by example? Have a look at this [Example README](https://github.com/workbetta/example-readme) I've put together for you. Make sure to read the [`WHAT_IS_THIS.md`](https://github.com/workbetta/example-readme/blob/master/WHAT_IS_THIS.md) for more information. </Message>
 
 
 ## 1. Inform
 
 The first task of your README is to inform your user what your product does, and how your library or SDK helps to make this happen. I think Twilio does an excellent task at this:
 
-<%= dx_image 'twilio', '35', 'Twilio' %>
+![Twilio](../images/dx/twilio/twilio-35.png)
 
 ### Repo name
 
@@ -101,7 +99,7 @@ If you want you could link to these from your README file.
 
 After you've informed a developer about your product and its library, the next step is to get them started with initializing and using your product. In this let's look at a different company, InterFAX:
 
-<%= dx_image 'interfax', '1', 'InterFAX' %>
+![InterFAX](../images/dx/interfax/interfax-1.png)
 
 ### Install instructions
 
@@ -135,7 +133,7 @@ __Don'ts__
 
 It's important to not just document how to handle success, but also failure in your API. Pusher does an excellent job at this.
 
-<%= dx_image 'pusher', '21', 'Pusher' %>
+![Pusher](../images/dx/pusher/pusher-21.png)
 
 
 ## 4. Link
@@ -152,7 +150,7 @@ If possible I'd link to the documentation in their programming language, so they
 
 Finally, make sure to link to your support channels, whether that is email, Twitter, or other. SendGrid does an excellent job at this.
 
-<%= dx_image 'sendgrid', '26', 'SendGrid' %>
+![SendGrid](../images/dx/sendgrid/sendgrid-26.png)
 
 Allowing developers to find you and get a quick response to technical questions can prove to be a major factor in converting a developer into a success story.
 

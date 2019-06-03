@@ -3,6 +3,7 @@ title: "Graceful Errors in Ruby SDKs"
 date: 2018-03-30
 tags: developer experience
 icon: Terminal
+migrated: true
 ---
 
 When setting out to create a great developer experience, a large part of your

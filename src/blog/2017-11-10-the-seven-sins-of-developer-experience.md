@@ -3,6 +3,7 @@ title: "The 7 Sins of Developer Experience"
 date: 2017-11-10 
 tags: developer experience
 icon: Map
+migrated: true
 ---
 
 <Message> This post is a write up of a talk given at [DevRelCon Tokyo 2017](tokyo-2017.devrel.net) and a few other events. Slides for this talk are [available on Speaker Deck](https://speakerdeck.com/cbetta/the-7-deadly-sins-of-developer-experience-devrelcon-tokyo). </Message>
