@@ -3,6 +3,7 @@ title: Minimum Viable Samples
 date: 2016-04-10
 tags: devrel
 icon: Code
+migrated: true
 ---
 
 > TL;DR - Code samples are important for teaching developers how to use a technology. Use the Minimum Viable Sample checklist below to avoid common mistakes.
@@ -16,7 +17,6 @@ Code samples are a great way to teach developers how your product works. They go
 The purpose of a good code sample is to allow a developer to see a fully integrated example of your technology in action. They can download, run, experience, and then break down your sample to see how it works and how it fails. At the essence samples allow for "Learning By Breaking" (or "Learning By Taking Apart").
 
 Additionally samples also allow developers to get a full context for  your documentation. Often tutorials or documentation can skip important details that seem obvious to the experts but can confuse a beginner.
-
 
 
 ## The sample flow

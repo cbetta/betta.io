@@ -1,11 +1,11 @@
 ---
-
 title: "Integrating Log In With PayPal into Rails"
 date: 2013-09-27
 comments: true
 tags: ruby, paypal, login, tutorial
 published: true
 icon: CreditCard
+migrated: true
 ---
 
 Earlier this year PayPal launched the new [Log In with PayPal](https://developer.paypal.com/webapps/developer/docs/integration/direct/log-in-with-paypal/) experience worldwide. Integrating it into Rails is very straightforward with the help of [Omniauth](https://github.com/intridea/omniauth) so I thought I'd show how with a little tutorial.
@@ -17,8 +17,6 @@ Earlier this year PayPal launched the new [Log In with PayPal](https://developer
 * Account verification status
 
 All the code for this tutorial is available on [Github](https://github.com/cbetta/login-with-paypal-demo-rails).
-
-
 
 ## Acquiring credentials
 

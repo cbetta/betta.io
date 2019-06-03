@@ -3,6 +3,7 @@ title: "Developer Onboarding: Twilio"
 date: 2017-01-09 
 tags: developer experience, developer onboarding
 icon: Instagram
+migrated: true
 ---
 
 This is the fourth in a series of articles focussing on reviewing [Developer Onboarding](https://betta.io/blog/categories/developer-onboarding/). In this post I'm looking at the onboarding offered by [Twilio](https://twilio.com/).
@@ -19,10 +20,9 @@ I will be looking at 3 aspects of the developer onboarding experience:
 
 #### _Build apps that communicate with everyone in the world_
 
-<div class="ui embed" data-source='youtube' data-id="LUAt8vw1Wys" data-placeholder="<%= image_path '/images/dx/twilio/twilio.png' %>
-"></div><br>
+<Youtube id="LUAt8vw1Wys"></Youtube>
 
-_"Twilio (pronounced TWILL-e-o) is a cloud communications platform as a service (PaaS) company based in San Francisco, California. Twilio allows software developers to programmatically make and receive phone calls and send and receive text messages using its web service APIs."_ - [Wikipedia](https://en.wikipedia.org/wiki/Twilio)
+> Twilio (pronounced TWILL-e-o) is a cloud communications platform as a service (PaaS) company based in San Francisco, California. Twilio allows software developers to programmatically make and receive phone calls and send and receive text messages using its web service APIs. - [Wikipedia](https://en.wikipedia.org/wiki/Twilio)
 
 Twilio is one of the companies most famous for having an excellent Developer Experience. Their reputation as a "developer first" company is well established.
 
@@ -30,13 +30,13 @@ Twilio is one of the companies most famous for having an excellent Developer Exp
 
 My first step is to try and learn what it would be like to use Twilio before I sign up. Let's visit their main site.
 
-<%= dx_image 'twilio', 1, 'Landing Page' %>
+![Landing Page](../images/dx/twilio/twilio-1.png)
 
 I love this simple design. They get straight to the point and explain what they do in plain English. No marketing terms, no jargon, just a simple proposition: APIs for communication.
 
 Twilio has done an excellent job at hiding the complexities of their product line up under a menu that only those of us who know what we are looking to achieve will be able to find and need.
 
-<%= dx_image 'twilio', 2, 'Drop Down Menu' %>
+![Drop Down Menu](../images/dx/twilio/twilio-2.png)
 
 Rather than talking about SIP, TaskRouter, Network Traversal, or any other industry jargon on their frontpage they keep it to a minimum. Yes it's there, but for those of us new to the platform the messaging is clear and to the point.
 
@@ -44,7 +44,7 @@ Even this menu is pretty straightforward. Links are split in products and use-ca
 
 I follow the __Messaging__ link and eventually end up on a page describing the SMS API.
 
-<%= dx_image 'twilio', 4, 'SMS API' %>
+![SMS API](../images/dx/twilio/twilio-4.png)
 
 This is a perfect **Demo Unit**, it achieves the most essential goals.
 
@@ -56,7 +56,7 @@ This is a perfect **Demo Unit**, it achieves the most essential goals.
 
 At this point I'm happy to  continue so I click the big orange button to get started. It takes me to the sign up form.
 
-<%= dx_image 'twilio', 5, 'Signup form' %>
+![Signup form](../images/dx/twilio/twilio-5.png)
 
 Twilio's sign up form asks some very important questions that I love:
 
@@ -66,11 +66,11 @@ Twilio's sign up form asks some very important questions that I love:
 
 These answers can help them better cater their onboarding experience to me. It's good to see that every question also has an option to answer it with "I don't know".
 
-<%= dx_image 'twilio', 6, 'Verification' %>
+![Verification](../images/dx/twilio/twilio-6.png)
 
 Rather than verifying my email, Twilio verifies my mobile phone number. They do this to battle spam and it allows a new user to directly start sending with a trial account to that number, and that number only.
 
-<%= dx_image 'twilio', 8, 'Welcome (1)' %>
+![Welcome (1)](../images/dx/twilio/twilio-8.png)
 
 Once confirmed I am presented with a rather excellent first use experience. It tries to cover a few things:
 
@@ -79,7 +79,7 @@ Once confirmed I am presented with a rather excellent first use experience. It t
 
 I take a tour of the console.
 
-<%= dx_image 'twilio', 10, 'Welcome (2)' %>
+![Welcome (2)](../images/dx/twilio/twilio-10.png)
 
 I get a few tooltip explanations of where to find what I need. Interesting, but I always feel like these kind of tooltips are a sign of an overcomplicated, confusing UI. If you need them you need to review your UI, not provide more instructions.
 
@@ -89,21 +89,21 @@ After the quick introduction to the console I __Get Started__ with my first impl
 
 Because I answered __SMS__ as my "Product I'd use first" when I signed up, I directly get presented with an SMS tutorial.
 
-<%= dx_image 'twilio', 13, 'Get Started with SMS (1)' %>
+![Get Started with SMS (1)](../images/dx/twilio/twilio-13.png)
 
 The first step is to buy a phone number. There's little explanation as to why, but I kinda like that. I assume they know and they are showing by example.
 
-<%= dx_image 'twilio', 14, 'Get Started with SMS (2)' %>
+![Get Started with SMS (2)](../images/dx/twilio/twilio-14.png)
 
 Cool, I have a new phone number! I even get to change the number if I want, but I don't really care so I continue. Interestingly here the explanation as to why I need a number does show up.
 
-<%= dx_image 'twilio', 16, 'Get Started with SMS (3)' %>
+![Get Started with SMS (3)](../images/dx/twilio/twilio-16.png)
 
 On to the next step: sending a message. I'd like to point out that all this time it's clear to me that this is a 4 step process, and I'm now at step 2.
 
 What's interesting here is that this is not a step where I get to implement some code, instead I can use their console to send an SMS. I need to expand the code sample to see the code I'd need to produce this step myself.
 
-<%= dx_image 'twilio', 17, 'Get Started with SMS (4)' %>
+![Get Started with SMS (4)](../images/dx/twilio/twilio-17.png)
 
 And here is probably the most disapointing thing of the Twilio onboarding experience. This code sample is extremely basic and could be so much better:
 
@@ -114,29 +114,29 @@ And here is probably the most disapointing thing of the Twilio onboarding experi
 
 Instead I copy paste this code into my text editor and continue with the click-demo instead.
 
-<%= dx_image 'twilio', 19, 'Get Started with SMS (5)' %>
+![Get Started with SMS (5)](../images/dx/twilio/twilio-19.png)
 
 Next up a bit about receiving SMS and replying to them. This is the first flow chart I've seen so far. I tend to hate these when they are presented too early, due to information overload, but this one seems to be well timed.
 
 I try out the demo they provided, I send an SMS to my Twilio phone number and promptly get a reply.
 
-<%= dx_image 'twilio', 21, 'Get Started with SMS (6)' %>
+![Get Started with SMS (6)](../images/dx/twilio/twilio-21.png)
 
 Step 4 turns out to not really be a step at all - I like this, always under sell and over deliver your product's simplicity. Instead it just sends us to the vast documentation Twilio provides.
 
-<%= dx_image 'twilio', 22, 'Tutorials' %>
+![Tutorials](../images/dx/twilio/twilio-22.png)
 
 ## Integration
 
 I copy-pasted some code earlier and I want to quickly test and see if I can make it work on my machine. What I need though is my Twilio phone number and API credentials. It took me a moment to realise that the __#__ icon represents the __numbers__ section, but once I saw it I figured out where to find my number. I do wish this sidebar would just have text on it though. It would just be way more obvious.
 
-<%= dx_image 'twilio', 25, 'My phone number' %>
+![My phone number](../images/dx/twilio/twilio-25.png)
 
 Surprisingly in the whole onboarding process I have not been presented with my API credentials, and the phone numbers screen does not have it either. I click around randomly and eventually spot a __Show API credentials__ link in the top right corner.
 
 I click on that link and boom, my API credentials.
 
-<%= dx_image 'twilio', 26, 'API credentials' %>
+![API credentials](../images/dx/twilio/twilio-26.png)
 
 With this in place I run my code, install the Twilio gem, and run the code again, and promptly I receive the SMS message I expected.
 
@@ -144,11 +144,11 @@ With this in place I run my code, install the Twilio gem, and run the code again
 
 My next step is to see what exactly the arguments and return types are for the SMS API. I click on the docs icon on the dashboard and end up on the API reference.
 
-<%= dx_image 'twilio', 27, 'API Reference (1)' %>
+![API Reference (1)](../images/dx/twilio/twilio-27.png)
 
 I spot the __Send SMS & MMS Messages__ link under the __Twilio REST API__ header and click on it to continue.
 
-<%= dx_image 'twilio', 28, 'API Reference (2)' %>
+![API Reference (2)](../images/dx/twilio/twilio-28.png)
 
 This page has a lot of detail on the arguments this API takes: the recipient, the message, and a various array of optional other arguments. It pairs this with some Ruby code, I'm not sure if this is because of my earlier choices or not.
 
@@ -156,23 +156,23 @@ What it's missing though is the response I can expect from this API. It's not ob
 
 Eventually I spot the __Output__ link next to the code.
 
-<%= dx_image 'twilio', 29, 'API Reference (3)' %>
+![API Reference (3)](../images/dx/twilio/twilio-29.png)
 
 That's the actual message object that's returned. It's not labeled as such in the API, but I figure it must be after clicking around the REST API reference documentation for a bit and finding the __Message__ resource.
 
-<%= dx_image 'twilio', 30, 'API Reference (4)' %>
+![API Reference (4)](../images/dx/twilio/twilio-30.png)
 
 In this resource every attribute of the response is described, though one note would be to point out that the names do not match 100% due to the documentation being written for the XML response, not the JSON response. It's not too hard to go from __snake_case__ to __CamelCase__ though.
 
 I wondered if I was in the wrong place for the kind of documentation I was looking for, so I quickly went over to the Twilio Ruby gem on Github, to see if those docs provided the right kind of links. Sadly those docs were equally as sparse, not pointing to any reference docs from the samples at all.
 
-<%= dx_image 'twilio', 31, 'Github Docs' %>
+![Github Docs](../images/dx/twilio/twilio-31.png)
 
 ## Emails
 
 Finally I want to highlight the email I eventually received from Twilio.
 
-<%= dx_image 'twilio', 32, 'Email' %>
+![Email](../images/dx/twilio/twilio-32.png)
 
 Interestingly here I finally get presented with links to my API credentials. It also features a few segments to give someone who did not finish the __Get Started__ guide another chance to get started.
 
@@ -180,14 +180,10 @@ I love how this email also provides links to some very useful non-Twilio essenti
 
 ## Conclusions
 
-> <div class="ui huge star rating" data-rating="4" data-max-rating="5"></div>
-> *Almost flawless*
+> ★★★★
+>
+> Almost flawless
 
-<!-- 1 Impossible
-2 Barely possible
-3 Harder than it should be
-4 Almost flawless
-5 Flawless -->
 
 Twilio is an example of a developer product that offers a wide variety of solutions within a certain industry.  Twilio's first-use experience is not perfect but still much more advanced than I've seen in many other places.
 

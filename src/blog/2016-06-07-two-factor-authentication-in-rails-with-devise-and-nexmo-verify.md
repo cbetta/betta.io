@@ -3,10 +3,11 @@ title: Two Factor Authentication in Rails with Devise and Nexmo Verify
 date: 2016-06-07
 tags: nexmo, tutorial
 icon: MessageSquare
+migrated: true
 ---
 
-> This post was originally first posted on
-  the [Nexmo Developer Blog](https://www.nexmo.com/blog/2016/06/07/two-factor-authentication-2fa-ruby-rails-devise-nexmo-verify/) on June 7th 2016.
+<Message> This post was originally first posted on
+  the [Nexmo Developer Blog](https://www.nexmo.com/blog/2016/06/07/two-factor-authentication-2fa-ruby-rails-devise-nexmo-verify/) on June 7th 2016.  </Message>
 
 I love applications that support two factor authentication! Whether it is
 through SMS, voice, or other means - it simply tells me that the app developer
@@ -128,7 +129,7 @@ end
 
 ## Send a verification request
 
-![Text Message](../images/blog/2016/nexmo-2fa/screen-3.jpg){:.ui.image.medium.centered.bordered}
+![Text Message](../images/blog/2016/nexmo-2fa/screen-3.jpg)
 
 Now that a user can add their phone number to their account I can have them
 verify their phone number on login. In order to send a verification message via

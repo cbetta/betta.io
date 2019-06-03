@@ -4,6 +4,7 @@ date: 2012-04-12
 comments: true
 tags: rails, omniauth, ruby
 icon: Terminal
+migrated: true
 ---
 
 [Omniauth Identity](https://github.com/intridea/omniauth-identity) is a great
@@ -13,8 +14,6 @@ registration form and this is what I came up with.
 
 For this example I assume you already have a Omniauth Identity setup much
 like explained in [this Railscast](http://railscasts.com/episodes/304-omniauth-identity).
-
-
 
 ## Step 1 - app/views/identities/new.html.erb
 

@@ -4,18 +4,17 @@ date: 2015-09-21
 tags: credit cards, javascript, braintree
 image: blog/2015/vzero-card-type.gif
 icon: CreditCard
+migrated: true
 ---
 
-> This post was originally first posted on
-  [Braintree's Strongly Typed](https://www.braintreepayments.com/blog/gesture-based-browsing-and-checkouts/) blog on September 3rd 2015.
+<Message> This post was originally first posted on
+  [Braintree's Strongly Typed](https://www.braintreepayments.com/blog/gesture-based-browsing-and-checkouts/) blog on September 3rd 2015. </Message>
 
 This post is the first of a series where I will be detailing how to provide users with the best custom credit card form experience in the business.
 
 Ever since we launched our v.zero SDK with the [Drop-in UI](https://www.braintreepayments.com/features/drop-in) in July last year, I’ve been in love with all the little user experience tweaks that our design team incorporated into our credit card forms. As a speaker at dev conferences, I have a lot of fun referencing these small tweaks by highlighting how bad a credit card form UX is without them. If you’re not yet familiar, here is a little example of our Drop-in in action:
 
-
-
-![Braintree v.zero Drop-in UI](blog/2015/vzero-card-type.gif)
+![Braintree v.zero Drop-in UI](../images/blog/2015/vzero-card-type.gif)
 
 Last month we launched [Hosted Fields](https://www.braintreepayments.com/features/hosted-fields), our brand new solution to the latest PCI requirements. This is an awesome way to fully customize your credit card form to your liking while still processing the card data with full v.zero security. The new API comes with some very powerful features that allow you to replicate the cool UX features from the Drop-in UI into your own form. I recommend reading our [previous post](https://www.braintreepayments.com/blog/your-checkout-our-iframes/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Braintrust+%28Braintree+Developer+RSS%29) by Kyle DeTella for the full background as to why we designed these APIs the way they are.
 

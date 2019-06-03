@@ -5,12 +5,12 @@ date: 2013-08-21
 comments: true
 tags: jekyll
 icon: MessageCircle
+migrated: true
 ---
 
 I've been tempted to write a bit about Static Site Generators (SSGs) for a while now, mainly because I love them. I've been using [Jekyll](http://jekyllrb.com/) for various projects for a while now and I love it. The simplified hosting, higher security, and general hackability are just a few pros that make it worth it.
 
 But they have also pained me, and after reading ["The joy and pain of using a static site generator for private and client work"](http://screamingatmyscreen.com/2013/8/the-joy-and-pain-of-using-a-static-site-generator-for-private-and-client-work/) I thought I'd add in my own few observations from a Jekyll perspective.
-
 
 
 ## The joys

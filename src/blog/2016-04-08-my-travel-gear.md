@@ -4,6 +4,7 @@ date: 2016-04-08
 tags: gear, devrel
 slug: "anker-travel-gear"
 icon: Anchor
+migrated: true
 ---
 
 During the last 3 years I've travelled an awful lot and I realised it might be interesting to write up some of my favorite travel gear, specifically the chargers I use.

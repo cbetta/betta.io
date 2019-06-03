@@ -3,6 +3,7 @@ title: Using LetsEncrypt with Sinatra on Heroku
 date: 2016-10-28
 tags: gems, ruby, tutorial
 icon: Terminal
+migrated: true
 ---
 
 This is a short and straightforward tutorial showing how to use [Sinatra](http://www.sinatrarb.com/) on [Heroku](https://heroku.com) with an auto-renewing SSL certificate from [LetsEncrypt](https://letsencrypt.org/).
@@ -27,7 +28,7 @@ Let's start with a simple [Sinatra](http://www.sinatrarb.com/) app.
 
 We start with the `sinatra` gem and bundle.
 
-```ruby{1-2,4}
+```ruby
 # Gemfile
 source 'https://rubygems.org'
 

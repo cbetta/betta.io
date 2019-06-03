@@ -5,13 +5,12 @@ date: 2012-11-12
 comments: true
 tags: puppet, servers
 icon: MessageSquare
+migrated: true
 ---
 
 I've been playing with [Puppet](http://puppetlabs.com/) recently in order to finally teach myself a bit about server management. I decided for Puppet because... well... I didn't have time to play with [Chef](http://www.opscode.com/chef/) yet.
 
 I can't show any of my code because it contains some stuff I'd rather not open up, but here are some of my global notes on Puppet that I wanted to share.
-
-
 
 ## The good
 

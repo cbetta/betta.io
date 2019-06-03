@@ -4,15 +4,15 @@ date: 2015-11-20
 tags: code of conduct, devrel
 image: blog/2015/hack-code-of-conduct-1.png
 icon: FileText
+migrated: true
 ---
-> This post was originally first posted on
-  [Braintree's Strongly Typed](https://www.braintreepayments.com/blog/the-hack-code-of-conduct/) blog on November 6th 2015.
+
+<Message> This post was originally first posted on
+  [Braintree's Strongly Typed](https://www.braintreepayments.com/blog/the-hack-code-of-conduct/) blog on November 6th 2015. </Message>
 
 A little more than a year ago we launched the [Hack Code of Conduct](http://hackcodeofconduct.org/), which is a document outlining the rules and norms of a hackathon in order to guarantee a harassment-free experience for everyone.
 
 It’s been a year since its release and we’ve gotten a lot of positive feedback. It’s been an eye-opening experience to see how many people (including myself) have come to grips with the concept of a code of conduct as a necessity, not just an option, at an event.
-
-
 
 ## Scratching an itch
 
@@ -26,13 +26,13 @@ Sadly, there was a real lack of any off-the-shelf codes of conduct written speci
 
 Inspired by [The Hack Day Manifesto](http://hackdaymanifesto.com/) -- of which I’m a maintainer -- I realised that writing our own solution was probably the best way to go, and so the Hack Code of Conduct was born. While the manifesto exists as a static website, I decided to turn the HackCoC into a proper web app to allow any event organiser to customise. This also permits any hackathon organiser to specify a designated point of contact when the HackCoC is breached. I hadn’t seen this on any other codes of conduct and I thought of it as a valuable addition:
 
-![The Hack Code of Conduct](blog/2015/hack-code-of-conduct-1.png)
+![The Hack Code of Conduct](../images/blog/2015/hack-code-of-conduct-1.png)
 
 ## An amazing response
 
 Since its launch, the response to our Hack Code of Conduct has been amazing. We’ve had over 125 thought leaders across the tech industry and hackathon scene sign their support. This includes developers and hackathon organisers from PayPal, Braintree, Venmo, Twilio, Sendgrid, Twitter, MLH, and PennApps, to name a few. We’d like to thank all of these individuals and organizations for showing their support and helping hackathons become more inclusive to everyone.
 
-![Some of the Hack Code of Conduct supporters](blog/2015/hack-code-of-conduct-2.png)
+![Some of the Hack Code of Conduct supporters](../images/blog/2015/hack-code-of-conduct-2.png)
 
 Since 2014 when we rolled out the Hack Code of Conduct for our Braintree/PayPal BattleHack series, we’ve had more than 50 hackathon organisers create custom versions of it for their events. What I really love is the collaborative nature of a project like this, as evidenced by the occasional pull requests I receive with changes to the content. This helps us as a developer/hackathon organiser community to further refine the wording and common values that our Hack Code of Conduct is committed to implementing.
 

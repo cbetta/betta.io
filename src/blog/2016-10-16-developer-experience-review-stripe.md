@@ -3,6 +3,7 @@ title: "Developer Onboarding: Stripe"
 date: 2016-10-16
 tags: developer experience, developer onboarding
 icon: Instagram
+migrated: true
 ---
 
 This is the third in a series of articles focussing on reviewing [Developer Onboarding](https://betta.io/blog/categories/developer-onboarding/). In this post I'm looking at the brand new design and onboarding offered by [Stripe](https://stripe.com/).
@@ -12,16 +13,16 @@ This is the third in a series of articles focussing on reviewing [Developer Onbo
 I will be looking at 3 aspects of the developer onboarding experience:
 
 1. **Exploration**: Does the experience help me to understand or try out their product before signing up for an account?
-2. **Onboarding &amp; Integration:** How well does the product guide me from their main site to create an account and to make that first API call or integration?
+2. **Onboarding & Integration:** How well does the product guide me from their main site to create an account and to make that first API call or integration?
 3. **Reference:** Once I have my first integration in place, how hard is it to find the full reference documentation for the API call I made?
 
 ## Stripe
 
 #### _The new standard in online payments_
 
-[![Stripe](/images/dx/stripe/stripe.png)](https://stripe.com){:.ui.image.fluid.bordered}
+[![Stripe](../images/dx/stripe/stripe.png)](https://stripe.com)
 
-_"Stripe is an American technology company, operating in over 25 countries, that allows both private individuals and businesses to accept payments over the Internet."_ - [Wikipedia](https://en.wikipedia.org/wiki/Stripe_(company))
+> Stripe is an American technology company, operating in over 25 countries, that allows both private individuals and businesses to accept payments over the Internet - [Wikipedia](https://en.wikipedia.org/wiki/Stripe_(company))
 
 Stripe is one of the companies most famous for having an excellent Developer Experience. Their reputation as a "developer first" company is well established.
 
@@ -31,15 +32,15 @@ Stripe is one of the companies most famous for having an excellent Developer Exp
 
 My first step is to learn what Stripe is, does, and how I can use it in my project. Let's visit their main site.
 
-<%= dx_image 'stripe', 5, 'Landing Page' %>
+![Landing Page](../images/dx/stripe/stripe-5.png)
 
 There's not a lot to be seen here for developers but there's a big **developers** link at the top. Before I click on it I decide to scroll down and see what else they have on their frontpage.
 
-<%= dx_image 'stripe', 6, 'Developers First' %>
+![Developers First](../images/dx/stripe/stripe-6.png)
 
 At the bottom of the page we find a few code snippets showing off how easy it is to integrate Stripe as a developer. They proudly state to be "Developers First" and I believe them. My only nag would be that none of this code can be run as-is, and it's limited to Javascript.
 
-<%= dx_image 'stripe', 7, 'Developers Documentation' %>
+![Developers Documentation](../images/dx/stripe/stripe-7.png)
 
 I scroll back up and click on the **Developers** link. I'm surprised to find a dropdown with documentation and getting started links, rather than to be brought to a general overview. This is not a bad thing, just different than what I've seen before.
 
@@ -47,13 +48,13 @@ It's a bit too early to deep dive into the docs so instead I take my chances wit
 
 [`https://stripe.com/us/payments`](https://stripe.com/us/payments)
 
-<%= dx_image 'stripe', 8, 'Exploring the stack' %>
+![Exploring the stack](../images/dx/stripe/stripe-8.png)
 
 This doesn't really inspire me any further as a developer either. I want to see some live examples but so far all I've found is marketing material and some non functional code. Let's head over to the docs.
 
 [`https://stripe.com/docs`](https://stripe.com/docs)
 
-<%= dx_image 'stripe', 10, 'Developer Documentation' %>
+![Developer Documentation](../images/dx/stripe/stripe-10.png)
 
 My doubt about the docs prove to be incorrect, they are exactly what I needed. Some companies use their documentation just to focus on in-depth examples and reference documentation. Stripe on the other hand uses it to for exploration as well.
 
@@ -64,7 +65,7 @@ This page does a few things very well:
 
 I scroll down a bit to try their playground example.
 
-<%= dx_image 'stripe', 11, 'Try Now' %>
+![Try Now](../images/dx/stripe/stripe-11.png)
 
 This playground is a great example of **learning by trying**. By following the step-by-step guide a developer can get familiar with the
 number of API calls needed, the various parts that make up a complete payment (create token, create customer, make a charge, etc), and it even
@@ -75,11 +76,11 @@ teaching them what it takes to process a payment through code examples.
 
 Here's the first part of this playground in action.
 
-<%= dx_image 'stripe', 2, 'Try Now (Animated)', 'gif' %>
+![Try Now (Animated)](../images/dx/stripe/stripe-2.gif)
 
 I follow all the steps and learn the basics of processing payments. When I reach the last step I am presented with some options as to where to go next.
 
-<%= dx_image 'stripe', 14, 'Try Now (Finished)' %>
+![Try Now (Finished)](../images/dx/stripe/stripe-14.png)
 
 I think I've seen enough though, let's sign up and start processing my first payment.
 
@@ -89,23 +90,23 @@ Annoyingly Stripe does not have a big **Sign Up** button on this page, which is 
 
 [`https://dashboard.stripe.com/login`](https://dashboard.stripe.com/login)
 
-<%= dx_image 'stripe', 16, 'Login Page' %>
+![Login Page](../images/dx/stripe/stripe-16.png)
 
 As I expected there's a link at the bottom to bring me to the sign up form.
 
 [`https://dashboard.stripe.com/register`](https://dashboard.stripe.com/register)
 
-<%= dx_image 'stripe', 17, 'Registration Page' %>
+![Registration Page](../images/dx/stripe/stripe-17.png)
 
 I only noticed later on that there's a link to **save your account later** and continue with a sort of guest-account. This is a great way to lower the barrier to entry for people not quite yet committed to signing up.
 
 I fill in my details.
 
-<%= dx_image 'stripe', 18, 'Registration Page (Password Warning)' %>
+![Registration Page (Password Warning)](../images/dx/stripe/stripe-18.png)
 
 My password for this account is apparently a bit insecure but I continue anyway.
 
-<%= dx_image 'stripe', 19, 'Dashboard' %>
+![Dashboard](../images/dx/stripe/stripe-19.png)
 
 After signing up I am welcomed to Stripe with a popup that links to 4 separate articles covering the various steps of processing a payment.
 
@@ -119,7 +120,7 @@ I click on the first link named **Collecting your customer's cards**.
 
 [`https://stripe.com/docs/cards`](https://stripe.com/docs/cards)
 
-<%= dx_image 'stripe', 20, 'Receiving Cards' %>
+![Receiving Cards](../images/dx/stripe/stripe-20.png)
 
 This page feels a bit underwhelming. It states in tiny letters that this is the **first step** to taking payments but it's not providing any clear next places to go. I needed to read the text precisely to discover that the **Checkout** link would probably be the easiest method available to me.
 
@@ -129,15 +130,15 @@ An easy way to improve this page would have been to list the differences between
 
 [`https://stripe.com/docs/checkout/tutorial`](https://stripe.com/docs/checkout/tutorial)
 
-<%= dx_image 'stripe', 23, 'Integrating Checkout' %>
+![Integrating Checkout](../images/dx/stripe/stripe-23.png)
 
 This page is extremely interesting to me. The UI element that screamed out the most to me amongst the vastness of bland text was the big blue **Pay with Card** button. I clicked it almost immediately.
 
-<%= dx_image 'stripe', 24, 'Pay with Card popup' %>
+![Pay with Card popup](../images/dx/stripe/stripe-24.png)
 
 Now this is cool, an interactive demo. I can play around with it, fill in some fake details and see what the integration would effectively look like on my site.
 
-<%= dx_image 'stripe', 1, 'Pay with Card popup (Animated)', 'gif' %>
+![Pay with Card popup (Animated)](../images/dx/stripe/stripe-1.gif)
 
 I love this demo as it gave me a good idea as to what we will be achieving next but a few things come to mind.
 
@@ -145,19 +146,19 @@ First off I would have loved to have been shown this and a comparison to **Strip
 
 I also noticed that once the popup is in place I can't see the instructions on what to fill in anymore. I have to close the popup, read the instructions, and try again.
 
-<%= dx_image 'stripe', 30, 'Code sample' %>
+![Code sample](../images/dx/stripe/stripe-30.png)
 
 As I scroll down further I find a code sample. I copy and paste it into a `.html` file and start up a local server.
 
-<%= dx_image 'stripe', 25, 'Button integration' %>
+![Button integration](../images/dx/stripe/stripe-25.png)
 
 Cool, I now have the same button as I had before but on my site! One of the cool things here is that the code I just copied had **my API key** inserted into it already. In other words: this code was ready to go for me the moment I signed up.
 
-<%= dx_image 'stripe', 31, 'Pay with Card popup' %>
+![Pay with Card popup](../images/dx/stripe/stripe-31.png)
 
 The button directly works and has all the fluid animations I saw on the Stripe documentation page. When I submit the form I end up being redirected to a page that does not exist on my server. I assume I need to continue on to the next step so I return to the docs.
 
-<%= dx_image 'stripe', 32, 'Next steps' %>
+![Next steps](../images/dx/stripe/stripe-32.png)
 
 What's interesting here is that there's more than one next step. The way a payment has to be processed totally depends per merchant. Stripe presented me with a tutorial on collecting card details first, rather than forcing me earlier to have to chose what flow I wanted to go through.
 
@@ -165,7 +166,7 @@ I click on **Charging the customer immediately**.
 
 [`https://stripe.com/docs/charges`](https://stripe.com/docs/charges)
 
-<%= dx_image 'stripe', 33, 'Creating Charges' %>
+![Creating Charges](../images/dx/stripe/stripe-33.png)
 
 On this page I find the Ruby code needed to process the payment. Although the Ruby code is short and to the point it makes a few assumptions:
 
@@ -177,7 +178,7 @@ I was able to figure out what I needed quite easy, but a more junior developer m
 
 When I start my server and run the complete code sample I got an error but when I log back into the dashboard I see that my payment has gone through!
 
-<%= dx_image 'stripe', 35, 'Dashboard with charge' %>
+![Dashboard with charge](../images/dx/stripe/stripe-35.png)
 
 I assume the error was my fault and continue.
 
@@ -187,23 +188,23 @@ After some debugging I notice the payment returns a `Stripe::Charge` object and 
 
 [`https://stripe.com/docs/api`](https://stripe.com/docs/api)
 
-<%= dx_image 'stripe', 40, 'Reference Documentation' %>
+![Reference Documentation](../images/dx/stripe/stripe-40.png)
 
 Stripe has pretty much set the standard for reference documentation in the last few years. Many other platforms have adopted the same three column layout with code samples in various languages.
 
 I switch the reference documentation to Ruby.
 
-<%= dx_image 'stripe', 41, 'Ruby Reference Documentation' %>
+![Ruby Reference Documentation](../images/dx/stripe/stripe-41.png)
 
 On the left I find links to an **Introduction** for those new to the platform, popular **Topics** that go more in-depth in more important aspects, and a list of **Core Resources**.
 
 I click on the **Charges** link under the **Core Resources** and find exactly what I needed.
 
-<%= dx_image 'stripe', 42, 'Charges (Core Resource)' %>
+![Charges (Core Resource)](../images/dx/stripe/stripe-42.png)
 
 Finally I want to take a quick look at what errors to expect and click on **Errors** under **Topics**.
 
-<%= dx_image 'stripe', 43, 'Errors (Topics)' %>
+![Errors (Topics)](../images/dx/stripe/stripe-43.png)
 
 The Stripe reference documentation is everything you'd expect it to be: complete, correct, and full of context. Resources are linked to when mentioned from other resources, errors are linked to when needed, and all of it is presented in the context of the language of my preference.
 
@@ -211,7 +212,7 @@ The Stripe reference documentation is everything you'd expect it to be: complete
 
 I want to quickly highlight the email that Stripe sent me while I signed up. The email did not block me from signing up but it nicely rounds out the onboarding experience.
 
-<%= dx_image 'stripe', 1, 'Landing Page' %>
+![Landing Page](../images/dx/stripe/stripe-1.png)
 
 As you can see this email serves both as a confirmation email for my email address and to provide me with links to the documentation and more.
 
@@ -221,18 +222,14 @@ The other links point to the documentation and a support article on how to get s
 
 [`https://support.stripe.com/questions/using-stripe-without-programming`](https://support.stripe.com/questions/using-stripe-without-programming)
 
-<%= dx_image 'stripe', 2, 'I’m not a programmer. Can I still use Stripe?' %>
+![I’m not a programmer. Can I still use Stripe?](../images/dx/stripe/stripe-2.png)
 
 ## Conclusions
 
-> <div class="ui huge star rating" data-rating="4" data-max-rating="5"></div>
-> *Almost flawless*
+> ★★★★
+>
+> Almost flawless
 
-<!-- 1 Impossible
-2 Barely possible
-3 Harder than it should be
-4 Almost flawless
-5 Flawless -->
 
 Stripe is an example of a developer product that has to teach developers what the product does at the same time as it teaches them how to use it. Additionally they have to to solve the problem of onboarding a developer in not just one but two programming languages! Stripe's first-use experience is not perfect but still pretty straightforward.
 
@@ -254,7 +251,3 @@ Stripe is an example of a developer product that has to teach developers what th
 ## Next
 
 That's it for this third post on [Developer Onboarding](/blog/categories/developer-onboarding/). Let me know in the comments below what you think of this post and if I should continue. I'd also love to know what company you think I should review next.
-
-
-
-

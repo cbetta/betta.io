@@ -5,10 +5,10 @@ date: 2013-09-20
 comments: true
 tags: reading, ruby
 icon: Rss
+migrated: true
 ---
 
 I thought I'd get back into blogging again so let's start with a simple reading list. Here's some articles that have kept me busy over the past week and I'd think people ight enjoy.
-
 
 
 * Pete Keen has a short list of [Essential Tools for Starting a Rails App in 2013](http://www.petekeen.net/essential-tools-for-starting-a-rails-app-in-2013). I knew most of them but there were a few I didn't yet.

@@ -4,13 +4,12 @@ date: 2012-06-04
 comments: true
 tags: mobile, hackdays
 icon: MessageSquare
+migrated: true
 ---
 
 So last weekend I was at [Over The Air 2012](http://overtheair.org/) - on of my favorite regular Hack days - and for the first time I decided to actually try and make a "native" mobile app.
 
 Seeing as I don't want to have to redo the app for every platform I decided to try out one of the more famous cross platform development frameworks: [PhoneGap](http://phonegap.com/).
-
-
 
 Here are some of the things I discovered during the weekend:
 

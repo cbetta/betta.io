@@ -3,6 +3,7 @@ title: The cost of using ZipCar
 date: 2017-01-05
 tags: information
 icon: DollarSign
+migrated: true
 ---
 
 About a year ago I tweeted about my [ZipCar](https://zipcar.co.uk) usage in 2015, and as I was doing my accounting I realised I should do a similar thing for 2016.
@@ -17,6 +18,8 @@ The base rate for a ZipCar membership in London is about £60/year. For that, I 
 
 Besides the yearly membership cost there is a fee for each individual rental. For the past year my breakdown came down the following.
 
+|||||
+|-|-|-|-|-|
 |Membership Fee||||£59.90|
 |Minivan|1 day|1x||£94|
 |Regular car|1 day|1x||£64|
@@ -30,7 +33,6 @@ Besides the yearly membership cost there is a fee for each individual rental. Fo
 |Refunds||||£10|
 |**Total**||**14x**||**£330.50**|
 |Average/trip||||£23.61|
-{:.ui.unstackable.celled.striped.table}
 
 
 In other words: for less than £24 a trip I've had 14 trips that included insurance (excluding a damage fee per incident) and fuel (up to a limit). I did a quick check on CompareTheMarket and if I were to buy a 12-year-old Ford KA for about £500 today I'd pay at least £800 for insurance alone!

@@ -5,15 +5,12 @@ date: 2012-05-08
 comments: true
 tags: events, hackdays
 icon: MessageSquare
+migrated: true
 ---
 
-**<TL;DR>**
-
-I want to run a new kind of event: **OpenCodeCamp** (working title). OpenCodeCamp should be an event that promotes knowledge sharing and skills swapping amongst developers of any age or level of experience. It should be free of commercialism, competition, sexism, racism, age-ism and accessible to developers of any seniority.
+> **TL;DR** I want to run a new kind of event: **OpenCodeCamp** (working title). OpenCodeCamp should be an event that promotes knowledge sharing and skills swapping amongst developers of any age or level of experience. It should be free of commercialism, competition, sexism, racism, age-ism and accessible to developers of any seniority.
 
 Read the full post and leave a comment if you want to get involved.
-
-
 
 ## Where did this come from?
 

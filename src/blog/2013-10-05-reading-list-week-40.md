@@ -5,13 +5,12 @@ date: 2013-10-05
 comments: true
 tags: reading, ruby
 icon: Rss
+migrated: true
 ---
 
 ## [UK IEPC 2013](http://github.com/ukiepc2013)
 
 I decided to drop by the [UKIEPC](http://www.cs.nott.ac.uk/~mlw/ukiepc/2013/) at Nottingham University today and they offered me to enter as a visitor. I used to do these programming competitions when I was in uni with Melinda and Reinier (go Team OLF!) so it was a bit of nostalgia to be able to participate again. I ended up leading the board for a bit in Nottingham but eventually [ended up 2nd, and 22nd on the UK standings](https://ukiepc13.contest.scrool.se/standings/). Only downside: Ruby wasn't an allowed language so I had to brush up my Python skills.
-
-
 
 ## [DRY up your CRUD](https://www.petekeen.net/dry-your-rails-crud-with-simple-form-and-inherited-resources)
 

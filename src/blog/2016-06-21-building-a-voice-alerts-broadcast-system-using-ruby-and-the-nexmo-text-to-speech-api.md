@@ -3,10 +3,11 @@ title: Building a Voice Alerts Broadcast System using Sinatra and the Nexmo Text
 date: 2016-06-21
 tags: nexmo, tutorial
 icon: PhoneCall
+migrated: true
 ---
 
-> This post was originally first posted on
-  the [Nexmo Developer Blog](https://www.nexmo.com/blog/2016/06/21/building-voice-alerts-broadcast-system-using-ruby-nexmo-text-speech-api/) on June 7th 2016.
+<Message> This post was originally first posted on
+the [Nexmo Developer Blog](https://www.nexmo.com/blog/2016/06/21/building-voice-alerts-broadcast-system-using-ruby-nexmo-text-speech-api/) on June 7th 2016. </Message>
 
 Sometimes a text message won't do. When you really want to be alerted of
 something important you probably want to receive an actual phone call, wether

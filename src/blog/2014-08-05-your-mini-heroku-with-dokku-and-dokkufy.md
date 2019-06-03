@@ -5,6 +5,7 @@ date: 2014-08-05
 comments: true
 tags: ruby, gems, dokku
 icon: Terminal
+migrated: true
 ---
 
 I've always enjoyed [Heroku](http://heroku.com) but there are plenty of reasons both monetary and practical not to use it. I always liked the deployment method through Git though.
@@ -12,7 +13,6 @@ I've always enjoyed [Heroku](http://heroku.com) but there are plenty of reasons 
 So this weekend at [LeedsHack](http://leedshack.org) I started to look into [Dokku](https://github.com/progrium/dokku), an open source mini-Heroku powered by [Docker](https://www.docker.com/), [Buildstep](https://github.com/progrium/buildstep) and some other bits that share infrastructure elements with Heroku.
 
 I found the installation rather tedious and as this was a hackathon I decided to create something simpler.
-
 
 
 ## Introducing Dokkufy

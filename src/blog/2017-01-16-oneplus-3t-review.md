@@ -3,6 +3,7 @@ title: OnePlus 3T Review
 date: 2017-01-16
 tags: gear
 icon: Smartphone
+migrated: true
 ---
 
 ![OnePlus 3T](../images/blog/2017/oneplus-3t-review/oneplus-3t.jpg)
@@ -71,11 +72,10 @@ The camera is good but not great. My wife has an iPhone SE and it takes amazing 
 
 For some recent photos taken with the OnePlus 3T see [my Instagram feed](https://www.instagram.com/cristiano_betta/) and photos tagged with [#shotononeplus3t](https://www.instagram.com/explore/tags/shotononeplus3t/) on Instagram.
 
-![Sunset](../images/blog/2017/oneplus-3t-review/shot.jpg){:.ui.image.fluid}
+![Sunset](../images/blog/2017/oneplus-3t-review/shot.jpg)
 
 
-__Note:__ both the front and back camera on the OnePlus 3T are 16MP, which makes the phone great for selfies.
-{:.ui.message}
+<Message> __Note:__ both the front and back camera on the OnePlus 3T are 16MP, which makes the phone great for selfies. </Message>
 
 ### 👌 OxygenOS
 

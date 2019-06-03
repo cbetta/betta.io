@@ -3,6 +3,7 @@ title: "Developer Onboarding: SendGrid"
 date: 2016-08-28 
 tags: developer experience, developer onboarding
 icon: Instagram
+migrated: true
 ---
 
 When trying to design a great **Developer Onboarding Experience** it's worth taking a look at what others have done before. This article is the first in a series where I am going to document the current onboarding experience of some well established developer focussed products.
@@ -21,32 +22,31 @@ I will be looking at 3 aspects of the developer experience:
 
 #### _Delivering your transactional and marketing email through one reliable platform._
 
-[![SendGrid](/images/dx/sendgrid/sendgrid.png)](https://sendgrid.com){:.ui.image.fluid.bordered}
+[![SendGrid](../images/dx/sendgrid/sendgrid.png)](https://sendgrid.com)
 
-_"SendGrid is a Boulder, Colorado-based transactional email delivery and management service. The company was founded by Isaac Saldana, Jose Lopez, and Tim Jenkins in 2009, and incubated through the TechStars accelerator program. As of 2013, SendGrid has raised over $27 million and has offices in Boulder, Denver, Orange, California, and London, and operations in New York City and San Francisco."_ - [Wikipedia](https://en.wikipedia.org/wiki/SendGrid)
+> SendGrid is a Boulder, Colorado-based transactional email delivery and management service. The company was founded by Isaac Saldana, Jose Lopez, and Tim Jenkins in 2009, and incubated through the TechStars accelerator program. As of 2013, SendGrid has raised over $27 million and has offices in Boulder, Denver, Orange, California, and London, and operations in New York City and San Francisco. - [Wikipedia](https://en.wikipedia.org/wiki/SendGrid)
 
 For this first post I picked SendGrid. They are well established, have been very developer focussed for years, and they have a reasonably good reputation with developers.
 
 ## Landing
 
-Since writing this article, SendGrid has made a lot of changes to their onboarding, partially based on this review. This article therefore serves as a historical document, and does not reflect the current onboarding experience of SendGrid.
-{:.ui.warning.message}
+<Message> Since writing this article, SendGrid has made a lot of changes to their onboarding, partially based on this review. This article therefore serves as a historical document, and does not reflect the current onboarding experience of SendGrid. </Message>
 
 [`http://sendgrid.com/`](http://sendgrid.com/)
 
-<%= dx_image 'sendgrid', 1, 'Landing Page' %>
+![Landing Page](../images/dx/sendgrid/sendgrid-1.png)
 
 A pretty simple starting point. No clear direct link to any developer landing page but there's a big **Get Started** button so let's click that.
 
 [`https://sendgrid.com/pricing/`](https://sendgrid.com/pricing/)
 
-<%= dx_image 'sendgrid', 2, 'Pricing Page' %>
+![Pricing Page](../images/dx/sendgrid/sendgrid-2.png)
 
 Not quite what I expected from Getting Started as a developer. Lots of paid plans.
 
 When I scroll down though I see this.
 
-<%= dx_image 'sendgrid', 3, 'Pricing Page' %>
+![Pricing Page](../images/dx/sendgrid/sendgrid-3.png)
 
 Great! A free plan! Let's try this.
 
@@ -54,19 +54,19 @@ Great! A free plan! Let's try this.
 
 [`https://app.sendgrid.com/signup`](https://app.sendgrid.com/signup)
 
-<%= dx_image 'sendgrid', 4, 'Signup Form' %>
+![Signup Form](../images/dx/sendgrid/sendgrid-4.png)
 
 The sign up form is pretty straightforward. I fill in my details and continue.
 
-<%= dx_image 'sendgrid', 5, 'Confirmation Question' %>
+![Confirmation Question](../images/dx/sendgrid/sendgrid-5.png)
 
 I take a quick detour via my email inbox.
 
-<%= dx_image 'sendgrid', 6, 'Confirmation Email' %>
+![Confirmation Email](../images/dx/sendgrid/sendgrid-6.png)
 
 A very pretty email - as is to be expected of an email company. When I click the big blue button I end up on the next form. I somehow knew that previous form was too easy!
 
-<%= dx_image 'sendgrid', 7, 'Signup form v2' %>
+![Signup form v2](../images/dx/sendgrid/sendgrid-7.png)
 
 I noticed some interesting things here:
 
@@ -75,19 +75,19 @@ I noticed some interesting things here:
 
 There are some interesting questions at the bottom of the form as well.
 
-<%= dx_image 'sendgrid', 8, 'Signup form v2 - continued' %>
+![Signup form v2 - continued](../images/dx/sendgrid/sendgrid-8.png)
 
 It's interesting to see how SendGrid assumes I already know what I need them for. Maybe they're not expecting a developer to do the signup process - although it is an option in the occupation section.
 
 I save the form and end up on the following screen.
 
-<%= dx_image 'sendgrid', 9, 'Pending verification' %>
+![Pending verification](../images/dx/sendgrid/sendgrid-9.png)
 
 I find this page very dissapointing. I've followed the **Get Started**-button on their home page all the way here, and now they leave me hanging with no further instructions as to how to continue.
 
 The warning at the top informs me that my account is still to be activated, but as I follow the link it just gives me a video explaining that this has to do with the obvious anti-spam measures they have to take.
 
-<%= dx_image 'sendgrid', 10, 'Video' %>
+![Video](../images/dx/sendgrid/sendgrid-10.png)
 
 ## Integration
 
@@ -95,7 +95,7 @@ I close that page and go back to my logged in dashboard. As I scroll down I find
 
 [`https://app.sendgrid.com/`](https://app.sendgrid.com/)
 
-<%= dx_image 'sendgrid', 11, 'Dashboard' %>
+![Dashboard](../images/dx/sendgrid/sendgrid-11.png)
 
 Interestingly enough none of these seem to link me to my API key, developer documentation, or any next steps to sending my first email.
 
@@ -103,13 +103,13 @@ Let's head back to the main site and see if I can find some documentation.
 
 [`http://sendgrid.com/`](http://sendgrid.com/)
 
-<%= dx_image 'sendgrid', 12, 'Homepage' %>
+![Homepage](../images/dx/sendgrid/sendgrid-12.png)
 
 The homepage does have a documentation tab that expands into various sections. I click on the overview link.
 
 [`https://sendgrid.com/docs/index.html`](https://sendgrid.com/docs/index.html)
 
-<%= dx_image 'sendgrid', 13, 'Developer Documentation' %>
+![Developer Documentation](../images/dx/sendgrid/sendgrid-13.png)
 
 This looks promising. SendGrid split their documentation into various sections:
 
@@ -122,19 +122,19 @@ That last one is clearly the one I need so let's select that one.
 
 [`https://sendgrid.com/docs/Integrate/Code_Examples/index.html`](https://sendgrid.com/docs/Integrate/Code_Examples/index.html)
 
-<%= dx_image 'sendgrid', 14, 'Code Examples' %>
+![Code Examples](../images/dx/sendgrid/sendgrid-14.png)
 
 I was expecting a list of programming languages but instead I was given a list of different API endpoints. What's odd is that V2 is positioned above V3. I'd assume V3 would be newer and therefore better? This makes me wonder if V3 is stable or just a Beta. I decide to go with V3 anyway.
 
 [`https://sendgrid.com/docs/Integrate/Code_Examples/v3_Mail/index.html`](https://sendgrid.com/docs/Integrate/Code_Examples/v3_Mail/index.html)
 
-<%= dx_image 'sendgrid', 15, 'Programming languages' %>
+![Programming languages](../images/dx/sendgrid/sendgrid-15.png)
 
 A list of programming languages. let's pick Ruby as that's what I'm most familiar with.
 
 [`https://sendgrid.com/docs/Integrate/Code_Examples/v3_Mail/ruby.html`](https://sendgrid.com/docs/Integrate/Code_Examples/v3_Mail/ruby.html)
 
-<%= dx_image 'sendgrid', 16, 'Ruby Example' %>
+![Ruby Example](../images/dx/sendgrid/sendgrid-16.png)
 
 The code sample is simple enough for a Ruby developer to follow. On line 12 it asks me for an API key, and I haven't seen one so far.
 
@@ -144,19 +144,19 @@ I check my email inbox for an API key but they haven't emailed it to me, which i
 
 [`https://app.sendgrid.com/settings/api_keys`](https://app.sendgrid.com/settings/api_keys)
 
-<%= dx_image 'sendgrid', 17, 'Getting an API key' %>
+![Getting an API key](../images/dx/sendgrid/sendgrid-17.png)
 
 SendGrid hasn't created an API key for me by default. This seems odd as I'd assume everyone would need one. I click the big blue button to create one.
 
-<%= dx_image 'sendgrid', 18, 'Getting an API key - continued' %>
+![Getting an API key - continued](../images/dx/sendgrid/sendgrid-18.png)
 
 Apparently there are 2 kinds of API keys but at this point I'm not sure yet which one I need. It's odd there's no help text to help me decide which one I need. I assume I need a regular API key so I continue with that choice.
 
-<%= dx_image 'sendgrid', 19, 'Getting an API key - continued' %>
+![Getting an API key - continued](../images/dx/sendgrid/sendgrid-19.png)
 
 This seems to be the page I wanted. I tick the option to send emails and create my first API key.
 
-<%= dx_image 'sendgrid', 20, 'Getting an API key - continued' %>
+![Getting an API key - continued](../images/dx/sendgrid/sendgrid-20.png)
 
 I have an API key! I click on the key and it copies it to my clipboard for me. Very nice!
 
@@ -179,24 +179,25 @@ On the documentation overview earlier there was no direct link to the API refere
 
 [`https://sendgrid.com/docs/API_Reference/index.html`](https://sendgrid.com/docs/API_Reference/index.html)
 
-<%= dx_image 'sendgrid', 21, 'Reference documentation' %>
+![Reference documentation](../images/dx/sendgrid/sendgrid-21.png)
 
 I used the V3 code sample to send an email so I click through to the **Mail Send V3** reference documentation.
 
 [`https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html`](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html)
 
-<%= dx_image 'sendgrid', 22, 'Reference documentation - continued' %>
+![Reference documentation - continued](../images/dx/sendgrid/sendgrid-22.png)
 
 This page has a lot of info and it tells us that indeed the status of 202 is a successful response. I also found a list of full response codes in the sidebar.
 
 [`https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html`](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html)
 
-<%= dx_image 'sendgrid', 23, 'Reference documentation - continued' %>
+![Reference documentation - continued](../images/dx/sendgrid/sendgrid-23.png)
 
 ## Conclusions
 
-> <div class="ui huge star rating" data-rating="3" data-max-rating="5"></div>
-> *Unnecessarily hard*
+> ★★★
+>
+> Harder than it should be
 
 <!-- 1 Impossible
 2 Barely possible
@@ -204,8 +205,7 @@ This page has a lot of info and it tells us that indeed the status of 202 is a s
 4 Almost flawless
 5 Flawless -->
 
-Since writing this article, SendGrid has made a lot of changes to their onboarding, partially based on this review. This article therefore serves as a historical document, and does not reflect the current onboarding experience of SendGrid.
-{:.ui.warning.message}
+<Message> Since writing this article, SendGrid has made a lot of changes to their onboarding, partially based on this review. This article therefore serves as a historical document, and does not reflect the current onboarding experience of SendGrid. </Message>
 
 As simple as email might sound, SendGrid has the hard task of having to explain some complicated issues to developers. A big issue they have to deal with is that they have more than one way to send an email. This choice makes their onboarding less seemless as it makes it hard for them to predict what a user is most likely to want.
 
@@ -233,13 +233,4 @@ That's it for this first post on Developer Experience. Let me know in the commen
 
 I'd also like to thank initiatives like [UserOnboard](https://www.useronboard.com/onboarding-teardowns/) for giving me the inspiration for this post.
 
-
-
 I am a [freelance Developer Experience designer](https://work.betta.io). If you want to know more about my work have a look at [my portfolio](https://work.betta.io) and if you'd like for me to help make your company's Developer Experience better then most definitely reach out to me via [Twitter](https://twitter.com/cbetta) or [email](mailto:work@betta.io)!
-
-<div class='ui pagination menu item fluid one'>
-  <a href="/blog/2016/08/31/developer-experience-review-pusher/" class='item'>
-  <strong>Next :</strong>&nbsp;Pusher&nbsp;
-  <i class='icon arrow right'></i>
-  </a>
-</div>

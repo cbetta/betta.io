@@ -3,11 +3,11 @@ title: Building an Interactive Delivery Notifications System using Express and t
 date: 2016-10-31
 tags: nexmo, tutorial
 icon: MessageSquare
+migrated: true
 ---
 
-> This post was originally first posted on
-  the [Nexmo Developer Blog](https://www.nexmo.com/blog/2016/09/29/building-interactive-delivery-notifications-system-using-expressjs-dr/) on September 29th 2016.
-
+<Message> This post was originally first posted on
+the [Nexmo Developer Blog](https://www.nexmo.com/blog/2016/09/29/building-interactive-delivery-notifications-system-using-expressjs-dr/) on September 29th 2016. </Message>
 
 One of the amazing things about SMS is how ubiquitous it is. Wether you have a smartphone or an old '90s "dumb" phone you will be able to send and receive SMS messages. While many companies use them as a notification service only, they become **really** powerful when they facilitate a two way communication channel between companies and customers.
 
