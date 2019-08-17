@@ -16,31 +16,25 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  return new Promise((resolve) => {
-    query(graphql).then(result => {
-      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        createPage({
-          path: node.fields.slug,
-          component: path.resolve(`./src/templates/Article.js`),
-          context: {
-            slug: node.fields.slug,
-          },
-        })
-      })
-      resolve()
+  const { data } = await query(graphql)  
+  data.posts.nodes.forEach(node => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/templates/Article.js`),
+      context: {
+        slug: node.fields.slug,
+      },
     })
   })
 }
 
-const query = (graphql) => graphql(`{
-  allMarkdownRemark {
-    edges {
-      node {
-        fields {
-          slug
-        }
+const query = async (graphql) => graphql(`{
+  posts: allMarkdownRemark {
+    nodes {
+      fields {
+        slug
       }
     }
   }

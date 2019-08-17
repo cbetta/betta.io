@@ -16,6 +16,8 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+  border-radius: 3px;
+  font-size: 15px;
 }
 
 /* Code blocks */
@@ -32,7 +34,7 @@ pre[class*="language-"] code {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #1d1f21;
+  background: #1d3954;
 }
 
 /* Inline code */
@@ -45,7 +47,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-text"] {
   color: #1d1f21;
-  background-color: #ddd;
+  background-color: #eee;
 }
 
 .token.comment,
@@ -66,7 +68,7 @@ pre[class*="language-"] {
 .token.property,
 .token.keyword,
 .token.tag {
-  color: #97c4ff;
+  color: #c3daf9;
 }
 
 .token.class-name {

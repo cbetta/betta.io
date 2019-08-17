@@ -1,16 +1,21 @@
-$blue: #0061D4;
-$white: #fff;
+@import '../css/variables.scss';
 
-.this {    
+.content {    
   background-color: $white;  
 }
 
 .body {
   padding: 0 1em;
 
+  a {
+    color: $blue;
+  }
+
   @media (min-width: 650px) {
-    max-width: 600px;
-    padding: 0;
-    margin: 0 auto;
+    & {
+      max-width: 600px;
+      padding: 0;
+      margin: 0 auto;
+    }
   }
 }

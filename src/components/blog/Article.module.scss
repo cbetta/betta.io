@@ -1,6 +1,25 @@
+@import '../../css/variables.scss';
+
 .style {
+  header {
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: $white;
+    z-index: 100;
+
+    &[data-shadow=true] {
+      box-shadow: 0px 15px 15px -15px rgba(0, 0, 0, 0.1);
+
+      h1 {
+        border: none;
+      }
+    }
+  }
+
   h1 {
     text-align: center;
+    padding-top: 0.5em;
 
     svg {
       text-align: center;
@@ -16,6 +35,30 @@
       font-size: 1.2rem;
       font-weight: 300;
       margin-top: 0.5rem;
+    }
+  }
+
+  pre {
+    margin-bottom: 1em;
+  }
+
+  @media (min-width: 800px) {
+    & {
+      header,
+      pre {
+        margin-left: -50px;
+        margin-right: -50px;
+      }
+
+      header {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      pre {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
     }
   }
 }

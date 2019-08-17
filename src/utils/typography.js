@@ -9,7 +9,7 @@ export default new Typography({
   bodyFontFamily: ['Roboto', 'sans-serif'],
   headerFontFamily: ['Roboto', 'sans-serif'],
   bodyWeight: 300,
-  headerWeight: 800,
+  headerWeight: 400,
   overrideThemeStyles:  ({ rhythm }) => ({
     'h1': {
       paddingBottom: rhythm(1),

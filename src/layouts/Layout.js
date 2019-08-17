@@ -22,7 +22,7 @@ export default ({ children }) => (
 )
 
 const Layout = ({ site: { siteMetadata}, children }) => (
-  <div className={style.this}>
+  <div className={style.content}>
     <div className={style.body}>
       <div>
         <Link to="/">{ siteMetadata.name }</Link>
