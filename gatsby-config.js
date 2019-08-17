@@ -28,8 +28,8 @@ const Styling = [
 ]
 
 const Images = [
-  `gatsby-transformer-sharp`,
   `gatsby-plugin-sharp`,
+  `gatsby-transformer-sharp`
 ]
 
 const Markdown = [
@@ -45,9 +45,8 @@ const Markdown = [
           resolve: `gatsby-remark-images`,
           options: {
             maxWidth: 600,
-            linkImagesToOriginal: true,
-            // withWebp: true,
-            // tracedSVG: true,
+            withWebp: true,
+            tracedSVG: true,
             quality: 50
           },
         },
