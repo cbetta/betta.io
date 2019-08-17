@@ -1,13 +1,14 @@
 {
   "name": "betta-io",
-  "description": "Betta.io site",
+  "description": "Betta.io",
   "private": true,
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "clean": "rm -rf ./cache"
   },
   "dependencies": {
     "gatsby": "^2.1.2",
@@ -43,7 +44,8 @@
     "react-responsive-embed": "^2.1.0",
     "react-typography": "^0.16.18",
     "rehype-react": "^4.0.1",
-    "typeface-lato": "^0.0.75",
+    "typeface-open-sans": "^0.0.75",
+    "typeface-roboto": "^0.0.75",
     "typography": "^0.16.18",
     "typography-theme-github": "^0.16.18"
   }

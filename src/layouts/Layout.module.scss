@@ -8,8 +8,8 @@ $white: #fff;
 .body {
   padding: 0 1em;
 
-  @media (min-width: 800px) {
-    max-width: 800px;
+  @media (min-width: 650px) {
+    max-width: 600px;
     padding: 0;
     margin: 0 auto;
   }

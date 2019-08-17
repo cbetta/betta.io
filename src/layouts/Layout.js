@@ -5,7 +5,7 @@ import Head from './Head'
 
 import style from "./Layout.module.scss"
 
-import 'typeface-lato'
+import 'typeface-roboto'
 
 export default ({ children }) => (
   <StaticQuery
