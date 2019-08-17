@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react"
+import { DiscussionEmbed } from 'disqus-react';
 
 import Icon from "./Icon"
 
@@ -16,12 +17,22 @@ const onScroll = (setShadow) => {
 }
 
 const Article = ({ 
+  id,
   frontmatter, 
   timeToRead, 
-  htmlAst 
+  htmlAst,
+  fields
 }) => {
   const [shadow, setShadow] = useState(false)
   useEffect(() => onScroll(setShadow), [])
+
+  const disqusConfig = {
+    url: `https://betta.io${fields.slug}`,
+    identifier: id,
+    title: frontmatter.title
+  }
+
+  console.dir(disqusConfig)
   
   return (
     <div className={ style }>
@@ -35,6 +46,10 @@ const Article = ({
         </h1>
       </header>
       <div>{ render(htmlAst) }</div>
+      <DiscussionEmbed 
+        shortname='bettacoding' 
+        config={disqusConfig}
+      />
     </div>
   )
 }

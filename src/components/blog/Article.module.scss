@@ -1,18 +1,25 @@
 @import '../../css/variables.scss';
 
 .style {
-  header {
-    top: 0;
-    position: sticky;
-    position: -webkit-sticky;
-    background-color: $white;
-    z-index: 100;
+  img {
+    border: 1px solid $grey;
+  }
 
+  header {
     &[data-shadow=true] {
       box-shadow: 0px 15px 15px -15px rgba(0, 0, 0, 0.1);
 
       h1 {
         border: none;
+        font-size: 20px;
+      }
+
+      small {
+        font-size: 1rem;
+      }
+
+      svg {
+        font-size: 0;
       }
     }
   }
@@ -20,8 +27,10 @@
   h1 {
     text-align: center;
     padding-top: 0.5em;
+    transition: font-size 0.2s;
 
     svg {
+      transition: font-size 0.2s;
       text-align: center;
       width: 100%;
       font-size: 3rem;
@@ -31,6 +40,7 @@
     }
 
     small {
+      transition: font-size 0.2s;
       display: block;
       font-size: 1.2rem;
       font-weight: 300;
@@ -44,20 +54,60 @@
 
   @media (min-width: 800px) {
     & {
-      header,
+      header {
+        top: 0;
+        position: sticky;
+        position: -webkit-sticky;
+        background-color: $white;
+        z-index: 100;
+      }
+      
+      header {
+        margin-left: -80px;
+        margin-right: -80px;
+      }
+
       pre {
         margin-left: -50px;
         margin-right: -50px;
       }
 
-      header {
-        padding-left: 50px;
-        padding-right: 50px;
+      :global(.gatsby-resp-image-wrapper) {
+        margin-left: -50px !important;
+        margin-right: -50px !important;
       }
 
+      header {
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+
+      img,
       pre {
         margin-top: 50px;
         margin-bottom: 50px;
+      }
+
+      picture img {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      img {
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      :global(.gatsby-resp-image-wrapper) img,
+      :global(.gatsby-resp-image-wrapper) source {
+        width: calc(100% + 100px);
+        max-width: calc(100% + 100px);
+        height: auto;
+      }
+
+      :global(.gatsby-resp-image-wrapper) {
+        margin-top: 4em;
+        margin-bottom: 7em;
       }
     }
   }
