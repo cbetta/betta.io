@@ -1,14 +1,16 @@
 @import '../../css/variables.scss';
 
-.style {
-  margin: 3em 0;
+.bio {
+  margin: 1rem 0;
+  font-size: 1.1em;
   position: relative;
 
   & > header {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-transform: uppercase;
+    font-size: 1.3rem;
     z-index: 0;
 
     span {
@@ -17,6 +19,7 @@
       z-index: 2;
       position: relative;
       background-color: white !important;
+      font-weight: 500;
     }
 
     &::after {
@@ -26,7 +29,7 @@
       border-bottom: 1px dashed rgba($grey, 0.4);
       width: 100%;
       left: 0;
-      top: 0.75rem;
+      top: 0.90rem;
     }
   }
 }
