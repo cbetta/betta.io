@@ -12,7 +12,7 @@ It can be overkill to start every new Rails project as a bunch of microservices.
 
 A simple example is to split functionality for regular users and admins:
 
-~~~ruby
+```ruby
 # /config/routes.rb
 
 # routes regular users
@@ -26,7 +26,7 @@ namespace :admin do
 end
 
 root "app/pages#index"
-~~~
+```
 
 
 
@@ -36,15 +36,15 @@ Notice that the admin user has its own controller namespace (e.g. `Admin::UsersC
 
 The next step is to assign a specific (base) controller and layout that all resources in a scope/namespace will use.
 
-~~~ruby
+```ruby
 # /app/controllers/admin/base_controller.rb
 class Admin::BaseController < ApplicationController
   include AdminHelper
   layout "admin"
 end
-~~~
+```
 
-~~~erb
+```erb
 <!-- /app/views/layouts/admin.html.erb -->
 <!DOCTYPE html>
 <html lang='en'>
@@ -63,7 +63,7 @@ end
     <%= yield %>
   </body>
 </html>
-~~~
+```
 
 A few things to note here:
 
@@ -75,18 +75,18 @@ A few things to note here:
 
 The reason why each layout includes its own asset tags is so that we can be more explicit about what styles and JS to include in each namespace. By default the Rails manifest looks something like this:
 
-~~~css
+```css
 /* /app/assets/stylesheets/application.css */
 
 /*
  *= require_self
  *= require_tree .
  */
-~~~
+```
 
 Here the `require_tree` statement loads in all CSS in the root folder. This isn't very useful for separating concern and instead I prefer my manifests to only load explicitly defined folders:
 
-~~~
+```
 - app/
   - assets/
     - stylesheets/
@@ -101,11 +101,11 @@ Here the `require_tree` statement loads in all CSS in the root folder. This isn'
       - app/
       - admin/
       - shared/
-~~~
+```
 
 With this setup we can change the manifests to:
 
-~~~css
+```css
 /* /app/assets/stylesheets/admin.css */
 
 /*
@@ -113,32 +113,32 @@ With this setup we can change the manifests to:
  *= require_tree ./shared
  *= require_tree ./admin
  */
-~~~
+```
 
-~~~js
+```js
 // /app/assets/javascripts/admin.js */
 
 //= require_self
 //= require_tree ./shared
 //= require_tree ./admin
-~~~
+```
 
 In the past this would work great in development but give you headaches in production. Luckily since about Rails 4 you will be warned to add these new manifest files to your list of precompiled assets:
 
-~~~ruby
+```ruby
 # /config/application.rb
 
 config.assets.precompile += ['app.css', 'app.js', 'admin.css', 'admin.js']
-~~~
+```
 
 ## Helpers
 
 Lastly, by default Rails auto includes all helpers in every controller. This behaviour is nice in a simple app but does not help to separate functionality in this new setup. The following line disables this behaviour:
 
-~~~ruby
+```ruby
 # /config/application.rb
 
 config.action_controller.include_all_helpers = false
-~~~
+```
 
 Now you can simply include all helpers for each namespace in their respective base controller.

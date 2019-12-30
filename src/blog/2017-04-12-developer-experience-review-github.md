@@ -87,7 +87,7 @@ A little introduction, admitting that most people would use an API library, and 
 
 I copy paste the cURL command into my terminal and low and behold I've made my first API call.
 
-```sh
+```bash
 curl https://api.github.com/zen
 ```
 
@@ -99,7 +99,7 @@ I mean, yes technically I've made an API call here, but not one I would actually
 
 When I actually run the next command I can see something more useful.
 
-```sh
+```bash
 curl https://api.github.com/users/defunkt
 ```
 

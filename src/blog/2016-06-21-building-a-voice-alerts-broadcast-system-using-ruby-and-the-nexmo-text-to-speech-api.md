@@ -27,14 +27,14 @@ built my own **Nexmo Flood Alerts** service that allows people to subscribe to v
 
 You can download the starting point of the app from Github and run it locally.
 
-~~~sh
+```bash
 # ensure you have Ruby and Bundler installed
 git clone https://github.com/nexmo-community/nexmo-sinatra-voice-alerts-demo.git
 cd nexmo-sinatra-voice-alerts-demo
 bundle install
 bundle exec rake db:migrate
 ruby app.rb
-~~~
+```
 
 Then visit [localhost:4567](http://localhost:3000) in your browser and subscribe
 to a flood alert with your postcode and your number. After this you can visit the
@@ -74,11 +74,11 @@ them. To do this we are going to add the following changes to our app:
 In order to send a Text-To-Speech message via Nexmo I am going to have to
 add the `nexmo` gem to my project.
 
-~~~rb
+```rb
 # Gemfile
 gem 'nexmo'
 gem 'dotenv'
-~~~
+```
 
 As you can see I also added the `dotenv` gem. This is so that the app can
 load my API credentials from a `.env` file. The Nexmo gem automatically picks
@@ -86,20 +86,20 @@ up those environment variables and uses them to initialize the client. You can
 find your credentials on [the settings page](https://dashboard.nexmo.com/settings)
 of your Nexmo account.
 
-~~~sh
+```bash
 # .env
 NEXMO_API_KEY='your_key'
 NEXMO_API_SECRET='your_secret'
-~~~
+```
 
 We also need to tell our app to use these two gems on start.
 
-~~~ruby
+```ruby
 # app.rb
 require 'nexmo'
 require 'dotenv'
 Dotenv.load
-~~~
+```
 
 Now that we've loaded these 2 gems we can simply call `Nexmo::Client.new`
 without any parameters and use this in our app anywhere we want.
@@ -112,7 +112,7 @@ Before we start sending alerts to everyone we should probably give the admin
 a way to select who to send a message to. Let's start by adding a form to the
 admin panel.
 
-~~~html
+```html
 <!-- views/admin.erb -->
   ...
 </table>
@@ -130,13 +130,13 @@ admin panel.
   </div>
   <input type='submit' value='Send' class='btn btn-primary'>
 </form>
-~~~
+```
 
 Ignoring the Bootstrap boilerplate, all we did here is to create a form with 1
 field that gives us the option to target a phone number. Let's add a second
 field though that let's us choose from all the postcodes as well.
 
-~~~html
+```html
 <!-- views/admin.erb -->
 ...
 <select class="form-control" name="postcode">
@@ -146,14 +146,14 @@ field though that let's us choose from all the postcodes as well.
   <% end %>
 </select>
 ...
-~~~
+```
 
 ## Send a Text-To-Speech message
 
 When the admin submits this form it will `POST` a request to `/alert` where
 we can parse the number or postcode selected and make a call to the Nexmo API.
 
-~~~ruby
+```ruby
 # app.rb
 ...
 post '/alert' do
@@ -164,7 +164,7 @@ post '/alert' do
   end
   redirect '/alert'
 end
-~~~
+```
 
 To actually send the message we will pass along 4 parameters to the
 `initiate_tts_call` method of the `Nexmo::Client`.
@@ -181,7 +181,7 @@ number right on the command line.
 
 With this number purchased we can now send our actual message.
 
-~~~ruby
+```ruby
 # app.rb
 def send_alert key, value
   Subscriber.where(key => value).each do |subscriber|
@@ -198,7 +198,7 @@ def send_alert key, value
     )
   end
 end
-~~~
+```
 
 Here we find all the `Subscribers` that match the given postcode or number, and
 then for each we make a call to the Nexmo API. In my app I put my number in the
@@ -215,14 +215,14 @@ postcode. More about these tags can be found
 Finally all we need to do is make sure that when the admin is redirected they
 see a page that confirms they sent the alert.
 
-~~~ruby
+```ruby
 # app.rb
 get '/alert' do
   erb :alert
 end
-~~~
+```
 
-~~~html
+```html
 <!-- views/alert.erb  -->
 <% content_for :title do %>
   Alert sent
@@ -231,7 +231,7 @@ end
 <p>
   Your Nexmo Flood Alert has been sent.
 </p>
-~~~
+```
 
 That's it, give it a try! Make sure to restart Sinatra if needed. Select your
 own number from the dropdown and submit the form. You should receive a voice

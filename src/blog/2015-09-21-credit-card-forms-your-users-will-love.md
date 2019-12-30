@@ -31,7 +31,7 @@ This example uses 2 features from the Hosted Fields API. The first one automatic
 
 Additionally, the following code is added to the Javascript that initializes our Hosted Fields to automatically make the text in the field turn red:
 
-~~~js
+```js
 braintree.setup(clientToken, "custom", {  
   id: "example-form",
   hostedFields: {
@@ -46,7 +46,7 @@ braintree.setup(clientToken, "custom", {
     }
   },
 });
-~~~
+```
 
 As you can see both of these solutions are very declarative. I do not need to update the UI myself, instead I rely on the v.zero SDK to inform me of changes. I’d like to point out that the v.zero Drop-in UI also uses a very clear, fluid animation to shake the form and bounce the bottom border. The animation is a bit complicated for this example, but I recommend looking at [this animation tool](http://bouncejs.com/) that helped us create the effect.
 
@@ -58,14 +58,14 @@ Aside from the declarative styles added by our SDK, there is another way to inte
 
 The first change I make here is to update my Hosted Fields Javascript setup code to pass in a listener for the `onFieldEvent-event`. This handler then receives an update every time the content of the card field changes significantly. An extra class is then added to the `icon-type` element if it has detected the credit card type.
 
-~~~js
+```js
 handleFieldEvent = function(event) {  
   console.log((event.card));
   iconType = document.getElementsByClassName("icon-type")[0];
   iconType.className = "icon-type";
   if (event.card) iconType.className += " icon-type-" + event.card.type;
 }
-~~~
+```
 
 To finish things up, I add a few CSS styles that point to a [custom-built sprite](https://gist.githubusercontent.com/cbetta/800a425505407de9342b/raw/5ea2b7f9a2d53193ee1fce7f55b89575074f3744/cards.png) containing some of the credit card logos, updating the location in the sprite for each card type. This approach is less declarative than the previous example, but it does provide you with a lot of additional data. Have a look at the [full documentation](https://developers.braintreepayments.com/javascript+ruby/guides/hosted-fields/overview) for more details.
 

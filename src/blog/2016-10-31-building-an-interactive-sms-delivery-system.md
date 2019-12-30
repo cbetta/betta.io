@@ -24,12 +24,12 @@ This app serves as our starting point for this tutorial. It is a basic [Express]
 
 You can download the starting point of this tutorial from Github:
 
-~~~sh
+```bash
 git clone git@github.com:nexmo-community/nexmo-express-delivery-notifications-demo.git
 cd nexmo-express-delivery-notifications-demo
 npm install
 npm start
-~~~
+```
 
 Then visit [localhost:3000](http://localhost:3000) in your browser and submit a phone number in international format, e.g. `447755555555`.
 
@@ -49,32 +49,32 @@ We will be hardcoding the options in our app just to keep things simple. In your
 
 In order to send an SMS message via Nexmo we're going to have to add the [nexmo](https://www.npmjs.com/package/nexmo) module to the project.
 
-~~~javascript
+```javascript
 npm intall nexmo dotenv --save
-~~~
+```
 
 As you can see we also added the [dotenv](https://www.npmjs.com/package/dotenv) module. This is just so that the app can load the API credentials from a `.env` file. You can find your credentials on t[he settings page of your Nexmo account](https://dashboard.nexmo.com/settings).
 
-~~~yml
+```yml
 # .env
 KEY='<your_api_key>'        
 SECRET='<your_api_secret>'        
 FROM='<phone_number>'
-~~~
+```
 
 We also added the Nexmo phone number that we will be sending an SMS message from to the `.env` file. You can buy a number from the [Nexmo Dashboard](https://dashboard.nexmo.com/settings), or you can use the [`nexmo-cli`](https://www.npmjs.com/package/nexmo) library and buy one straight from the command line.
 
 For example to buy a UK phone number starting with `077`:
 
-~~~sh
+```bash
 npm install -g nexmo-cli
 nexmo setup <your_api_key> <your_api_secret>
 nexmo number:buy GB 4477* --confirm
-~~~
+```
 
 Now that we have our API key, secret, and Nexmo phone number we initialize the Nexmo client.
 
-~~~javascript
+```javascript
 // app.js - after the other imports
 import Nexmo from 'nexmo';        
 import dotenv from 'dotenv';        
@@ -85,7 +85,7 @@ const nexmo = new Nexmo({
   key: process.env.KEY,        
   secret: process.env.SECRET        
 });
-~~~
+```
 
 From now on we can use `nexmo` anywhere in our app to make the API calls we need.
 
@@ -97,18 +97,18 @@ Currently when the employee submits a phone number it calls the `POST /notify` e
 
 Let's hardcode some options for the user to change their delivery slot to.
 
-~~~javascript
+```javascript
 // app.js - after the previous code
 const options = [        
   'this Friday',        
   'next Monday',        
   'next Tuesday'        
 ];
-~~~
+```
 
 We can use these options to generate a pretty text message to send to the user.
 
-~~~javascript
+```javascript
 // app.js - after the previous code
 let notification = "Your Nexmo Mail delivery is scheduled for tomorrow between " +        
                    "8am and 2pm. If you wish to change the delivery date please " +        
@@ -117,23 +117,23 @@ let notification = "Your Nexmo Mail delivery is scheduled for tomorrow between "
 options.forEach((option, index) => {        
   notification += `${index+1}. for ${option}\n`;        
 });
-~~~
+```
 
 **Note:** We didn't hardcode the whole message here as we will need these options later on again.
 
 Next up all we need to do is send the message to the phone number that was submitted.
 
-~~~javascript
+```javascript
 // app.js         
 app.post('/notify', (request, response) => {         
   send(request.body.number, notification); // adding this line
   response.send('Notification sent');
 });
-~~~
+```
 
 We wrapped the actual Nexmo API call in a `send` function just to make things more readable and reusable. The `send` function wraps the `nexmo.sms.sendTextMessage` API and prefills the Nexmo phone number we bought before.
 
-~~~javascript
+```javascript
 // app.js - anywhere outside of an endpoint call      
 let send = function(number, message) {        
   nexmo.sms.sendTextMessage(        
@@ -142,7 +142,7 @@ let send = function(number, message) {
     message        
   );        
 }
-~~~
+```
 
 If you now try and resubmit your own mobile number you should get a text message within seconds.
 
@@ -154,28 +154,28 @@ Our final trick is to receive an incoming message from the user replying to our 
 
 Let's start by adding a dummy endpoint for the webhook to call.
 
-~~~javascript
+```javascript
 // app.js
 app.get('/response', (request, response) => {        
   // TODO: Confirm selection
   response.send('Response processed');        
 });
-~~~
+```
 
 To make your app publicly reachable by the Nexmo webhooks you have a few options. If you are lucky enough to have a public IP on your machine you should be ready to go, for the rest of us we could either deploy the app, use an SSH tunnel, or my favorite solution: use the amazing [ngrok](http://ngrok.com) tool.
 
 Once your app is publicly available we can link our number to make a call to this endpoint when a SMS has been received. For this we are again using the `nexmo-cli`.
 
-~~~sh
+```bash
 > nexmo link:sms 44755555555 http://<your_url>.ngrok.io/response
 Number updated
-~~~
+```
 
 If you get any errors at this state please make sure you are using the Nexmo phone number on your account, and that the URL is publicly accessible.
 
 Our last step is to expand our endpoint to take the incoming message, parse the response, check if it contains one of our options, and sends another text message to confirm their selection.
 
-~~~javascript
+```javascript
 // app.js
 app.get('/response', (request, response) => {        
   // TODO: store this selection somewhere in your database
@@ -195,7 +195,7 @@ app.get('/response', (request, response) => {
   send(request.query.msisdn, message);        
   response.send('Response processed');        
 });
-~~~
+```
 
 Now try replying to the message you received earlier. It might take a few seconds depending on your internet connection but you should get a confirmation in seconds. Also try and reply with some random text and see what happens.
 

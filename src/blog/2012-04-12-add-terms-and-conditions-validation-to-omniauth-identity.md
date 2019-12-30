@@ -19,18 +19,18 @@ like explained in [this Railscast](http://railscasts.com/episodes/304-omniauth-i
 
 Add a checkbox to your form.
 
-~~~erb
+```erb
 <div class="field">
   <%= label_tag :conditions %><br>
   <%= check_box_tag :conditions %>
 </div>
-~~~
+```
 
 ## Step 2 - `app/models/identity.rb`
 
 Add a attribute to your identity model and check for it to be set.
 
-~~~ruby
+```ruby
 class Identity < OmniAuth::Identity::Models::ActiveRecord
   ...
 
@@ -39,7 +39,7 @@ class Identity < OmniAuth::Identity::Models::ActiveRecord
 
   ...
 end
-~~~
+```
 
 
 You should really only check this on create, otherwise this validation will
@@ -51,11 +51,11 @@ the `conditions` value in the database.
 This is the one that took me the longest to figure out. You need to tell
 Omniauth Identity what fields to look for on signup.
 
-~~~ruby
+```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider :identity, fields: [:email, :conditions]
 end
-~~~
+```
 
 In the same way you can add a users name and other details, though I highly
 recommend you dont store those on the `Identity` but on the `User` model.

@@ -49,12 +49,12 @@ I love Markdown but sometimes it can be such a pain. Especially when you want to
 
 To be honest this is a bit of a pet peeve with Markdown, not Jekyll. Often all I want to do is just add a class to something, either a header or a link. I often wished Markdown supported something like this:
 
-~~~markdown
+```markdown
 This is a H2 with classname of foo
 ------------------------------.foo
 
 ## This is a H3 with an index of foo ### #foo
-~~~
+```
 
 ## Suggestions
 

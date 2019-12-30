@@ -39,7 +39,6 @@ const Markdown = [
       gfm: true,
       commonmark: true,
       plugins: [
-        'gatsby-remark-component',
         'gatsby-remark-autolink-headers',
         {
           resolve: `gatsby-remark-images`,
@@ -168,7 +167,7 @@ const SEO = [
 const Optimizations = [ 
   `gatsby-plugin-netlify`,
   `gatsby-plugin-netlify-cache`,
-  `gatsby-plugin-subfont`,
+  // `gatsby-plugin-subfont`,
   `gatsby-plugin-force-trailing-slashes`,
 ]
 

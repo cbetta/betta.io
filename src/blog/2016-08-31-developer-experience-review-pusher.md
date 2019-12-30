@@ -116,9 +116,9 @@ Nice, they integrated the push events into their dashboard. A slight annoyance h
 
 The cURL command returned an empty JSON hash.
 
-~~~json
+```json
 {}
-~~~
+```
 
 I know the command was successful because I received the alert in my browser, but I'm still interested in the full API reference documentation including expected responses.
 

@@ -31,13 +31,13 @@ world.
 
 You can download the starting point of the app from Github and run it locally.
 
-~~~sh
+```bash
 # ensure you have Ruby and Bundler installed
 git clone https://github.com/nexmo-community/nexmo-rails-2fa-demo.git
 cd nexmo-rails-2fa-demo
 bundle install
 rails server
-~~~
+```
 
 Then visit [127.0.0.1:3000](http://127.0.0.1:3000) in your browser and register.
 
@@ -70,33 +70,33 @@ To add Nexmo Verify to our system I am going to add the following changes:
 Let's start by adding a phone number to a user. I generate a new database
 migration and change it to add a new column to our user model.
 
-~~~sh
+```bash
 rails generate migration add_phone_number_to_users
-~~~
+```
 
-~~~rb
+```rb
 # db/migrate/...add_phone_number_to_users.rb
 class AddPhoneNumberToUsers < ActiveRecord::Migration
   def change
     add_column :users, :phone_number, :string
   end
 end
-~~~
+```
 
-~~~sh
+```bash
 rake db:migrate
-~~~
+```
 
 Devise comes with the ability to edit a user right out of the box. By default
 these views are hidden to the developer though, so I need to get a copy of them
 to make changes to. Devise makes this pretty easy through a Rails generator.
 
-~~~sh
+```bash
 # this is not the default generator but the one needed for the device-bootstrap-templates gem
 rails generate devise:views:bootstrap_templates
 # use the command below if you did not use the device-bootstrap-templates gem
 rails generate devise:views:templates
-~~~
+```
 
 This will copy a lot of view templates into `app/views/devise/`. I deleted most
 of them and only kept the one I really needed: `registrations/edit.html.erb`.
@@ -104,19 +104,19 @@ of them and only kept the one I really needed: `registrations/edit.html.erb`.
 The only change I need to make to this template is to add a phone number field
 right after our email field.
 
-~~~html
+```html
 <!-- app/views/devise/registrations/edit.html.erb -->
 <div class="form-group">
   <%= f.label :phone_number %> <i>(Leave blank to disable two factor authentication)</i><br />
   <%= f.number_field :phone_number, class: "form-control", placeholder: "e.g. 447555555555 or 1234234234234"  %>
 </div>
-~~~
+```
 
 The last step is to make Devise aware of this extra parameter. Without these
 lines the phone number won't be accepted as a strong parameter and will be lost
 after it's submitted.
 
-~~~rb
+```rb
 # app/controllers/application_controller.rb
 ...
 before_filter :configure_permitted_parameters, if: :devise_controller?
@@ -125,7 +125,7 @@ def configure_permitted_parameters
   devise_parameter_sanitizer.for(:account_update) << :phone_number
 end
 ...
-~~~
+```
 
 ## Send a verification request
 
@@ -135,22 +135,22 @@ Now that a user can add their phone number to their account I can have them
 verify their phone number on login. In order to send a verification message via
 Nexmo Verify I am going to have to add the `nexmo` gem to my project.
 
-~~~rb
+```rb
 # Gemfile
 gem 'nexmo'
 gem 'dotenv-rails', groups: [:development, :test]
-~~~
+```
 
 As you can see I also added the `dotenv-rails` gem. This is so that the app can
 load my API credentials from a `.env` file. The Nexmo gem automatically picks
 up those environment variables and uses them to initialize the client. You can
 find your credentials on [the settings page](https://dashboard.nexmo.com/settings) of your Nexmo account.
 
-~~~sh
+```bash
 # .env
 NEXMO_API_KEY='your_key'
 NEXMO_API_SECRET='your_secret'
-~~~
+```
 
 There are many different ways you could implement the verification check in your
 app. To keep things simple I am just adding a `before_action` to my
@@ -158,32 +158,32 @@ app. To keep things simple I am just adding a `before_action` to my
 enabled, and if they do makes sure that they are verified before they are
 allowed to continue.
 
-~~~rb
+```rb
 # app/controllers/application_controller.rb
 before_action :verify_user!, unless: :devise_controller?
 
 def verify_user!
   start_verification if requires_verification?
 end
-~~~
+```
 
 I decided to keep the check to see if the user requires verification very
 simple by just checking if they have a phone number on file and if a `:verified`
 value on their session hasn't been set yet.
 
-~~~rb
+```rb
 # app/controllers/application_controller.rb
 def requires_verification?
   session[:verified].nil? && !current_user.phone_number.blank?
 end
-~~~
+```
 
 To start the verification process I call `send_verification_request` (API call #1)
 on the `Nexmo::Client` object. I don't need to pass in any API credentials
 because it has already been initialized through our environment values - though
 if you want to be explicit you can (see the [gem documentation](https://github.com/Nexmo/nexmo-ruby)).
 
-~~~rb
+```rb
 # app/controllers/application_controller.rb
 def start_verification
   result = Nexmo::Client.new.send_verification_request(
@@ -199,7 +199,7 @@ def start_verification
     }
   end
 end
-~~~
+```
 As you can see I pass the verification request the name of my web app. This is
 used in the text message the user receives and adds some very nice brand
 personalisation.
@@ -217,12 +217,12 @@ them as verified accordingly. For this I am going to have to add a new page.
 
 I'll start with adding the routes and a basic controller.
 
-~~~rb
+```rb
 # config/routes.rb
 resources :verifications, only: [:edit, :update]
-~~~
+```
 
-~~~rb
+```rb
 # app/controllers/verifications_controller.rb
 class VerificationsController < ApplicationController
   skip_before_action :verify_user!
@@ -234,7 +234,7 @@ class VerificationsController < ApplicationController
     ...
   end
 end
-~~~
+```
 
 As you can see I made sure to skip the `before_action` I added earlier so that
 the browser doesn't end up in an infinite loop of redirects.
@@ -242,7 +242,7 @@ the browser doesn't end up in an infinite loop of redirects.
 When the user lands on the new page they are presented with a simple form to fill
 in their verification code.
 
-~~~html
+```html
 <!-- app/views/verifications/edit.html.erb -->
 ...
 <%= form_tag verification_path(id: params[:id]), method: :put do %>
@@ -253,12 +253,12 @@ in their verification code.
   <%= submit_tag 'Verify', class: "btn btn-primary" %>
 <% end %>
 ...
-~~~
+```
 
 The user then submits their code to the new `update` action. In this action I am taking the `request_id` and `code` from the params and pass them to the
 `check_verification_request` method (API call #2!) to verify them.
 
-~~~rb
+```rb
 # app/controllers/verifications_controller.rb
 def update
   confirmation = Nexmo::Client.new.check_verification_request(
@@ -273,7 +273,7 @@ def update
     redirect_to edit_verification_path(id: params[:id]), flash: { error: confirmation['error_text'] }
   end
 end
-~~~
+```
 
 When the confirmation comes back successful I set the user's status as verified
 and redirect them back to the main page. If the code was not successful I

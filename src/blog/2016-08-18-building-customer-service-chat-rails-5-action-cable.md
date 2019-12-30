@@ -21,13 +21,13 @@ To make things easy we build a [starting point](https://github.com/nexmo-communi
 
 You can download the starting point of this tutorial from Github if you want to code along.
 
-~~~bash
+```bash
 git clone git@github.com:nexmo-community/nexmo-customer-service-chat-demo.git
 cd nexmo-customer-service-chat-demo
 bundle install
 rails db:create db:migrate db:seed
 bundle exec rails server
-~~~
+```
 
 Then visit [localhost:3000](http://localhost:3000) in your browser and you should be able to comment on the existing threads but nothing will be sent via SMS just yet.
 
@@ -54,35 +54,35 @@ You can buy a number from the [Nexmo Dashboard](https://dashboard.nexmo.com/sett
 
 For example to buy a UK phone number starting with 07:
 
-~~~sh
+```bash
 > npm install -g nexmo-cli
 > nexmo setup <your_api_key> <your_api_secret>
 > nexmo number:buy GB 447* --confirm
 Number purchased
 > nexmo number:list
 4475555555555
-~~~
+```
 
 When a SMS is received by this new number Nexmo will call the webhook URL we specify. We'll create a dummy webhook for now that just returns a simple JSON response.
 
-~~~ruby
+```ruby
 # app/controllers/text_messages_controller.rb
 class TextMessagesController < ApplicationController
   def index
     render json: { state: 200 }
   end
 end
-~~~
+```
 
 Let's also add this to our `routes.rb`.
 
-~~~ruby
+```ruby
 # config/routes.rb
 Rails.application.routes.draw do
   resources :text_messages
   ...
 end
-~~~
+```
 
 If you now load [localhost:3000/text_messages](https://localhost:3000/text_messages) you should see a JSON response.
 
@@ -90,16 +90,16 @@ To make your app publicly reachable by the Nexmo webhooks you have a few options
 
 Once your app is publicly available we can link our number to a webhook URL. Now every time an SMS is received a call will be made to this URL. For this we are again using the `nexmo-cli`.
 
-~~~sh
+```bash
 > nexmo link:sms 44755555555 http://<your_url>.ngrok.io/text_messages
 Number updated
-~~~
+```
 
 If you get any errors at this state please make sure you are using the Nexmo phone number on your account, and that the webhook URL is publicly accessible.
 
 The next step is to expand our action to take the incoming message, parse the response and save it to our database.
 
-~~~ruby
+```ruby
 # app/controllers/text_messages_controller.rb
 def index
   message = Message.create!(
@@ -109,7 +109,7 @@ def index
   )
   render json: { state: 200 }
 end
-~~~
+```
 
 Give it a try! Start your server (and ngrok if necessary) and send a message to your Nexmo number. Within a few seconds the message should be parsed by your app. Refresh the website to see you new message.
 
@@ -121,7 +121,7 @@ ActionCable uses channels to communicate between publishers and subscribers. In 
 
 We'll start by adding a new line to our `TextMessagesController`:
 
-~~~ruby
+```ruby
 # app/controllers/text_messages_controller.rb
 include ApplicationHelper
 
@@ -130,13 +130,13 @@ def index
   send_cable(message)
   render json: { state: 200 }
 end
-~~~
+```
 
 As you can see we extracted our publishing into a helper method as we will want to reuse this later on.
 
 Our helper is pretty straightforward - it renders the HTML and then passes the HTML and the number to the `ActionCable.server` method.
 
-~~~ruby
+```ruby
 # app/helpers/application_helper.rb
 def send_cable message
   html = render_message(message)
@@ -151,47 +151,47 @@ def render_message message
     locals: { message: message }
   })
 end
-~~~
+```
 
 At the other side our frontend will want to connect to our server over a new WebSocket and listen to the `messages` channel for new messages coming in.
 
 We start this off by mounting `ActionCable` in our routes.
 
-~~~ruby
+```ruby
 # config/routes.rb
 Rails.application.routes.draw do
   mount ActionCable.server => '/cable'
   ...
 end
-~~~
+```
 
 This will expose a WebSocket endpoint on `http://localhost:3000/cable` that we can connect to using our Javascript as followed.
 
-~~~javascript
+```javascript
 // app/assets/javascripts/channels/messages.js
 App.cable.subscriptions.create('MessagesChannel', {
   received: function(data) {
     // process data
   }
 });
-~~~
+```
 
 So how does Rails know that the `MessagesChannel` maps to the `messages` stream? It doesn't. We need to specify this ourselves.
 
-~~~ruby
+```ruby
 # app/channels/messages_channel.rb
 class MessagesChannel < ApplicationCable::Channel
   def subscribed
     stream_from "messages"
   end
 end
-~~~
+```
 
 In more complicated examples you could use this to bind to specific channels based on the authenticated user, extra parameters, and much more. In our example we're keeping it simple and just subscribe to the `messages` stream.
 
 Finally we just need to update our JS to insert the HTML we received over the cable into our UI.
 
-~~~javascript
+```javascript
 // app/assets/javascripts/channels/messages.js
 App.cable.subscriptions.create('MessagesChannel', {
   received: function(data) {
@@ -213,23 +213,23 @@ App.cable.subscriptions.create('MessagesChannel', {
     $('.message:first').transition('flash');
   }
 });
-~~~
+```
 
 This code does a few things. First off it finds the `.thread` and `.numbers` elements. If we're on a thread for a number and we received that number we prepend the message. If we're on the `index` view of all numbers we remove the last message for this nummber and replace it with the new HTML.
 
 To make all of this work we do need to add some data to our `.thread` and each `.message` so that we know what numbers they belong to.
 
-~~~erb
+```erb
 <!-- app/views/messages/show.html.erb -->
 <div class="ui one cards thread" data-number="<%= params[:id] %>">     
-~~~
+```
 
-~~~erb
+```erb
 <!-- app/views/messages/_message.html.erb  -->
 <%= link_to "/messages/#{message.number}",
       class: 'ui card message',
       data: { number: message.number } do %>
-~~~
+```
 
 That's it for ActionCable! Start your server (and ngrok if necessary) and send a message to your Nexmo number. Within a few seconds the message should be parsed by your app and this time you do not need to refresh the website to see you new message. Instead it will show up as soon as ActionCable publishes it to the `messages` stream.
 
@@ -241,55 +241,55 @@ So now that we have incoming SMS working let's update our existing code to send 
 
 In order to send an SMS message via Nexmo we're going to have to add the `nexmo` gem to the project.
 
-~~~ruby
+```ruby
 # Gemfile
 gem 'nexmo'
 
 group :development, :test do
   gem 'dotenv-rails'
 end
-~~~
+```
 
 As you can see we also added the `dotenv-rails` gem. This is just to make things easier as it will allow the app to load our API credentials from a `.env` file. The `nexmo` gem automatically picks up those environment variables and uses them to initialize the client. You can find your credentials on [the settings page of your Nexmo account](https://dashboard.nexmo.com/settings).
 
-~~~ruby
+```ruby
 # .env
 NEXMO_API_KEY=<your_api_key>
 NEXMO_API_SECRET=<your_api_secret>
 NEXMO_NUMBER=<your_phone number>
-~~~
+```
 
 We also added our `NEXMO_NUMBER` to the `.env` file here as well.
 
 Next let's turn our form into a `remote` form and use `ActionCable` to show the customer new submissions instead of redirecting the page.
 
-~~~erb
+```erb
 <!-- app/views/messages/_form.html.erb -->
 <%= form_for(@new_message, remote: true, html: { class: 'ui form error' }) do |f| %>
-~~~
+```
 
 In our controller we will replace the redirect with something familiar.
 
-~~~ruby
+```ruby
 # app/controllers/messages_controller.rb
 if message.save
   send_cable(message)
   send_sms(message)
 end
-~~~
+```
 
 The `send_cable` is our ActionCable publisher from before, and the `send_sms` will be implemented next.
 
 Before we continue though let's create a `create.js.erb` so that our action doesn't complain about a missing view. We'll use this view to also empty our `textarea` when the form is submitted.
 
-~~~js
+```js
 // app/views/messages/create.js.erb
 $('textarea').val('');
-~~~
+```
 
 Finally let's send the SMS to the right number with the message from the support agent.
 
-~~~ruby
+```ruby
 # app/helpers/application_helper.rb
 def send_sms message
   Nexmo::Client.new.send_message(
@@ -298,7 +298,7 @@ def send_sms message
     text: message.text
   )
 end
-~~~
+```
 
 That's it, you should now have full 2-way SMS to Rails messaging in place with he help of Nexmo and Rails 5's ActionCable. Restart your server if needed and send yourself some messages to see it all in action.
 

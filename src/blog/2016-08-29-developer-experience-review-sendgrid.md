@@ -164,12 +164,12 @@ I have an API key! I click on the key and it copies it to my clipboard for me. V
 
 I go back to my code, add the key, and run the code. The output is as follows:
 
-~~~sh
+```bash
 $ ruby test.rb
 202
 
 {"server"=>["nginx"], "date"=>["Fri, 26 Aug 2016 14:37:31 GMT"], "content-type"=>["text/plain; charset=utf-8"], "content-length"=>["0"], "connection"=>["close"], "x-message-id"=>["pfRkpys-Sk-sXKekBc5yzg"], "x-frame-options"=>["DENY"]}
-~~~
+```
 
 The 202 is the response code, the next line is the body, and the last line is the headers. As an experienced developer I know that a response code in the **2**** range is generally good, but then the response also returns the word **DENY** in the headers. So did this email send? I check my email inbox but no email has arrived yet.
 

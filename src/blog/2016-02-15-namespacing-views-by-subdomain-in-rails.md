@@ -14,7 +14,7 @@ On the BattleHack site we serve every year from the same app (e.g. [2014](https:
 
 In the base controller I first extract the current year:
 
-~~~ruby
+```ruby
 # /app/controllers/app/base_controller.rb
 
 def selected_year
@@ -26,7 +26,7 @@ def selected_year
     end
   end
 end
-~~~
+```
 
 
 
@@ -39,7 +39,7 @@ A few things to note here:
 
 Next up I changed the base controllers to use the current year to load the correct layout and views.
 
-~~~ruby
+```ruby
 # /app/controllers/app/base_controller.rb
 
 class App::BaseController < ApplicationController
@@ -53,7 +53,7 @@ class App::BaseController < ApplicationController
 
   ...
 end
-~~~
+```
 
 With this setup your controllers will default to:
 
