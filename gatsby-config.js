@@ -102,6 +102,7 @@ const Feed = [
             }
           `,
           output: `/atom.xml`,
+          title: "Cristiano Betta",
           setup: ({
             query: {
               site: { siteMetadata },

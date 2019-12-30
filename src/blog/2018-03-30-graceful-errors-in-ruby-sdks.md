@@ -235,6 +235,7 @@ see something like this.
 curl -XPOST https://api.twilio.com/2010-04-01/Accounts/MY_SID/Messages.json \
     -u 'MY_SID:MY_AUTH_TOKEN'
 ```
+
 ```bash
 {"code": 21603, "message": "A 'From' phone number is required.", "more_info": \
 "https://www.twilio.com/docs/errors/21603", "status": 400}

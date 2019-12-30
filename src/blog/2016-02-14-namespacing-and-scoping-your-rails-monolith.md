@@ -86,7 +86,7 @@ The reason why each layout includes its own asset tags is so that we can be more
 
 Here the `require_tree` statement loads in all CSS in the root folder. This isn't very useful for separating concern and instead I prefer my manifests to only load explicitly defined folders:
 
-```
+```yaml
 - app/
   - assets/
     - stylesheets/

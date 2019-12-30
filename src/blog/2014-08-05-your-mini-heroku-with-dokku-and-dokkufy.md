@@ -27,7 +27,7 @@ Dokku only works with Ubuntu 12.04 and 14.04 server, so go get one of those imag
 
 Then on your local machine run:
 
-```
+```bash
 dokkufy server
 > Server hostname or IP: ppd.io
 > Username on server: cbetta
@@ -47,7 +47,7 @@ Now that we have a Dokku server ready to go it's time to prepare your app.
 
 I used the [Heroku Node JS sample app](https://github.com/heroku/node-js-sample) for my example.
 
-```
+```bash
 cd node-js-sample
 dokkufy app
 > Server hostname or IP: ppd.io
@@ -62,7 +62,7 @@ As you can see this simply asks for the details of your server and then adds a G
 
 Now do a `git push dokku master` and you will see your app deployed.
 
-```
+```bash
 git push dokku master
 > Counting objects: 4, done.
 > Delta compression using up to 8 threads.

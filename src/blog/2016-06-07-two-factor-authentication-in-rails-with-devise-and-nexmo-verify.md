@@ -200,6 +200,7 @@ def start_verification
   end
 end
 ```
+
 As you can see I pass the verification request the name of my web app. This is
 used in the text message the user receives and adds some very nice brand
 personalisation.
