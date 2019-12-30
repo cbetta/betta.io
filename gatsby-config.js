@@ -150,7 +150,7 @@ const PWA = [
       background_color: "#333",
       theme_color: "#333",
       display: "minimal-ui",
-      icon: "content/images/icon.jpg",
+      icon: "content/images/icon.png",
     },
   },
   {
