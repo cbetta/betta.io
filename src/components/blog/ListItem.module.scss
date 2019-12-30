@@ -1,9 +1,10 @@
+@import '../../css/variables.scss';
+
 .this {
   display: grid;  
   grid-template-columns: 2.5rem auto;
-  border-bottom: 1px solid #eee;
   
-  padding: 0.5rem;
+  padding: 0.7rem 0.5rem;
   text-decoration: none !important;
 
   &:focus,
@@ -24,21 +25,34 @@
     flex-direction: column;
     grid-column: 2 / 2;
     grid-row: 1;
-  }
 
-  h2 {
-    color: #4078BF;
-    font-size: 1.1em;
-    line-height: 1.5em;
-    border: none;
-    grid-column: 2 / 3 ;
-    grid-row: 1 / 1;
-    padding: 0;
-    margin: 0;
+    & > span {
+      color: $black;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      border: none;
+      grid-column: 2 / 3 ;
+      grid-row: 1 / 1;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 0.3rem;
+    }
   }
 
   small {
     font-size: 0.8em;
     color: #262F35;
+
+    span {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.6rem;
+      display: inline-block;
+      background-color: white;
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+      position: relative;
+      margin-right: 0.5rem;
+      border: 1px dashed $middle-grey;
+    }
   }
 }

@@ -8,11 +8,12 @@ export default ({ timeToRead, fields, frontmatter }) => (
   <Link to={ fields.slug } className={style.this}>
     <Icon type={ frontmatter.icon } />
     <header>
-      <h2>
+      <span>
         { frontmatter.title }
-      </h2>
+      </span>
       <small>
-        { frontmatter.date  } - { timeToRead } minute read
+        <span>{ frontmatter.date  }</span>
+        <span>{ timeToRead } minute read</span>
       </small>
     </header>
   </Link>
