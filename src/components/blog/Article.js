@@ -1,8 +1,7 @@
-import React, { useState } from "react"
-import { DiscussionEmbed } from 'disqus-react';
+import React from "react"
 
 import Icon from "./Icon"
-import { MdChevronRight } from 'react-icons/md' 
+import Disqus from "./Disqus"
 
 import { render } from '../../utils/rehype-render'
 import style from "./Article.module.scss"
@@ -23,38 +22,18 @@ const Article = ({
   return (
     <div className={ style.article }>
       <header>
-        <Icon type={ frontmatter.icon } />
         <h1>
           {frontmatter.title}
           <small>
-            { frontmatter.date } - { timeToRead } minute read
+            <Icon type={ frontmatter.icon } />
+            <span className={style.date}>{ frontmatter.date }</span>
+            <span className={style.ttr}>{ timeToRead } minute read</span>
           </small>
         </h1>
       </header>
       <div className={style.content}>{ render(htmlAst) }</div>
-      <Disqus>
-        <DiscussionEmbed 
-          shortname='bettacoding' 
-          config={disqusConfig}
-        />
-      </Disqus>
+      <Disqus config={disqusConfig} />
     </div>
-  )
-}
-
-const Disqus = ({
-  children
-}) => {
-  const [show, setShow] = useState(false)
-
-  return (
-    <button 
-      className={style.comments}
-      data-show={show} 
-      onClick={() => setShow(true)}>
-        <span>{ children }</span>
-        <span><MdChevronRight />Show comments</span>
-    </button>
   )
 }
 

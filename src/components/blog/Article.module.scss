@@ -13,25 +13,29 @@
   }
 
   header  {
-    padding-top: 1em;
     margin-bottom: 3em;
-
-    svg {
-      font-size: 2.3rem;
-      display: none;
-    }
+    padding: 1em 80px 0;
   }
 
   h1 {
     margin: 0;
     border-bottom: 0;
+    line-height: 2.9rem;
 
     small {
+      line-height: 1rem;
       display: block;
       font-size: 1rem;
       font-weight: 300;
       margin-top: 1rem;
       color: $dark-grey;
+    }
+
+    svg {
+      position: relative;
+      top: 2px;
+      opacity: 0.7;
+      margin-right: 1rem;
     }
   }
 
@@ -118,79 +122,27 @@
   }
 }
 
-.comments {
-  padding: 0;
-  margin: 0;
-  border: none;
-  outline: none;
-
-  & > :first-child {
-    margin-top: 5rem;
-    display: none;
-  }
-
-  & > :last-child {
-    margin-top: 3rem;
-    cursor: pointer;
-    display: block;
-    padding: 1rem;
-    border-top: 1px solid rgba($grey, 0.3);
-
-    &:hover {
-      opacity: 0.8;
-    }
-    
-    svg {
-      fill: $black;
-      font-size: 1.4rem;
-      margin-right: 1rem;
-      position: relative;
-      top: 0.3rem;
-    }
-  }
-
-  &[data-show=true] {
-    & > :first-child {
-      display: block;
-    }
-
-    & > :last-child {
-      display: none;
-    }
-  }
-
-  @media (min-width: 800px) {
-    width: calc(100% + 100px) !important;
-    max-width: calc(100% + 100px) !important;
-    margin-left: -50px !important;
-    margin-right: -50px !important;
-    border-radius: 5px;
-
-    & > :first-child {
-      padding: 0 50px;
-    }
-  }
+.date {
+  margin-right: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  display: inline-block;
+  background-color: $light-grey;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  position: relative;
+  top: -2px;
+  border: 1px dashed $middle-grey;
 }
 
-@media (min-width: 800px) {
-  @supports (display: grid) {
-    .article {
-      header {
-        display: grid;
-        grid-template-columns: 5.2rem auto;
-        grid-template-areas: "icon title";
-  
-        svg {
-          grid-area: icon;
-          display: inherit;
-          text-align: center;
-          width: 100%;
-        }
-  
-        h1 {
-          grid-area: title;
-        }
-      }
-    }
-  }
+.ttr {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  display: inline-block;
+  background-color: $light-grey;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  position: relative;
+  top: -2px;
+  border: 1px dashed $middle-grey;
 }

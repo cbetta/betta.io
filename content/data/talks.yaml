@@ -1,0 +1,409 @@
+---
+
+- title: Docs as Engineering
+  date: Dec 6, 2019
+  conference: DevRelCon London
+  conference_url: https://london-2019.devrel.net/
+  icon: code
+  country: gp
+  url: https://london-2019.devrel.net/
+
+- title: A Live API Teardown
+  date: Mar 9, 2019
+  conference: DevRelCon Tokyo
+  conference_url: https://tokyo-2019.devrel.net/
+  icon: bullhorn
+  country: jp
+  url: https://tokyo-2019.devrel.net/
+
+- title: A Live API Teardown
+  date: Nov 9, 2018
+  conference: API The Docs, London
+  conference_url: https://apithedocs.org/london2018
+  icon: university
+  country: gb
+  url: https://apithedocs.org/london2018
+
+- title: Track MC
+  date: Nov 8, 2018
+  conference: DevRelCon, London
+  conference_url: https://london-2018.devrel.net/
+  icon: comment outline
+  country: gb
+  url: https://london-2018.devrel.net/
+
+- title: DX & Events Workshop
+  date: Nov 6, 2018
+  conference: DevRelCon, London
+  conference_url: https://london-2018.devrel.net/
+  icon: comments outline
+  country: gb
+  url: https://london-2018.devrel.net/
+
+- title: A Live API Teardown
+  date: Sept 24-26, 2018
+  conference: API Strategy & Practice, Nashville
+  conference_url: https://events.linuxfoundation.org/events/apistrat-2018/program/schedule/
+  icon: university
+  country: us
+  url: https://events.linuxfoundation.org/events/apistrat-2018/program/keynote_speakers/
+
+- title: The Seven Deadly Sins of Developer Onboarding
+  date: September 3-4, 2018
+  conference: APIdays, Melbourne
+  conference_url: https://www.apidays.com.au
+  icon: university
+  country: au
+  url: https://betta.io/blog/2017/11/10/the-seven-sins-of-developer-experience/
+
+- title: A Live API Teardown
+  date: Sept 24-26, 2018
+  conference: API Strategy & Practice, Nashville
+  conference_url: https://events.linuxfoundation.org/events/apistrat-2018/program/schedule/
+  icon: university
+  country: us
+  url: https://events.linuxfoundation.org/events/apistrat-2018/program/keynote_speakers/
+
+- title: 'Developer Experience and Your Library: The LEGO Way'
+  url: "/blog/2016/12/14/what-developer-experience-could-learn-from-lego/"
+  date: July 16, 2018
+  conference: London Web Standards, London
+  conference_url: http://londonwebstandards.org/
+  icon: space shuttle
+  country: gb
+
+- title: DX & Events Workshop
+  date: June 6, 2018
+  conference: DevXcon, San Francisco
+  conference_url: https://2018.devxcon.com/
+  icon: comments outline
+  country: us
+  url: https://2018.devxcon.com/
+
+- title: 'Developer Experience and Your Library: The LEGO Way'
+  url: "/blog/2016/12/14/what-developer-experience-could-learn-from-lego/"
+  date: May 8-9, 2018
+  conference: Codemotion, Amsterdam
+  conference_url: https://amsterdam2018.codemotionworld.com/
+  icon: space shuttle
+  country: nl
+
+- title: 'Developer Experience: The LEGO Way'
+  url: "/blog/2016/12/14/what-developer-experience-could-learn-from-lego/"
+  date: April 22, 2018
+  conference: DevRelCon China, Shanghai
+  conference_url: https://devrelcon.net/china/
+  icon: space shuttle
+  country: cn
+
+- title: The Seven Deadly Sins of Developer Onboarding
+  date: January 30-31, 2018
+  conference: APIDays, Paris
+  conference_url: http://www.apidays.io/events/paris-2017
+  icon: university
+  country: fr
+  url: https://betta.io/blog/2017/11/10/the-seven-sins-of-developer-experience/
+
+- title: A Live API Teardown
+  date: January 30-31, 2018
+  conference: APIDays, Paris
+  conference_url: http://www.apidays.io/events/paris-2017
+  icon: university
+  country: fr
+  url: http://www.apidays.io/events/paris-2017
+
+- title: A Live API Teardown
+  date: December 6, 2017
+  conference: DevRelCon, London
+  conference_url: https://london-2017.devrel.net/
+  icon: tv
+  country: gb
+  url: https://london-2017.devrel.net/
+
+- title: Track MC
+  date: December 6, 2017
+  conference: DevRelCon, London
+  conference_url: https://london-2017.devrel.net/
+  icon: comment outline
+  country: gb
+  url: https://london-2017.devrel.net/
+
+- title: Developer Experience & Event Workshop
+  date: December 7, 2017
+  conference: DevRelCon, London
+  conference_url: https://london-2017.devrel.net/
+  icon: comments outline
+  country: gb
+  url: https://london-2017.devrel.net/
+
+- title: The Seven Deadly Sins of Developer Onboarding
+  date: December 4, 2017
+  conference: API The Docs, Amsterdam
+  conference_url: http://apithedocs.org/
+  icon: university
+  country: nl
+  url: https://betta.io/blog/2017/11/10/the-seven-sins-of-developer-experience/
+
+- title: Track MC
+  date: October 20, 2017
+  conference: Hackference, Birmingham
+  conference_url: https://2017.hackference.co.uk/
+  icon: comment outline
+  country: gb
+  url: https://2017.hackference.co.uk/
+
+- title: The Seven Deadly Sins of Developer Onboarding
+  date: July 29, 2017
+  conference: DevRelCon, Tokyo
+  conference_url: https://tokyo-2017.devrel.net/
+  icon: university
+  country: jp
+  url: https://betta.io/blog/2017/11/10/the-seven-sins-of-developer-experience/
+
+- title: Hackathon Workshop
+  date: July 28, 2017
+  conference: DevRelCon, Tokyo
+  conference_url: https://tokyo-2017.devrel.net/
+  icon: comments outline
+  country: jp
+  url: https://tokyo-2017.devrel.net/
+
+- title: The State of Encryption
+  date: June 21, 2017
+  conference: FullStack Bytes, London
+  conference_url: https://skillsmatter.com/meetups/9040-the-state-of-encryption
+  icon: lock
+  country: gb
+  url: https://speakerdeck.com/cbetta/the-state-of-encryption
+
+- title: The State of Encryption
+  url: https://speakerdeck.com/cbetta/the-state-of-encryption
+  date: June 8, 2017
+  conference: DevTalks, Bucharest
+  conference_url: http://www.devtalks.ro/bucharest/
+  icon: lock
+  country: ro
+
+- title: Developer Experience Workshop
+  url: https://speakerdeck.com/cbetta/developer-experience-workshop
+  date: May 23, 2017
+  conference: DevXCon, San Francisco
+  conference_url: https://2017.devxcon.com/
+  icon: comments outline
+  country: us
+
+- title: The Seven Deadly Sins of Developer Onboarding
+  url: https://betta.io/blog/2017/11/10/the-seven-sins-of-developer-experience/
+  date: April 19, 2017
+  conference: API Strategy & Tactics, London
+  conference_url: https://www.meetup.com/API-Strategy-Tactics-London/events/237546222/
+  icon: university
+  country: gb
+
+- title: 'Developer Experience: The LEGO Way'
+  url: "/blog/2016/12/14/what-developer-experience-could-learn-from-lego/"
+  date: April 10, 2017
+  conference: Contentful Dev Talks, Berlin
+  conference_url: https://www.contentful.com/
+  icon: space shuttle
+  country: de
+
+- title: The Seven Deadly Sins of Developer Onboarding
+  url: https://betta.io/blog/2017/11/10/the-seven-sins-of-developer-experience/
+  date: March 17, 2017
+  conference: The IDEs of March Conference, Reading
+  conference_url: https://www.theidesofmarch.net/
+  icon: university
+  country: gb
+
+- title: 'Developer Experience: The LEGO Way'
+  url: "/blog/2016/12/14/what-developer-experience-could-learn-from-lego/"
+  date: February 28-March 1, 2017
+  conference: APIDays, Sydney
+  conference_url: http://au.apidays.io/
+  icon: space shuttle
+  country: au
+
+- title: 'Developer Experience: The LEGO Way'
+  url: "/blog/2016/12/14/what-developer-experience-could-learn-from-lego/"
+  date: December 13, 2016
+  conference: APIDays, Paris
+  conference_url: http://www.apidays.io/events/paris-2016
+  icon: space shuttle
+  country: gb
+
+- title: A brick by brick guide to developer experience
+  url: "/blog/2016/12/14/what-developer-experience-could-learn-from-lego/"
+  date: December 7, 2016
+  conference: DevRelCon, London
+  conference_url: https://london-2016.devrel.net
+  icon: space shuttle
+  country: gb
+
+- title: Hackathon Workshop
+  url: https://speakerdeck.com/cbetta/hackathons-workshop
+  date: December 6, 2016
+  conference: DevRelCon, London
+  conference_url: https://london-2016.devrel.net
+  icon: comments outline
+  country: gb
+
+- title: Narrator / MC
+  url: http://2016.hackference.co.uk/
+  date: October 21-23, 2016
+  conference: Hackference, Birmingham
+  conference_url: http://2016.hackference.co.uk/
+  icon: comment outline
+  country: gb
+
+- title: 'Lightning Talk: Let''s Forget About Hackathons'
+  url: https://cbetta.github.io/slides-hackcon-europe-2016/
+  date: September 2-4, 2016
+  conference: Hackcon EU, Eindhoven
+  conference_url: https://hackcon.mlh.io/eu/
+  icon: lightning
+  country: nl
+
+- title: Lightweight JS with Riot, Redux and Rollup
+  url: https://github.com/cbetta/slides-fullstack-london-2016
+  date: July 13-15, 2016
+  conference: FullStack, London
+  conference_url: https://skillsmatter.com/conferences/7278-fullstack-2016-the-conference-on-javascript-node-and-internet-of-things
+  icon: code
+  country: gb
+
+- title: Lightweight JS with Riot, Redux and Rollup
+  url: https://github.com/cbetta/slides-devtalks-bucharest-2016
+  date: June 10, 2016
+  conference: DevTalks, Bucharest
+  conference_url: http://www.devtalks.ro/bucharest/
+  icon: code
+  country: ro
+
+- title: Lightweight JS with Riot, Redux and Rollup
+  url: https://github.com/cbetta/slides-techsylvania-2016
+  date: May 21-24, 2016
+  conference: Techsylvania, Cluj
+  conference_url: http://www.techsylvania.co/
+  icon: code
+  country: ro
+
+- title: This strange planet earth
+  url: https://speakerdeck.com/cbetta/this-strange-planet-earth
+  date: October 5-7, 2015
+  conference: Future of Web Apps, London
+  conference_url: http://lanyrd.com/2015/fowa/
+  icon: money
+  country: gb
+
+- title: Tooling your way to a great devrel team
+  url: http://blog.devrel.net/craft/tooling-your-way-to-a-great-devrel-team/
+  date: September 30, 2015
+  conference: DevRelCon, London
+  conference_url: http://london-2015.devrel.net/
+  icon: video
+  country: gb
+
+- title: A Credit Card Walks Into A Bar
+  url: https://speakerdeck.com/cbetta/devtalks-bucharest-2015-a-credit-card-walks-into-a-bar-dot-dot-dot
+  date: June 17-19, 2015
+  conference: EnterJS, Darmstadt
+  conference_url: https://www.enterjs.de/2015
+  icon: money
+  country: de
+
+- title: A Credit Card Walks Into A Bar
+  url: https://speakerdeck.com/cbetta/devtalks-bucharest-2015-a-credit-card-walks-into-a-bar-dot-dot-dot
+  date: June 11, 2015
+  conference: DevTalks, Bucharest
+  conference_url: http://www.devtalks.ro/edition2015/
+  icon: money
+  country: ro
+
+- title: Hackathons on Rails
+  url: https://speakerdeck.com/cbetta/techsylvania-hackathons-on-rails
+  date: June 6-9, 2015
+  conference: Techsylvania, Cluj
+  conference_url: http://www.techsylvania.co/
+  icon: lab
+  country: ro
+
+- title: A Credit Card Walks Into A Bar
+  url: https://speakerdeck.com/cbetta/devtalks-bucharest-2015-a-credit-card-walks-into-a-bar-dot-dot-dot
+  date: April 27-29, 2015
+  conference: Future of Web Design, London
+  conference_url: http://lanyrd.com/2015/fowd/
+  icon: money
+  country: gb
+
+- title: A Credit Card Walks Into A Bar
+  url: https://speakerdeck.com/cbetta/devtalks-bucharest-2015-a-credit-card-walks-into-a-bar-dot-dot-dot
+  date: April 27-29, 2015
+  conference: DroidCon, Dubai
+  conference_url: http://droidcon.ae/
+  icon: money
+  country: ae
+
+- title: Hackathons on Rails
+  url: https://speakerdeck.com/cbetta/techsylvania-hackathons-on-rails
+  date: March 22, 2015
+  conference: RubyConfBY, Minsk
+  conference_url: http://rubyconference.by/2015/
+  icon: lab
+  country: by
+
+- title: Hackathons on Rails
+  url: https://speakerdeck.com/cbetta/techsylvania-hackathons-on-rails
+  date: March 22, 2015
+  conference: RubyConfLT, Vilnius
+  conference_url: http://2015.rubyconf.lt/
+  icon: lab
+  country: lt
+
+- title: A Credit Card Walks Into A Bar
+  url: https://speakerdeck.com/cbetta/devtalks-bucharest-2015-a-credit-card-walks-into-a-bar-dot-dot-dot
+  date: March 7, 2015
+  conference: ".concat(), Salzburg"
+  conference_url: https://conc.at/
+  icon: money
+  country: at
+
+- title: Hacking through time and space
+  url: https://speakerdeck.com/cbetta/hacking-through-space-and-time
+  date: September 19-21, 2014
+  conference: Hackference, Birmingham
+  conference_url: http://2014.hackference.co.uk/
+  icon: lab
+  country: gb
+
+- title: Hardware and the commerce revolution
+  url: http://www.slideshare.net/cbetta/hardware-and-the-commerce-revolution
+  date: June 11, 2014
+  conference: DevTalks, Bucharest
+  conference_url: http://www.devtalks.ro/edition2014/
+  icon: settings
+  country: ro
+
+- title: Developer Programs Workshop
+  url: https://speakerdeck.com/cbetta/making-your-hackathon-matter-1
+  date: May 13-14, 2014
+  conference: WIP Factory, London
+  conference_url: http://www.wipfactory.com/
+  icon: lab
+  country: gb
+
+- title: 'Hackathons: Best Practices From experience'
+  url: http://www.slideshare.net/cbetta/hackathons-best-practices-from-experience
+  date: May 5-6, 2014
+  conference: APIDays, Berlin
+  conference_url: http://www.wipfactory.com/
+  icon: lab
+  country: de
+
+- title: The state of packaged web apps
+  url: http://www.slideshare.net/cbetta/the-state-of-packaged-web-apps
+  date: August 30, 2013
+  conference: Hackference, Birmingham
+  conference_url: http://2013.hackference.co.uk/
+  icon: code
+  country: gb

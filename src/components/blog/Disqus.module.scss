@@ -1,0 +1,60 @@
+@import '../../css/variables.scss';
+
+.disqus {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  display: none;
+
+  & > :first-child {
+    margin-top: 5rem;
+    display: none;
+  }
+
+  & > :last-child {
+    margin-top: 3rem;
+    cursor: pointer;
+    display: block;
+    padding: 1rem;
+    border-top: 1px solid rgba($grey, 0.3);
+
+    &:hover {
+      opacity: 0.8;
+    }
+    
+    svg {
+      fill: $black;
+      font-size: 1.4rem;
+      margin-right: 1rem;
+      position: relative;
+      top: 0.3rem;
+    }
+  }
+
+  &[data-loaded=true] {
+    display: unset;
+  }
+
+  &[data-show=true] {
+    & > :first-child {
+      display: block;
+    }
+
+    & > :last-child {
+      display: none;
+    }
+  }
+
+  @media (min-width: 800px) {
+    width: calc(100% + 100px) !important;
+    max-width: calc(100% + 100px) !important;
+    margin-left: -50px !important;
+    margin-right: -50px !important;
+    border-radius: 5px;
+
+    & > :first-child {
+      padding: 0 50px;
+    }
+  }
+}

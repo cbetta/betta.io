@@ -5,16 +5,23 @@ const FileSystem = [
     resolve: `gatsby-source-filesystem`,
     options: {
       name: `blog`,
-      path: `./src/blog`,
+      path: `./content/blog`,
     },
   },
   {
     resolve: `gatsby-source-filesystem`,
     options: {
       name: `images`,
-      path: `./src/images`,
+      path: `./content/images`,
     },
-  }
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `data`,
+      path: `./content/data/`,
+    },
+  },
 ]
 
 const Styling = [
@@ -143,7 +150,7 @@ const PWA = [
       background_color: "#333",
       theme_color: "#333",
       display: "minimal-ui",
-      icon: "src/images/icon.jpg",
+      icon: "content/images/icon.jpg",
     },
   },
   {
@@ -172,6 +179,10 @@ const Optimizations = [
   `gatsby-plugin-force-trailing-slashes`,
 ]
 
+const Data = [
+  `gatsby-transformer-yaml`
+]
+
 module.exports = {
   siteMetadata,
   plugins: [
@@ -180,6 +191,7 @@ module.exports = {
     ...Images,
     ...Markdown,
     ...Blog,
+    ...Data,
     ...Feed,
     ...PWA,
     ...SEO,
