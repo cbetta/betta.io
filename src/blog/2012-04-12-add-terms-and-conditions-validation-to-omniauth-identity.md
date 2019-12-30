@@ -15,7 +15,7 @@ registration form and this is what I came up with.
 For this example I assume you already have a Omniauth Identity setup much
 like explained in [this Railscast](http://railscasts.com/episodes/304-omniauth-identity).
 
-## Step 1 - app/views/identities/new.html.erb
+## Step 1 - `app/views/identities/new.html.erb`
 
 Add a checkbox to your form.
 
@@ -26,7 +26,7 @@ Add a checkbox to your form.
 </div>
 ~~~
 
-## Step 2 - app/models/identity.rb
+## Step 2 - `app/models/identity.rb`
 
 Add a attribute to your identity model and check for it to be set.
 
@@ -46,7 +46,7 @@ You should really only check this on create, otherwise this validation will
 run every time the identity gets updated, unless of course you decide to store
 the `conditions` value in the database.
 
-## Step 3 - config/initializers/omniauth.rb
+## Step 3 - `config/initializers/omniauth.rb`
 
 This is the one that took me the longest to figure out. You need to tell
 Omniauth Identity what fields to look for on signup.

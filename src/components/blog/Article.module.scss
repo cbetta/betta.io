@@ -1,50 +1,37 @@
 @import '../../css/variables.scss';
 
-.style {
+.article {
   img {
     border: 1px solid $grey;
   }
 
-  header {
-    &[data-shadow=true] {
-      box-shadow: 0px 15px 15px -15px rgba(0, 0, 0, 0.1);
+  [id]::before {
+    content: '';
+    display: block;
+    height:      160px;
+    margin-top: -160px;
+  }
 
-      h1 {
-        border: none;
-        font-size: 20px;
-      }
+  header  {
+    padding-top: 1em;
+    margin-bottom: 3em;
 
-      small {
-        font-size: 1rem;
-      }
-
-      svg {
-        font-size: 0;
-      }
+    svg {
+      font-size: 2.3rem;
+      display: none;
     }
   }
 
   h1 {
-    text-align: center;
-    padding-top: 0.5em;
-    transition: font-size 0.2s;
-
-    svg {
-      transition: font-size 0.2s;
-      text-align: center;
-      width: 100%;
-      font-size: 3rem;
-      top: 0.3rem;
-      margin-bottom: 1rem;
-      display: block;
-    }
+    margin: 0;
+    border-bottom: 0;
 
     small {
-      transition: font-size 0.2s;
       display: block;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 300;
-      margin-top: 0.5rem;
+      margin-top: 1rem;
+      color: $dark-grey;
     }
   }
 
@@ -60,26 +47,14 @@
         position: -webkit-sticky;
         background-color: $white;
         z-index: 100;
-      }
-      
-      header {
         margin-left: -80px;
         margin-right: -80px;
+        box-shadow: 0px 15px 15px -15px rgba(0, 0, 0, 0.1);
       }
 
       pre {
         margin-left: -50px;
         margin-right: -50px;
-      }
-
-      :global(.gatsby-resp-image-wrapper) {
-        margin-left: -50px !important;
-        margin-right: -50px !important;
-      }
-
-      header {
-        padding-left: 80px;
-        padding-right: 80px;
       }
 
       img,
@@ -95,19 +70,126 @@
 
       img {
         border: none;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) !important;
       }
 
-      :global(.gatsby-resp-image-wrapper) img,
-      :global(.gatsby-resp-image-wrapper) source {
-        width: calc(100% + 100px);
-        max-width: calc(100% + 100px);
-        height: auto;
+      [data-language] pre {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) !important;
+      }
+      
+      table {
+        margin-bottom: 3rem;
       }
 
       :global(.gatsby-resp-image-wrapper) {
-        margin-top: 4em;
-        margin-bottom: 7em;
+        width: calc(100% + 100px) !important;
+        max-width: calc(100% + 100px) !important;
+        margin-left: -50px !important;
+        margin-right: -50px !important;
+        height: auto !important;
+      }
+
+      :global(.gatsby-resp-image-wrapper) {
+        margin-top: 3em;
+        margin-bottom: 4em;
+      }
+
+      p > img {
+        width: calc(100% + 100px) !important;
+        max-width: calc(100% + 100px) !important;
+        height: auto;
+        margin-left: -50px !important;
+        margin-right: -50px !important;
+      }
+
+      h2,
+      h3,
+      h4 {
+        code {
+          font-size: inherit;
+        }
+      }
+    }
+  }
+
+  twitter-widget {
+    margin: 1rem auto !important;
+    display: inline-block !important;
+  }
+}
+
+.comments {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+
+  & > :first-child {
+    margin-top: 5rem;
+    display: none;
+  }
+
+  & > :last-child {
+    margin-top: 3rem;
+    cursor: pointer;
+    display: block;
+    padding: 1rem;
+    border-top: 1px solid rgba($grey, 0.3);
+
+    &:hover {
+      opacity: 0.8;
+    }
+    
+    svg {
+      fill: $black;
+      font-size: 1.4rem;
+      margin-right: 1rem;
+      position: relative;
+      top: 0.3rem;
+    }
+  }
+
+  &[data-show=true] {
+    & > :first-child {
+      display: block;
+    }
+
+    & > :last-child {
+      display: none;
+    }
+  }
+
+  @media (min-width: 800px) {
+    width: calc(100% + 100px) !important;
+    max-width: calc(100% + 100px) !important;
+    margin-left: -50px !important;
+    margin-right: -50px !important;
+    border-radius: 5px;
+
+    & > :first-child {
+      padding: 0 50px;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  @supports (display: grid) {
+    .article {
+      header {
+        display: grid;
+        grid-template-columns: 5.2rem auto;
+        grid-template-areas: "icon title";
+  
+        svg {
+          grid-area: icon;
+          display: inherit;
+          text-align: center;
+          width: 100%;
+        }
+  
+        h1 {
+          grid-area: title;
+        }
       }
     }
   }

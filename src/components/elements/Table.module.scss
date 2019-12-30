@@ -1,0 +1,12 @@
+.wrapper {
+  overflow-x: scroll;
+}
+
+@media(min-width: 800px) {
+  .wrapper {
+    width: calc(100% + 100px) !important;
+    max-width: calc(100% + 100px) !important;
+    margin-left: -50px !important;
+    margin-right: -50px !important;
+  }
+}

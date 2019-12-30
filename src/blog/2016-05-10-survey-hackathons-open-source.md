@@ -10,8 +10,7 @@ migrated: true
 
 I ran a Twitter Poll last week asking people about their involvement in Open Source.
 
-> Quick poll. Do you go to hackathons? And do you contribute to Open Source (OS) in any way?
-> &mdash; Cristiano Betta (@cbetta) [May 6, 2016](https://twitter.com/cbetta/status/728575405632933888)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Quick poll. Do you go to hackathons? And do you contribute to Open Source (OS) in any way?</p>&mdash; Cristiano Betta 🎄 (@cbetta) <a href="https://twitter.com/cbetta/status/728575405632933888?ref_src=twsrc%5Etfw">May 6, 2016</a></blockquote> 
 
 I'm really happy with the 426 responses I got! Thank you all! The results proved quite interesting and I noticed a few things:
 
@@ -22,14 +21,11 @@ In other words: there is not much of a correlation between hackathons and open s
 
 A few added some notes to their response:
 
-> [@cbetta](https://twitter.com/cbetta) voted but for some more detail: I do a lot of OS work, I don’t like hackdays as they are competitive and stressful
-> &mdash; 01101000 01101001 (@Charlotteis) [May 6, 2016](https://twitter.com/Charlotteis/status/728590824959836161)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/cbetta?ref_src=twsrc%5Etfw">@cbetta</a> voted but for some more detail: I do a lot of OS work, I don’t like hackdays as they are competitive and stressful</p>&mdash; smöl james (@varjmes) <a href="https://twitter.com/varjmes/status/728590824959836161?ref_src=twsrc%5Etfw">May 6, 2016</a></blockquote>
 
-> [@cbetta](https://twitter.com/cbetta) Only for work (hackathons). Yes.
-> &mdash; Paul Burt (@ThatMightBePaul) [May 6, 2016](https://twitter.com/ThatMightBePaul/status/728599717660086272)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/cbetta?ref_src=twsrc%5Etfw">@cbetta</a> Only for work (hackathons). Yes.</p>&mdash; Paul Burt 🍕 (@ThatMightBePaul) <a href="https://twitter.com/ThatMightBePaul/status/728599717660086272?ref_src=twsrc%5Etfw">May 6, 2016</a></blockquote>
 
-> [@cbetta](https://twitter.com/cbetta) [@jesslynnrose](https://twitter.com/jesslynnrose) Last commercial hackathon we participated in we github'd everything during the event so it'd be OSS'd before judging.
-> &mdash; Willa Riggins (@willasaywhat) [May 6, 2016](https://twitter.com/willasaywhat/status/728578970766168064)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/cbetta?ref_src=twsrc%5Etfw">@cbetta</a> <a href="https://twitter.com/jesslynnrose?ref_src=twsrc%5Etfw">@jesslynnrose</a> Last commercial hackathon we participated in we github&#39;d everything during the event so it&#39;d be OSS&#39;d before judging.</p>&mdash; Willa (@willasaywhat) <a href="https://twitter.com/willasaywhat/status/728578970766168064?ref_src=twsrc%5Etfw">May 6, 2016</a></blockquote>
 
 In the end I feel the poll left more questions than it provided answers to. Therefore I ~~am now running~~ ran a longer survey to answer some of these:
 

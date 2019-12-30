@@ -1,6 +1,16 @@
+@import '../../css/variables.scss';
+
 .style {
   display: block;
   padding: 0.5em 1em;
   margin: 1em 0 2em 0;
-  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
+  border: 1px dashed $grey;
+  background-color: $light-grey;
+  border-radius: 3px;
+
+  @media (min-width: 800px) {
+    max-width: calc(100% + 100px) !important;
+    margin-left: -50px !important;
+    margin-right: -50px !important;
+  }
 }

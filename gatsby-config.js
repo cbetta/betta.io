@@ -68,7 +68,8 @@ const Markdown = [
 ]
 
 const Blog = [
-  'blog-create-pages'
+  'blog-create-pages',
+  `gatsby-plugin-twitter`
 ]
 
 const Feed = [

@@ -12,7 +12,7 @@ One of the problems I keep running into with Puppet is that the packages I'm try
 
 I found a lot of solutions around the web but this one seems to work best for me.
 
-~~~puppet
+```puppet
 stage { 'preinstall':
   before => Stage['main']
 }
@@ -24,4 +24,4 @@ class apt_get_update {
 class { 'apt_get_update':
   stage => preinstall
 }
-~~~
+```

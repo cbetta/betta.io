@@ -25,7 +25,7 @@ const Layout = ({ site: { siteMetadata}, children }) => (
   <div className={style.content}>
     <div className={style.body}>
       <div>
-        <Link to="/">{ siteMetadata.name }</Link>
+          <Link to='/'>Home</Link>
       </div>
       <div>
         {children}

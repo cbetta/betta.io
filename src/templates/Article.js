@@ -30,6 +30,7 @@ export const query = graphql`
       frontmatter {
         title
         icon
+        date(formatString: "MMMM Do, YYYY")
       }
     }
   }
