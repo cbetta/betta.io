@@ -13,7 +13,7 @@ export default ({ children, path }) => (
     query={query}
     render={(data => (
       <>
-        <Head { ...data }/>
+        <Head { ...data } path={path} />
         <Layout { ...data } path={path}>
           { children }
         </Layout>

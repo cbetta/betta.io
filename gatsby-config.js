@@ -66,7 +66,29 @@ const Markdown = [
             noInlineHighlight: false,
           },
         },
-        "gatsby-remark-copy-linked-files"
+        "gatsby-remark-copy-linked-files",
+        {
+          resolve: `gatsby-remark-social-cards`,
+          options: {
+            title: {
+              style: "bold",
+              color: "black",
+              size: 48
+            },
+            meta: {
+              parts: [
+                "Cristiano Betta",
+                " - ",
+                { field: "date", format: "mmmm dS, yyyy"},
+              ],
+              color: 'black',
+              size: 32
+            },
+            xMargin: 30,
+            yMargin: 30,
+            background: "#fefefe"
+          }
+        }
       ],
     },
   },

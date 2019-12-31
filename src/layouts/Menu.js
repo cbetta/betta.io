@@ -33,7 +33,7 @@ const Menu = ({ path, image }) => {
           onClick={() => setShowSidebar(false)}
           onKeyDown={() => setShowSidebar(false)} 
           role='button' 
-          tabindex='0'
+          tabIndex='0'
           title='Hide sidebar'></div>
         <ul>
           <li>
