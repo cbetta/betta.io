@@ -1,0 +1,33 @@
+.menu {
+  padding: 10px 10px 0;
+  display: block;
+  width: 100%;
+  border-bottom: 1px dashed rgba(black, 0.3);
+  position: fixed;
+  background-color: white;
+  z-index: 10;
+
+  @media (min-width: 800px) {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.home {
+  color: black;
+  font-size: 1.5rem;
+
+  svg {
+    fill: black;
+  }
+
+  @media (min-width: 800px) {
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+}
+
+.homeActive {
+  display: none;
+}

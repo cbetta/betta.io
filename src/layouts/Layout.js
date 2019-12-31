@@ -1,8 +1,8 @@
 import React from "react"
-import { StaticQuery, Link, graphql } from "gatsby"
-import { MdMenu } from 'react-icons/md' 
+import { StaticQuery, graphql } from "gatsby"
 
 import Head from './Head'
+import Menu from './Menu'
 
 import style from "./Layout.module.scss"
 
@@ -24,12 +24,8 @@ export default ({ children }) => (
 
 const Layout = ({ children }) => (
   <div className={style.content}>
+    <Menu />
     <div className={style.body}>
-      <div>
-          <Link to='/'>
-            <MdMenu />
-          </Link>
-      </div>
       <div>
         {children}
       </div>

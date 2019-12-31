@@ -4,7 +4,7 @@
   display: grid;  
   grid-template-columns: 2.5rem auto;
   
-  padding: 0.7rem 0.5rem;
+  padding: 0.8rem 0.5rem;
   text-decoration: none !important;
 
   &:focus,
@@ -45,14 +45,14 @@
 
     span {
       font-family: 'Courier New', Courier, monospace;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       display: inline-block;
       background-color: white;
-      padding: 0.2rem 0.5rem;
+      padding: 0rem 0.5rem;
       border-radius: 3px;
       position: relative;
       margin-right: 0.5rem;
-      border: 1px dashed $middle-grey;
+      border: 1px dashed rgba($black, 0.4);
     }
   }
 }

@@ -1,9 +1,8 @@
 @import '../../css/variables.scss';
 
 .bio {
-  margin: 1rem 0;
+  margin: 2rem 0;
   position: relative;
-  text-align: justify;
   line-height: 2.3rem;
   color: rgba($black, 0.8);
   text-align: center;
@@ -15,6 +14,8 @@
   p {
     display: inline-block;
     text-align: justify;
+    line-height: 1.6rem;
+    padding: 0 0.6rem;
 
     a {
       font-weight: 400;
@@ -60,6 +61,11 @@
   .bio {
     header {
       margin-top: 2rem;
+    }
+
+    p {
+      text-align: left;
+      line-height: 2.3rem;
     }
 
     :global(.gatsby-image-wrapper) {

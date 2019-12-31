@@ -149,7 +149,7 @@ const PWA = [
       start_url: "/",
       background_color: "#FAFAFA",
       theme_color: "#FAFAFA",
-      display: "minimal-ui",
+      display: "standalone",
       icon: "content/images/icon.png",
     },
   },
