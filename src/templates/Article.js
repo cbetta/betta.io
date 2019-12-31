@@ -11,10 +11,10 @@ export default ({ data: { site, markdownRemark: article }, path }) => (
     <Helmet>
       <title>{article.frontmatter.title}</title>
       <meta name="description" content={ article.excerpt } />
-      <meta name="twitter:card" content="summary_large_image" />
+      {/* <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:image"
-        content={`${site.siteMetadata.siteUrl}${path}twitter-card.jpg`} />
+        content={`${site.siteMetadata.siteUrl}${path}twitter-card.jpg`} /> */}
     </Helmet>
     <Article {...article} />
   </Layout>
