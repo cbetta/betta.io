@@ -7,6 +7,16 @@
     border: 1px solid $grey;
   }
 
+  p a {
+    background-color: rgba($blue, 0.05);
+    border-bottom: 1px dashed rgba($blue, 0.2);
+    color: $black;
+    display: inline-block;
+    padding: 0 0.4rem;
+    line-height: 1.5rem;
+    
+  }
+
   [id]::before {
     content: '';
     display: block;
@@ -46,7 +56,7 @@
     margin-bottom: 1em;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 900px) {
     & {
       margin-top: 0;
 
@@ -56,8 +66,8 @@
         position: -webkit-sticky;
         background-color: $white;
         z-index: 100;
-        margin-left: -50px;
-        margin-right: -50px;
+        margin-left: -100px;
+        margin-right: -100px;
         border-bottom: 1px dashed rgba($grey, 0.4);
         margin-bottom: 3em;
         padding: 1em 50px 0;
@@ -126,6 +136,23 @@
   twitter-widget {
     margin: 1rem auto !important;
     display: inline-block !important;
+  }
+}
+
+.author {
+  color: $dark-grey !important;
+  display: none;
+  margin-right: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  position: relative;
+  top: -2px;
+  border: 1px dashed $middle-grey;
+
+  @media (min-width: 900px) {
+    display: inline-block;
   }
 }
 

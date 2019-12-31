@@ -5,6 +5,7 @@ import Disqus from "./Disqus"
 
 import { render } from '../../utils/rehype-render'
 import style from "./Article.module.scss"
+import { Link } from "gatsby"
 
 const Article = ({ 
   id,
@@ -27,6 +28,7 @@ const Article = ({
           <small>
             <Icon type={ frontmatter.icon } />
             <span className={style.date}>{ frontmatter.date }</span>
+            <Link className={style.author} to="/">Cristiano Betta</Link>
             <span className={style.ttr}>{ timeToRead } minute read</span>
           </small>
         </h1>

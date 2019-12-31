@@ -8,19 +8,15 @@
   padding: 0 1em;
   padding-top: 2rem;
 
-  a {
-    color: $blue;
-  }
-
   @media (min-width: 650px) {
     & {
       max-width: 600px;
-      padding: 4rem 0 2rem 0;
+      padding: 2rem 0 2rem 0;
       margin: 0 auto;
     }
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 900px) {
     padding-top: 0;
   }
 }

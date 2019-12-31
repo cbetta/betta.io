@@ -11,9 +11,22 @@
     display: none;
   }
 
-  @media (min-width: 800px) {
+  span {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    position: relative;
+    top: -6px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  @media (min-width: 900px) {
     border: none;
     background-color: transparent;
+  }
+
+  & > div {
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 
@@ -25,7 +38,7 @@
     fill: black;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 900px) {
     position: fixed;
     top: 1.5rem;
     left: 1.5rem;
