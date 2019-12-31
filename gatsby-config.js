@@ -11,6 +11,13 @@ const FileSystem = [
   {
     resolve: `gatsby-source-filesystem`,
     options: {
+      name: `galleries`,
+      path: `./content/galleries`,
+    },
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
       name: `images`,
       path: `./content/images`,
     },
@@ -197,12 +204,15 @@ const SEO = [
 const Optimizations = [ 
   `gatsby-plugin-netlify`,
   `gatsby-plugin-netlify-cache`,
-  // `gatsby-plugin-subfont`,
   `gatsby-plugin-force-trailing-slashes`,
 ]
 
 const Data = [
   `gatsby-transformer-yaml`
+]
+
+const Galleries = [
+  'galleries-create-pages',
 ]
 
 module.exports = {
@@ -213,6 +223,7 @@ module.exports = {
     ...Images,
     ...Markdown,
     ...Blog,
+    ...Galleries,
     ...Data,
     ...Feed,
     ...PWA,

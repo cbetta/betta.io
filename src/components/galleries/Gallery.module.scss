@@ -1,6 +1,6 @@
 @import '../../css/variables.scss';
 
-.article {
+.gallery {
   margin-top: 2rem;
 
   img {
@@ -86,7 +86,6 @@
         margin-right: -50px;
       }
 
-      img,
       pre {
         margin-top: 50px;
         margin-bottom: 50px;
@@ -147,35 +146,12 @@
   }
 }
 
-.author {
+.galleries {
   color: $black !important;
-  display: none;
+  display: inline-block;
   margin-right: 1rem;
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.8rem;
-  padding: 0.2rem 0.5rem;
-  position: relative;
-  top: -2px;
-
-  @media (min-width: 900px) {
-    display: inline-block;
-  }
-}
-
-.date {
-  margin-right: 1rem;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.8rem;
-  display: inline-block;
-  padding: 0.2rem 0.5rem;
-  position: relative;
-  top: -2px;
-}
-
-.ttr {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.8rem;
-  display: inline-block;
   padding: 0.2rem 0.5rem;
   position: relative;
   top: -2px;

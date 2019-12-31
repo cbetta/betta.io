@@ -1,0 +1,48 @@
+@import '../../css/variables.scss';
+
+.this {
+  display: grid;  
+  grid-template-columns: 2.5rem auto;
+  
+  padding: 0.8rem 0.5rem;
+  text-decoration: none !important;
+
+  &:focus,
+  &:hover {
+    background-color: #fafafa;
+  }
+
+  svg {
+    grid-column: 1 / 1;
+    grid-row: 1;
+    width: 1.2rem;
+    height: 1.2rem;
+    position: relative;
+    top: 3px;
+    color: #262F35;
+  }
+
+  header { 
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 2;
+    grid-row: 1;
+
+    & > span {
+      color: $black;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      border: none;
+      grid-column: 2 / 3 ;
+      grid-row: 1 / 1;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 0.1rem;
+    }
+  }
+
+  p {
+   color: rgba($black, 0.6);
+   font-size: 0.8em;
+  }
+}

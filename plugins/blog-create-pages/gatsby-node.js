@@ -50,7 +50,11 @@ exports.createPages = async ({ graphql, actions }) => {
 }
 
 const query = async (graphql) => graphql(`{
-  posts: allMarkdownRemark {
+  posts: allMarkdownRemark(
+    filter: {
+      fileAbsolutePath: { regex: "content/blog/" }
+    }
+  ) {
     nodes {
       fields {
         slug

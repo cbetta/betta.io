@@ -30,6 +30,7 @@ export const query = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
         frontmatter: { draft: { ne: true } }
+        fileAbsolutePath: { regex: "content/blog/" }
       }
     ) 
     {
