@@ -41,7 +41,7 @@
       font-size: 1rem;
       font-weight: 300;
       margin-top: 1rem;
-      color: $dark-grey;
+      color: $black;
     }
 
     svg {
@@ -140,7 +140,7 @@
 }
 
 .author {
-  color: $dark-grey !important;
+  color: $black !important;
   display: none;
   margin-right: 1rem;
   font-family: 'Courier New', Courier, monospace;
@@ -149,7 +149,7 @@
   border-radius: 3px;
   position: relative;
   top: -2px;
-  border: 1px dashed $middle-grey;
+  border: 1px dashed $dark-grey;
 
   @media (min-width: 900px) {
     display: inline-block;
@@ -165,7 +165,7 @@
   border-radius: 3px;
   position: relative;
   top: -2px;
-  border: 1px dashed $middle-grey;
+  border: 1px dashed $dark-grey;
 }
 
 .ttr {
@@ -176,5 +176,5 @@
   border-radius: 3px;
   position: relative;
   top: -2px;
-  border: 1px dashed $middle-grey;
+  border: 1px dashed $dark-grey;
 }
