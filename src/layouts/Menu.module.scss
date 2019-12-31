@@ -1,11 +1,15 @@
 .menu {
-  padding: 10px 10px 0;
+  padding: 10px 15px 0;
   display: block;
   width: 100%;
-  border-bottom: 1px dashed rgba(black, 0.3);
+  border-bottom: 1px dashed rgba(black, 0.1);
   position: fixed;
   background-color: white;
   z-index: 10;
+
+  &[data-path="/"] {
+    display: none;
+  }
 
   @media (min-width: 800px) {
     border: none;

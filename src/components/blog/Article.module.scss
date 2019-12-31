@@ -1,6 +1,8 @@
 @import '../../css/variables.scss';
 
 .article {
+  margin-top: 2rem;
+
   img {
     border: 1px solid $grey;
   }
@@ -46,6 +48,8 @@
 
   @media (min-width: 800px) {
     & {
+      margin-top: 0;
+
       header {
         top: 0;
         position: sticky;

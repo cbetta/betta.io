@@ -8,13 +8,13 @@ import style from "./Layout.module.scss"
 
 import 'typeface-roboto'
 
-export default ({ children }) => (
+export default ({ children, path }) => (
   <StaticQuery
     query={query}
     render={(data => (
       <>
         <Head { ...data }/>
-        <Layout { ...data }>
+        <Layout { ...data } path={path}>
           { children }
         </Layout>
       </>
@@ -22,9 +22,9 @@ export default ({ children }) => (
   />
 )
 
-const Layout = ({ children }) => (
+const Layout = ({ children, path }) => (
   <div className={style.content}>
-    <Menu />
+    <Menu path={path} />
     <div className={style.body}>
       <div>
         {children}

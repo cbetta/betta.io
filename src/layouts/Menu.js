@@ -4,8 +4,8 @@ import { Link } from "gatsby"
 
 import style from './Menu.module.scss'
 
-const Menu = () => (
-  <div className={style.menu}>
+const Menu = ({ path }) => (
+  <div className={style.menu} data-path={path}>
     <Link to='/' className={style.home} activeClassName={style.homeActive} title='Home'>
       <MdHome />
     </Link>

@@ -1,7 +1,7 @@
 @import '../../css/variables.scss';
 
 .bio {
-  margin: 2rem 0;
+  margin: 0;
   position: relative;
   line-height: 2.3rem;
   color: rgba($black, 0.8);
@@ -59,6 +59,8 @@
 
 @media(min-width: 800px) {
   .bio {
+    margin: 2rem 0;
+
     header {
       margin-top: 2rem;
     }

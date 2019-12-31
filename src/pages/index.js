@@ -5,9 +5,8 @@ import Layout from "../layouts/Layout"
 import List from "../components/blog/List"
 import Bio from "../components/blog/Bio"
 
-export default ({ data }) => (
-  <Layout>
-    { console.log(data)}
+export default ({ data, path }) => (
+  <Layout path={path}>
     <Bio bio={data.bio} image={data.image} />
     <List articles={data.articles.nodes} />
   </Layout>
