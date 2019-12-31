@@ -12,7 +12,7 @@ export default ({ url, conference, conference_url, title, country, date, icon })
   useEffect(() => {
     const isExpired = Date.parse(date) <= Date.now()
     setExpired(isExpired)
-  }, [])
+  }, [date])
 
   return (
     <Link 

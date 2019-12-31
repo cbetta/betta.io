@@ -85,3 +85,21 @@
     }
   }
 }
+
+.icons {
+  margin: 2rem 0 0 0;
+  font-size: 1.5rem;
+
+  a {
+    margin-right: 1rem;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  svg {
+    color: black;
+    opacity: 0.6;
+  }
+}

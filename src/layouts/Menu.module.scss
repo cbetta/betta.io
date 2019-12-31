@@ -67,6 +67,12 @@
   border-radius: 10px;
   top: 3px;
   display: none !important;  
+
+  filter: grayscale(100%);
+
+  &:hover {
+    filter: grayscale(0%);
+  }
 }
 
 [data-path="/"] .avatar {
