@@ -1,0 +1,77 @@
+@import '../../css/variables.scss';
+
+.item {
+  display: grid;  
+  grid-template-columns: 2.5rem auto;
+  
+  padding: 0.8rem 0.5rem;
+  text-decoration: none !important;
+
+  &[data-expired=false] {
+    background-color: $yellow;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: #fafafa;
+  }
+
+  svg {
+    grid-column: 1 / 1;
+    grid-row: 1;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #262F35;
+  }
+
+  header { 
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 2;
+    grid-row: 1;
+
+    & > span {
+      color: $black;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      border: none;
+      grid-column: 2 / 3 ;
+      grid-row: 1 / 1;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 0.3rem;
+    }
+
+    img {
+      border: 1px solid rgba(black, 0.2);
+      position: relative;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      top: 1px;
+      margin-left: 0.5rem;
+      height: 10px;
+    }
+  }
+
+  small {
+    font-size: 0.8em;
+    color: #262F35;
+
+    span {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.8rem;
+      display: inline-block;
+      background-color: white;
+      padding: 0rem 0.5rem;
+      border-radius: 3px;
+      position: relative;
+      margin-right: 0.5rem;
+      border: 1px dashed rgba($black, 0.4);
+    }
+  }
+}
+
+.title {
+  font-size: 1rem !important;
+}

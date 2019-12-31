@@ -19,6 +19,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const { data } = await query(graphql)  
+  
   data.posts.nodes.forEach(node => {
     createPage({
       path: node.fields.slug,
@@ -26,6 +27,24 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         slug: node.fields.slug,
       },
+    })
+
+
+    // also create all index pages
+    const parts = node.fields.slug.replace('/blog/', '').split('/')
+    parts.pop()
+
+    let newSlug = '/blog/'
+    parts.forEach(part => {
+      newSlug += `${part}/`
+
+      createPage({
+        path: newSlug,
+        component: path.resolve(`./src/templates/ArticlesByDate.js`),
+        context: {
+          slug: newSlug,
+        },
+      })
     })
   })
 }

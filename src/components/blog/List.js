@@ -3,9 +3,9 @@ import React from "react"
 import ListItem from "./ListItem"
 import { style } from "./List.module.scss"
 
-export default ({ articles }) => (
+export default ({ articles, title }) => (
   <div className={ style }>
-    <header><span>Highlights from the blog</span></header>
+    <header><span>{ title || "Highlights from the blog" }</span></header>
 
     { articles.map(article => (
       <ListItem {...article} key={article.id} />

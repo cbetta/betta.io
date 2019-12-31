@@ -32,6 +32,10 @@
   @media (min-width: 900px) {
     border: none;
     background-color: transparent;
+
+    span {
+      display: none;
+    }
   }
 
   & > div {

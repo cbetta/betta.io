@@ -1,8 +1,9 @@
 import React from "react"
-import * as Icons from 'react-icons/fi' 
+import * as FIIcons from 'react-icons/fi' 
+import * as FAIcons from 'react-icons/fa' 
 
 export default ({ type }) => {
-  let Component = Icons[`Fi${type}`]
-  if (Component === undefined) { Component = Icons['FiCode'] }
+  let Component = FIIcons[`Fi${type}`] || FAIcons[`Fa${type}`]
+  if (Component === undefined) { Component = FIIcons['FiCode'] }
   return <Component />
 }
