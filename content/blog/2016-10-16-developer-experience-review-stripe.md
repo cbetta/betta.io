@@ -6,7 +6,7 @@ icon: Instagram
 migrated: true
 ---
 
-This is the third in a series of articles focussing on reviewing [Developer Onboarding](https://betta.io/blog/categories/developer-onboarding/). In this post I'm looking at the brand new design and onboarding offered by [Stripe](https://stripe.com/).
+This is the third in a series of articles focussing on reviewing [Developer Onboarding](/blog/categories/developer-onboarding/). In this post I'm looking at the brand new design and onboarding offered by [Stripe](https://stripe.com/).
 
 ## Criteria
 

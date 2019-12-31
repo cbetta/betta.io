@@ -6,7 +6,7 @@ icon: Instagram
 migrated: true
 ---
 
-This is the fourth in a series of articles focussing on reviewing [Developer Onboarding](https://betta.io/blog/categories/developer-onboarding/). In this post I'm looking at the onboarding offered by [Twilio](https://twilio.com/).
+This is the fourth in a series of articles focussing on reviewing [Developer Onboarding](/blog/categories/developer-onboarding/). In this post I'm looking at the onboarding offered by [Twilio](https://twilio.com/).
 
 ## Criteria
 

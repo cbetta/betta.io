@@ -32,9 +32,9 @@ A lot harder.
 
 So, who am I?
 
-My name is Cristiano. I am Developer Experience designer who used to work at PayPal and Braintree. I am a big fan of great Developer Experiences, and as such, I like to write about them. On my site, I've looked at companies like [Stripe](https://betta.io/blog/2016/10/16/developer-experience-review-stripe/), [GitHub](https://betta.io/blog/2017/04/12/developer-experience-review-github/) and others, and looked at how they take a developer from first signup all the way to their first API call.
+My name is Cristiano. I am Developer Experience designer who used to work at PayPal and Braintree. I am a big fan of great Developer Experiences, and as such, I like to write about them. On my site, I've looked at companies like [Stripe](/blog/2016/10/16/developer-experience-review-stripe/), [GitHub](/blog/2017/04/12/developer-experience-review-github/) and others, and looked at how they take a developer from first signup all the way to their first API call.
 
-Additionally, I also like to look at publicly available software that these companies produce, like their [SDKs](https://betta.io/blog/2017/02/07/developer-experience-github-readmes/), samples and documentation.
+Additionally, I also like to look at publicly available software that these companies produce, like their [SDKs](/blog/2017/02/07/developer-experience-github-readmes/), samples and documentation.
 
 ![Slide](../images/slides/sins/sins-011.jpg)
 

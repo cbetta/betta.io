@@ -90,7 +90,7 @@ Along the way it is important to provide the developer with all the tools they n
 
 As I said, a __Get Started__ guide is usually combined with the developer onboarding experience, __signing up__ a new developer to your product. It is extremely important for this process to take a developer all the way from __zero__ to __hero__. Onboarding is integral to the __Get Started__ guide and should therefore not just be about signing up a developer, but truly about getting them working on your platform.
 
-As the onboarding is part of that __Get Started__ experience it's important to resume this flow after signup has been completed. Many successful developer products provide __first-use experiences__ for users new to the platform. A great example is Pusher [who provide a new developer with an excellent first-use experience](https://betta.io/blog/2016/08/31/developer-experience-review-pusher/) that asks new developers to set up their first application, pick their preferred languages, and then provides them with next steps in those languages.
+As the onboarding is part of that __Get Started__ experience it's important to resume this flow after signup has been completed. Many successful developer products provide __first-use experiences__ for users new to the platform. A great example is Pusher [who provide a new developer with an excellent first-use experience](/blog/2016/08/31/developer-experience-review-pusher/) that asks new developers to set up their first application, pick their preferred languages, and then provides them with next steps in those languages.
 
 ## Complex Guidance
 

@@ -6,7 +6,7 @@ icon: Instagram
 migrated: true
 ---
 
-<Message> This is the fifth in a series of articles focussing on reviewing [Developer API Onboarding](https://betta.io/blog/categories/developer-onboarding/). In this post I'm looking at the API onboarding offered by [GitHub](https://github.com/). </Message>
+<Message> This is the fifth in a series of articles focussing on reviewing [Developer API Onboarding](/blog/categories/developer-onboarding/). In this post I'm looking at the API onboarding offered by [GitHub](https://github.com/). </Message>
 
 ## Criteria
 

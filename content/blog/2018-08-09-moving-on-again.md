@@ -6,7 +6,7 @@ icon: Inbox
 migrated: true
 ---
 
-About two and a half years ago [I wrote about moving on](https://betta.io/blog/2016/03/09/moving-on/) from my role at PayPal, a team I had been with for 3 years, build up a lot of experience at and met a lot of people at who I still call close friends to this day. 
+About two and a half years ago [I wrote about moving on](/blog/2016/03/09/moving-on/) from my role at PayPal, a team I had been with for 3 years, build up a lot of experience at and met a lot of people at who I still call close friends to this day. 
 
 At the time, I didn’t have a clear idea of what I would be doing next and my short terms goal was to “go do some contracting”. Oh, what an understatement that was.
 

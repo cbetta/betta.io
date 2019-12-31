@@ -12,7 +12,7 @@ const Menu = ({ path }) => {
     <>
       <div className={style.menu} data-path={path}>
         <div>
-          <button className={style.toggle} onClick={() => setShowSidebar(true)}>
+          <button className={style.toggle} onClick={() => setShowSidebar(true)} title='Show sidebar'>
             <MdMenu />
           </button>
           <Link 
@@ -26,7 +26,12 @@ const Menu = ({ path }) => {
         </div>
       </div>
       <div data-active={showSidebar} className={style.sidebar}>
-        <div onClick={() => setShowSidebar(false)}></div>
+        <div 
+          onClick={() => setShowSidebar(false)}
+          onKeyDown={() => setShowSidebar(false)} 
+          role='button' 
+          tabindex='0'
+          title='Hide sidebar'></div>
         <ul>
           <li>
             <Link to='/' 

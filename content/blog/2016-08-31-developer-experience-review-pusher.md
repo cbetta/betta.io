@@ -6,7 +6,7 @@ icon: Instagram
 migrated: true
 ---
 
-This is the second in a series of articles focussing on reviewing [Developer Onboarding](https://betta.io/blog/categories/developer-onboarding/). Have a look at the first post reviewing [SendGrid](https://betta.io/blog/2016/08/29/developer-experience-review-sendgrid/).
+This is the second in a series of articles focussing on reviewing [Developer Onboarding](/blog/categories/developer-onboarding/). Have a look at the first post reviewing [SendGrid](/blog/2016/08/29/developer-experience-review-sendgrid/).
 
 ## Criteria
 
