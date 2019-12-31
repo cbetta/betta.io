@@ -58,8 +58,8 @@ const Markdown = [
           resolve: `gatsby-remark-images`,
           options: {
             maxWidth: 600,
-            // withWebp: true,
-            // tracedSVG: true,
+            withWebp: true,
+            tracedSVG: true,
             quality: 50
           },
         },
