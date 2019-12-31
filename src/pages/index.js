@@ -7,7 +7,8 @@ import Bio from "../components/blog/Bio"
 
 export default ({ data }) => (
   <Layout>
-    <Bio bio={data.bio} />
+    { console.log(data)}
+    <Bio bio={data.bio} image={data.image} />
     <List articles={data.articles.nodes} />
   </Layout>
 )
@@ -18,6 +19,13 @@ export const query = graphql`
     bio: biosYaml {
       title
       description
+    }
+    image: file(relativePath: { eq: "cbetta.jpg" }) {
+      childImageSharp {
+        fixed(width: 150) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
     }
     articles: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }

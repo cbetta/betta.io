@@ -2,8 +2,30 @@
 
 .bio {
   margin: 1rem 0;
-  font-size: 1.1em;
   position: relative;
+  text-align: justify;
+  line-height: 2.3rem;
+  color: rgba($black, 0.8);
+  text-align: center;
+
+  :global(.gatsby-image-wrapper) {
+    display: none !important;
+  }
+
+  p {
+    display: inline-block;
+    text-align: justify;
+
+    a {
+      font-weight: 400;
+      color: $black;
+      border-bottom: 1px dashed rgba($black, 0.5);
+    }
+
+    strong {
+      font-weight: 400;
+    }
+  }
 
   & > header {
     text-align: center;
@@ -29,7 +51,29 @@
       border-bottom: 1px dashed rgba($grey, 0.4);
       width: 100%;
       left: 0;
-      top: 0.90rem;
+      margin-top: 1.05rem;
+    }
+  }
+}
+
+@media(min-width: 800px) {
+  .bio {
+    header {
+      margin-top: 2rem;
+    }
+
+    :global(.gatsby-image-wrapper) {
+      display: inline-block !important;
+    }
+
+    img {
+      filter: grayscale(100%);
+      border: 3px solid black;
+      border-radius: 75px;
+
+      &:hover {
+        filter: grayscale(0%);
+      }
     }
   }
 }
