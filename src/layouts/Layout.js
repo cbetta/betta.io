@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticQuery, Link, graphql } from "gatsby"
+import { MdMenu } from 'react-icons/md' 
 
 import Head from './Head'
 
@@ -21,11 +22,13 @@ export default ({ children }) => (
   />
 )
 
-const Layout = ({ site: { siteMetadata}, children }) => (
+const Layout = ({ children }) => (
   <div className={style.content}>
     <div className={style.body}>
       <div>
-          <Link to='/'>Home</Link>
+          <Link to='/'>
+            <MdMenu />
+          </Link>
       </div>
       <div>
         {children}
