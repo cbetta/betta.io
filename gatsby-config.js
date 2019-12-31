@@ -202,8 +202,13 @@ const SEO = [
 ]
 
 const Optimizations = [ 
+  {
+    resolve: `gatsby-plugin-netlify-cache`,
+    options: {
+      cachePublic: true
+    }
+  },
   `gatsby-plugin-netlify`,
-  `gatsby-plugin-netlify-cache`,
   `gatsby-plugin-force-trailing-slashes`,
 ]
 
