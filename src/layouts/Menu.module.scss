@@ -7,12 +7,6 @@
   background-color: white;
   z-index: 10;
 
-  &[data-path="/"] {
-    & > div > span {
-      display: none;
-    }
-  }
-
   sidebar {
     position: static;
   }
@@ -33,6 +27,12 @@
     border: none;
     background-color: transparent;
 
+    &[data-path="/"] {
+      & > div > span {
+        display: none;
+      }
+    }
+    
     span {
       display: none;
     }

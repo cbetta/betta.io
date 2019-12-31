@@ -35,6 +35,7 @@
     text-transform: uppercase;
     font-size: 1.3rem;
     z-index: 0;
+    display: none;
 
     span {
       display: inline-block;
@@ -63,6 +64,7 @@
 
     header {
       margin-top: 2rem;
+      display: block;
     }
 
     p {
