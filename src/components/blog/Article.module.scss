@@ -12,8 +12,8 @@
     border-bottom: 1px dashed rgba($blue, 0.2);
     color: $black;
     display: inline-block;
-    padding: 0 0.4rem;
-    line-height: 1.5rem;
+    padding: 0 0.2rem;
+    line-height: 1.3rem;
   }
 
   [id]::before {
@@ -149,11 +149,8 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.8rem;
   padding: 0.2rem 0.5rem;
-  border-radius: 3px;
   position: relative;
   top: -2px;
-  border: 1px dashed $dark-grey;
-  background-color: rgba($blue, 0.03);;
 
   @media (min-width: 900px) {
     display: inline-block;
@@ -166,11 +163,8 @@
   font-size: 0.8rem;
   display: inline-block;
   padding: 0.2rem 0.5rem;
-  border-radius: 3px;
   position: relative;
   top: -2px;
-  border: 1px dashed $dark-grey;
-  background-color: rgba($blue, 0.03);;
 }
 
 .ttr {
@@ -178,9 +172,6 @@
   font-size: 0.8rem;
   display: inline-block;
   padding: 0.2rem 0.5rem;
-  border-radius: 3px;
   position: relative;
   top: -2px;
-  border: 1px dashed $dark-grey;
-  background-color: rgba($blue, 0.03);
 }

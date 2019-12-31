@@ -12,7 +12,7 @@ export default ({ timeToRead, fields, frontmatter }) => (
         { frontmatter.title }
       </span>
       <small>
-        <span>{ frontmatter.date  }</span>
+        <span>{ frontmatter.date  } -</span>
         <span>{ timeToRead } minute read</span>
       </small>
     </header>

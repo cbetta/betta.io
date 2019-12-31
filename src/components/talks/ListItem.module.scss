@@ -19,9 +19,11 @@
   svg {
     grid-column: 1 / 1;
     grid-row: 1;
-    width: 1.5rem;
-    height: 1.5rem;
-    color: #262F35;
+    width: 1.2rem;
+    height: 1.2rem;
+    position: relative;
+    top: 3px;
+    color: rgba(black, 0.8);
   }
 
   header { 
@@ -63,11 +65,9 @@
       font-size: 0.8rem;
       display: inline-block;
       background-color: white;
-      padding: 0rem 0.5rem;
-      border-radius: 3px;
+      padding: 0;
       position: relative;
-      margin-right: 0.5rem;
-      border: 1px dashed rgba($black, 0.4);
+      margin-right: 2rem;
       margin-bottom: 0.3rem;
     }
   }

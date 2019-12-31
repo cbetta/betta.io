@@ -12,7 +12,7 @@
   date: "2019-03-09"
   conference: DevRelCon Tokyo
   conference_url: https://tokyo-2019.devrel.net/
-  icon: Bullhorn
+  icon: PlayCircle
   country: jp
   url: https://tokyo-2019.devrel.net/
 
@@ -20,7 +20,7 @@
   date: "2018-11-09"
   conference: API The Docs, London
   conference_url: https://apithedocs.org/london2018
-  icon: University
+  icon: Briefcase
   country: gb
   url: https://apithedocs.org/london2018
 
@@ -28,7 +28,7 @@
   date: "2018-11-08"
   conference: DevRelCon, London
   conference_url: https://london-2018.devrel.net/
-  icon: Comment
+  icon: MessageSquare
   country: gb
   url: https://london-2018.devrel.net/
 
@@ -36,7 +36,7 @@
   date: "2018-11-06"
   conference: DevRelCon, London
   conference_url: https://london-2018.devrel.net/
-  icon: Comments
+  icon: MessageSquare
   country: gb
   url: https://london-2018.devrel.net/
 
@@ -44,7 +44,7 @@
   date: "2018-09-24"
   conference: API Strategy & Practice, Nashville
   conference_url: https://events.linuxfoundation.org/events/apistrat-2018/program/schedule/
-  icon: University
+  icon: Briefcase
   country: us
   url: https://events.linuxfoundation.org/events/apistrat-2018/program/keynote_speakers/
 
@@ -52,7 +52,7 @@
   date: "2018-09-03"
   conference: APIdays, Melbourne
   conference_url: https://www.apidays.com.au
-  icon: University
+  icon: Briefcase
   country: au
   url: /blog/2017/11/10/the-seven-sins-of-developer-experience/
 
@@ -60,7 +60,7 @@
   date: "2018-09-24"
   conference: API Strategy & Practice, Nashville
   conference_url: https://events.linuxfoundation.org/events/apistrat-2018/program/schedule/
-  icon: University
+  icon: Briefcase
   country: us
   url: https://events.linuxfoundation.org/events/apistrat-2018/program/keynote_speakers/
 
@@ -69,14 +69,14 @@
   date: "2018-07-16"
   conference: London Web Standards, London
   conference_url: http://londonwebstandards.org/
-  icon: SpaceShuttle
+  icon: Box
   country: gb
 
 - title: DX & Events Workshop
   date: "2018-06-06"
   conference: DevXcon, San Francisco
   conference_url: https://2018.devxcon.com/
-  icon: Comments
+  icon: MessageSquare
   country: us
   url: https://2018.devxcon.com/
 
@@ -85,7 +85,7 @@
   date: "2018-05-08"
   conference: Codemotion, Amsterdam
   conference_url: https://amsterdam2018.codemotionworld.com/
-  icon: SpaceShuttle
+  icon: Box
   country: nl
 
 - title: 'Developer Experience: The LEGO Way'
@@ -93,14 +93,14 @@
   date: "2018-04-22"
   conference: DevRelCon China, Shanghai
   conference_url: https://devrelcon.net/china/
-  icon: SpaceShuttle
+  icon: Box
   country: cn
 
 - title: The Seven Deadly Sins of Developer Onboarding
   date: "2018-01-30"
   conference: APIDays, Paris
   conference_url: http://www.apidays.io/events/paris-2017
-  icon: University
+  icon: Briefcase
   country: fr
   url: /blog/2017/11/10/the-seven-sins-of-developer-experience/
 
@@ -108,7 +108,7 @@
   date: "2018-01-30"
   conference: APIDays, Paris
   conference_url: http://www.apidays.io/events/paris-2017
-  icon: University
+  icon: Briefcase
   country: fr
   url: http://www.apidays.io/events/paris-2017
 
@@ -124,7 +124,7 @@
   date: "2017-12-06"
   conference: DevRelCon, London
   conference_url: https://london-2017.devrel.net/
-  icon: Comment
+  icon: MessageSquare
   country: gb
   url: https://london-2017.devrel.net/
 
@@ -132,7 +132,7 @@
   date: "2017-12-07"
   conference: DevRelCon, London
   conference_url: https://london-2017.devrel.net/
-  icon: Comments
+  icon: MessageSquare
   country: gb
   url: https://london-2017.devrel.net/
 
@@ -140,7 +140,7 @@
   date: "2017-12-04"
   conference: API The Docs, Amsterdam
   conference_url: http://apithedocs.org/
-  icon: University
+  icon: Briefcase
   country: nl
   url: /blog/2017/11/10/the-seven-sins-of-developer-experience/
 
@@ -148,7 +148,7 @@
   date: "2017-10-20"
   conference: Hackference, Birmingham
   conference_url: https://2017.hackference.co.uk/
-  icon: Comment
+  icon: MessageSquare
   country: gb
   url: https://2017.hackference.co.uk/
 
@@ -156,7 +156,7 @@
   date: "2017-07-29"
   conference: DevRelCon, Tokyo
   conference_url: https://tokyo-2017.devrel.net/
-  icon: University
+  icon: Briefcase
   country: jp
   url: /blog/2017/11/10/the-seven-sins-of-developer-experience/
 
@@ -164,7 +164,7 @@
   date: "2017-07-28"
   conference: DevRelCon, Tokyo
   conference_url: https://tokyo-2017.devrel.net/
-  icon: Comments
+  icon: MessageSquare
   country: jp
   url: https://tokyo-2017.devrel.net/
 
@@ -189,7 +189,7 @@
   date: "2017-05-23"
   conference: DevXCon, San Francisco
   conference_url: https://2017.devxcon.com/
-  icon: Comments
+  icon: MessageSquare
   country: us
 
 - title: The Seven Deadly Sins of Developer Onboarding
@@ -197,7 +197,7 @@
   date: "2017-04-19"
   conference: API Strategy & Tactics, London
   conference_url: https://www.meetup.com/API-Strategy-Tactics-London/events/237546222/
-  icon: University
+  icon: Briefcase
   country: gb
 
 - title: 'Developer Experience: The LEGO Way'
@@ -205,7 +205,7 @@
   date: "2017-04-10"
   conference: Contentful Dev Talks, Berlin
   conference_url: https://www.contentful.com/
-  icon: SpaceShuttle
+  icon: Box
   country: de
 
 - title: The Seven Deadly Sins of Developer Onboarding
@@ -213,7 +213,7 @@
   date: "2017-03-17"
   conference: The IDEs of March Conference, Reading
   conference_url: https://www.theidesofmarch.net/
-  icon: University
+  icon: Briefcase
   country: gb
 
 - title: 'Developer Experience: The LEGO Way'
@@ -221,7 +221,7 @@
   date: "2017-02-28"
   conference: APIDays, Sydney
   conference_url: http://au.apidays.io/
-  icon: SpaceShuttle
+  icon: Box
   country: au
 
 - title: 'Developer Experience: The LEGO Way'
@@ -229,7 +229,7 @@
   date: "2016-12-13"
   conference: APIDays, Paris
   conference_url: http://www.apidays.io/events/paris-2016
-  icon: SpaceShuttle
+  icon: Box
   country: gb
 
 - title: A brick by brick guide to developer experience
@@ -237,7 +237,7 @@
   date: "2016-12-07"
   conference: DevRelCon, London
   conference_url: https://london-2016.devrel.net
-  icon: SpaceShuttle
+  icon: Box
   country: gb
 
 - title: Hackathon Workshop
@@ -245,7 +245,7 @@
   date: "2016-12-06"
   conference: DevRelCon, London
   conference_url: https://london-2016.devrel.net
-  icon: Comments
+  icon: MessageSquare
   country: gb
 
 - title: Narrator / MC
@@ -253,7 +253,7 @@
   date: "2016-10-21"
   conference: Hackference, Birmingham
   conference_url: http://2016.hackference.co.uk/
-  icon: Comment
+  icon: MessageSquare
   country: gb
 
 - title: 'Lightning Talk: Let''s Forget About Hackathons'
@@ -261,7 +261,7 @@
   date: "2016-09-02"
   conference: Hackcon EU, Eindhoven
   conference_url: https://hackcon.mlh.io/eu/
-  icon: Bolt
+  icon: CloudLightning
   country: nl
 
 - title: Lightweight JS with Riot, Redux and Rollup
@@ -325,7 +325,7 @@
   date: "2015-06-06"
   conference: Techsylvania, Cluj
   conference_url: http://www.techsylvania.co/
-  icon: Vial
+  icon: Cpu
   country: ro
 
 - title: A Credit Card Walks Into A Bar
@@ -349,7 +349,7 @@
   date: "2015-03-22"
   conference: RubyConfBY, Minsk
   conference_url: http://rubyconference.by/2015/
-  icon: Vial
+  icon: Cpu
   country: by
 
 - title: Hackathons on Rails
@@ -357,7 +357,7 @@
   date: "2015-03-22"
   conference: RubyConfLT, Vilnius
   conference_url: http://2015.rubyconf.lt/
-  icon: Vial
+  icon: Cpu
   country: lt
 
 - title: A Credit Card Walks Into A Bar
@@ -373,7 +373,7 @@
   date: "2014-09-19"
   conference: Hackference, Birmingham
   conference_url: http://2014.hackference.co.uk/
-  icon: Vial
+  icon: Cpu
   country: gb
 
 - title: Hardware and the commerce revolution
@@ -389,7 +389,7 @@
   date: "2014-05-13"
   conference: WIP Factory, London
   conference_url: http://www.wipfactory.com/
-  icon: Vial
+  icon: Cpu
   country: gb
 
 - title: 'Hackathons: Best Practices From experience'
@@ -397,7 +397,7 @@
   date: "2014-05-05"
   conference: APIDays, Berlin
   conference_url: http://www.wipfactory.com/
-  icon: Vial
+  icon: Cpu
   country: de
 
 - title: The state of packaged web apps

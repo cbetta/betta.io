@@ -1,7 +1,7 @@
 @import '../../css/variables.scss';
 
 .bio {
-  margin: 3rem 0 0 0;
+  margin: 4rem 0 0 0;
   position: relative;
   line-height: 2.3rem;
   color: rgba($black, 0.8);
@@ -22,8 +22,8 @@
       border-bottom: 1px dashed rgba($blue, 0.2);
       color: $black;
       display: inline-block;
-      padding: 0 0.4rem;
-      line-height: 1.5rem;
+      padding: 0 0.2rem;
+      line-height: 1.3rem;
     }
 
     strong {
