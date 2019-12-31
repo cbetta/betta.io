@@ -8,14 +8,24 @@
   z-index: 10;
 
   &[data-path="/"] {
-    display: none;
+    & > div > span {
+      display: none;
+    }
+  }
+
+  sidebar {
+    position: static;
   }
 
   span {
-    margin-left: 1rem;
-    font-size: 1.2rem;
-    position: relative;
-    top: -6px;
+    text-align: center;
+    font-size: 1rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    top: 0.8rem;
     font-family: 'Courier New', Courier, monospace;
   }
 
@@ -33,6 +43,8 @@
 .home {
   color: black;
   font-size: 1.5rem;
+  z-index: 1;
+  position: relative;
 
   svg {
     fill: black;
@@ -40,11 +52,144 @@
 
   @media (min-width: 900px) {
     position: fixed;
-    top: 1.5rem;
+    top: 1rem;
     left: 1.5rem;
   }
 }
 
 .homeActive {
   display: none;
+}
+
+.toggle {
+  border: none;
+  padding: 0;
+  color: black;
+  font-size: 1.3rem;
+  margin: 0;
+  margin-left: 0.5rem;
+  float: right;
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+  z-index: 1;
+  position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  svg {
+    fill: black;
+  }
+
+  @media (min-width: 900px) {
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+  }
+}
+
+.sidebar {
+  div {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 200;
+    opacity: 0.2;
+    display: none;
+    cursor: pointer;
+  }
+
+  & > ul {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    z-index: 201;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    right: -400px;
+    transition: all 0.3s ease-in-out;
+    padding: 1rem 0;
+    max-width: 100%;
+
+    li:first-child {
+      border-top: 1px dashed rgba(black, 0.2);
+    }
+
+    li {
+      margin: 0;
+      border-bottom: 1px dashed rgba(black, 0.2);
+    }
+
+    span {
+      display: block;
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      margin-top: 0.5rem;
+
+      svg {
+        margin-right: 0.5rem;
+        position: relative;
+        top: 2px;
+      }
+    }
+
+    a {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: black;
+      font-weight: 500;
+      text-decoration: none;
+
+      svg {
+        margin-right: 0.5rem;
+        position: relative;
+        top: 2px;
+      }
+
+      &:hover {
+        background-color: darken(white, 5%);
+      }
+    }
+  }
+
+
+  & > ul ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    border: none;
+
+    & a {
+      font-weight: 300;
+    }
+
+    li, 
+    li:first-child {
+      border: none;
+    }
+
+    svg {
+      margin-right: 0.7rem;
+    }
+  }
+
+  &[data-active=true] {
+    ul {
+      right: 0;
+    }
+
+    div {
+      display: block;
+    }
+  }
 }
