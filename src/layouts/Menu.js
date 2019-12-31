@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { StaticQuery, graphql } from "gatsby"
-import { MdHome, MdMenu, MdWork, MdMoreVert, MdFormatQuote, MdWeb } from 'react-icons/md' 
+import { FiBook, FiHome, FiMenu, FiBriefcase, FiGlobe, FiMoreVertical } from 'react-icons/fi' 
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
@@ -15,7 +15,7 @@ const Menu = ({ path, image }) => {
       <div className={style.menu} data-path={path}>
         <div>
           <button className={style.toggle} onClick={() => setShowSidebar(true)} title='Show sidebar'>
-            <MdMenu />
+            <FiMenu />
           </button>
           <Img fixed={image.fixed} className={style.avatar} />
           <Link 
@@ -23,7 +23,7 @@ const Menu = ({ path, image }) => {
             className={style.home} 
             activeClassName={style.homeActive} 
             title='Home'>
-            <MdHome />
+            <FiHome />
           </Link>
           <span>Cristiano Betta</span>
         </div>
@@ -39,20 +39,20 @@ const Menu = ({ path, image }) => {
           <li>
             <Link to='/' 
               onClick={() => setShowSidebar(false)}>
-                <MdHome />
+                <FiHome />
                 Home
             </Link>
           </li>
           <li>
             <Link to='/blog' 
               onClick={() => setShowSidebar(false)}>
-                <MdFormatQuote />
+                <FiBook />
                 Blog
             </Link>
           </li>
           <li>
             <span>
-              <MdWork />
+              <FiBriefcase />
               Work
             </span>
 
@@ -60,21 +60,21 @@ const Menu = ({ path, image }) => {
               <li>
                 <a href='https://developer.box.com' 
                   onClick={() => setShowSidebar(false)}>
-                    <MdMoreVert />
+                    <FiMoreVertical />
                     Box Developer Docs
                 </a>
               </li>
               <li>
                 <Link to='/talks' 
                   onClick={() => setShowSidebar(false)}>
-                    <MdMoreVert />
+                    <FiMoreVertical />
                     Public Speaking
                 </Link>
               </li>
               <li>
                 <Link to='/galleries' 
                   onClick={() => setShowSidebar(false)}>
-                    <MdMoreVert />
+                    <FiMoreVertical />
                     DX Design Patterns
                 </Link>
               </li>
@@ -82,7 +82,7 @@ const Menu = ({ path, image }) => {
           </li>
           <li>
             <span>
-              <MdWeb />
+              <FiGlobe />
               Online
             </span>
 
@@ -90,28 +90,28 @@ const Menu = ({ path, image }) => {
               <li>
                 <a href='https://twitter.com/cbetta' 
                   onClick={() => setShowSidebar(false)}>
-                    <MdMoreVert />
+                    <FiMoreVertical />
                     Twitter
                 </a>
               </li>
               <li>
                 <a href='https://github.com/cbetta' 
                   onClick={() => setShowSidebar(false)}>
-                    <MdMoreVert />
+                    <FiMoreVertical />
                     GitHub
                 </a>
               </li>
               <li>
                 <a href='https://linkedin.com/in/cbetta' 
                   onClick={() => setShowSidebar(false)}>
-                    <MdMoreVert />
+                    <FiMoreVertical />
                     LinkedIn
                 </a>
               </li>
               <li>
                 <a href='https://youtube.com/cbetta' 
                   onClick={() => setShowSidebar(false)}>
-                    <MdMoreVert />
+                    <FiMoreVertical />
                     YouTube
                 </a>
               </li>

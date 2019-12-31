@@ -50,10 +50,6 @@
   z-index: 1;
   position: relative;
 
-  svg {
-    fill: black;
-  }
-
   @media (min-width: 900px) {
     position: fixed;
     top: 1rem;
