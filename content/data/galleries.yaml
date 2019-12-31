@@ -1,0 +1,181 @@
+---
+- id: developer_portals
+  title: Developer Landing Pages
+  description: Dedicated developer landing pages
+  long_description: A dedicated developer portal or landing page can serve as a way
+    to keep the homepage non technical and providing with all the dedication developers
+    need to make a decision.
+  screenshots:
+    - title: Pusher
+      image: "/images/dx/pusher/pusher-3.png"
+    - title: Stripe
+      image: "/images/dx/stripe/stripe-10.png"
+    - title: Twilio
+      image: "/images/dx/twilio/twilio-4.png"
+    - title: GitHub
+      image: "/images/dx/github/github-5.png"
+    - title: Heroku
+      image: "/images/dx/heroku/heroku-26.png"
+
+- id: interactive_demos
+  title: Interactive Demos
+  description: Interactive demonstrations of product features
+  long_description: An interactive demonstration of product's features can be the
+    easiest way to explain to new users the purpose and power of your developer product.
+  screenshots:
+    - title: Pusher
+      image: "/images/dx/pusher/pusher-1.gif"
+    - title: Twilio
+      image: "/images/dx/twilio/twilio-4.png"
+    - title: Stripe
+      image: "/images/dx/stripe/stripe-3.gif"
+    - title: Heroku / 1
+      image: "/images/dx/heroku/heroku-2.gif"
+    - title: Heroku / 2
+      image: "/images/dx/heroku/heroku-3.gif"
+
+- id: first_login
+  title: First-time use dashboards
+  description: Look and feel of dashboards on first login
+  long_description: Providing a custom first-time use experience right after a developer
+    signs up can help with user activation and retention.
+  screenshots:
+    - title: Pusher / 1
+      image: "/images/dx/pusher/pusher-10.png"
+    - title: Pusher / 2
+      image: "/images/dx/pusher/pusher-11.png"
+    - title: Pusher / 3
+      image: "/images/dx/pusher/pusher-12.png"
+    - title: Stripe
+      image: "/images/dx/stripe/stripe-19.png"
+    - title: Twilio / 1
+      image: "/images/dx/twilio/twilio-8.png"
+    - title: Twilio / 2
+      image: "/images/dx/twilio/twilio-9.png"
+    - title: Twilio / 3
+      image: "/images/dx/twilio/twilio-10.png"
+    - title: Twilio / 4
+      image: "/images/dx/twilio/twilio-11.png"
+    - title: Twilio / 5
+      image: "/images/dx/twilio/twilio-12.png"
+    - title: Twilio / 6
+      image: "/images/dx/twilio/twilio-13.png"
+    - title: Twilio / 7
+      image: "/images/dx/twilio/twilio-14.png"
+    - title: Twilio / 8
+      image: "/images/dx/twilio/twilio-15.png"
+    - title: Twilio / 9
+      image: "/images/dx/twilio/twilio-17.png"
+    - title: Twilio / 10
+      image: "/images/dx/twilio/twilio-19.png"
+    - title: Twilio / 11
+      image: "/images/dx/twilio/twilio-21.png"
+    - title: Heroku / 1
+      image: "/images/dx/heroku/heroku-8.png"
+    - title: Heroku / 2
+      image: "/images/dx/heroku/heroku-10.png"
+    - title: Heroku / 3
+      image: "/images/dx/heroku/heroku-11.png"
+    - title: Heroku / 4
+      image: "/images/dx/heroku/heroku-12.png"
+
+- id: reference_documentation
+  title: Reference Documentation
+  description: The reference documentation root pages
+  long_description: The reference documentation is an important tool to the experienced
+    and dedicated developer intending to make the most of a developer product.
+  screenshots:
+    - title: Stripe
+      image: "/images/dx/stripe/stripe-40.png"
+    - title: Sendgrid
+      image: "/images/dx/sendgrid/sendgrid-21.png"
+    - title: Twilio
+      image: "/images/dx/twilio/twilio-28.png"
+    - title: Heroku / 1
+      image: "/images/dx/heroku/heroku-27.png"
+    - title: Heroku / 2
+      image: "/images/dx/heroku/heroku-28.png"
+
+- id: confirmation_emails
+  title: Confirmation Emails
+  description: Emails sent out to confirm the user's email address
+  long_description: Confirmation emails are sent out to confirm the user's email address.
+  screenshots:
+    - title: SendGrid
+      image: "/images/dx/sendgrid/sendgrid-6.png"
+    - title: Pusher
+      image: "/images/dx/pusher/pusher-16.png"
+    - title: Stripe
+      image: "/images/dx/stripe/stripe-1.png"
+    - title: GitHub
+      image: "/images/dx/github/github-47.png"
+    - title: Heroku
+      image: "/images/dx/heroku/heroku-22.png"
+
+- id: welcome_emails
+  title: Welcome Emails
+  description: Emails sent out to developers after signup
+  long_description: Welcome emails are an essential tool for managing user retention.
+    When people sign up and don't complete a first integration a simple welcome email
+    can often bring people back to your product on a later moment.
+  screenshots:
+    - title: SendGrid
+      image: "/images/dx/sendgrid/sendgrid-24.png"
+    - title: Pusher
+      image: "/images/dx/pusher/pusher-17.png"
+    - title: Stripe
+      image: "/images/dx/stripe/stripe-1.png"
+    - title: Twilio
+      image: "/images/dx/twilio/twilio-32.png"
+    - title: Heroku / 1
+      image: "/images/dx/heroku/heroku-23.png"
+    - title: Heroku / 2
+      image: "/images/dx/heroku/heroku-24.png"
+    - title: Heroku / 3
+      image: "/images/dx/heroku/heroku-25.png"
+
+- id: home_pages
+  title: Home Pages
+  description: Product homepages
+  long_description: The initial home page is often catered to fit the needs of developers
+    and other interested parties. It therefore has to strike a balance to introduce
+    both technical and non technical people to the product at offer.
+  screenshots:
+    - title: Stripe
+      image: "/images/dx/stripe/stripe-5.png"
+    - title: Pusher
+      image: "/images/dx/sendgrid/sendgrid-1.png"
+    - title: SendGrid
+      image: "/images/dx/pusher/pusher-1.png"
+    - title: Twilio
+      image: "/images/dx/twilio/twilio-1.png"
+    - title: GitHub
+      image: "/images/dx/github/github-1.png"
+    - title: Heroku
+      image: "/images/dx/heroku/heroku-26.png"
+
+- id: readmes
+  title: Github READMEs
+  description: The READMEs for the SDKs
+  long_description: The README for the publicly available SDKs and libraries for a
+    developer product offer an important initial starting point or many developers.
+    Getting the various steps of the developer experience nailed down in this document
+    is important to a successful onboarding.
+  screenshots:
+    - title: Stripe
+      image: "/images/dx/stripe/stripe-44.png"
+      preview: true
+    - title: Twilio
+      image: "/images/dx/twilio/twilio-34.png"
+      preview: true
+    - title: Pusher
+      image: "/images/dx/pusher/pusher-20.png"
+      preview: true
+    - title: SendGrid
+      image: "/images/dx/sendgrid/sendgrid-25.png"
+      preview: true
+    - title: GitHub
+      image: "/images/dx/github/github-50.png"
+      preview: true
+    - title: Heroku
+      image: "/images/dx/heroku/heroku-29.png"

@@ -18,9 +18,12 @@
     padding: 0 0.6rem;
 
     a {
-      font-weight: 400;
+      background-color: rgba($blue, 0.05);
+      border-bottom: 1px dashed rgba($blue, 0.2);
       color: $black;
-      border-bottom: 1px dashed rgba($black, 0.5);
+      display: inline-block;
+      padding: 0 0.4rem;
+      line-height: 1.5rem;
     }
 
     strong {

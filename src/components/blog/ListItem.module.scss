@@ -47,12 +47,13 @@
       font-family: 'Courier New', Courier, monospace;
       font-size: 0.8rem;
       display: inline-block;
-      background-color: white;
+      background-color: rgba($blue, 0.03);;
       padding: 0rem 0.5rem;
       border-radius: 3px;
       position: relative;
       margin-right: 0.5rem;
       border: 1px dashed rgba($black, 0.4);
+      margin-bottom: 0.3rem;
     }
   }
 }

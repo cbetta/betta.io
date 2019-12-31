@@ -14,7 +14,6 @@
     display: inline-block;
     padding: 0 0.4rem;
     line-height: 1.5rem;
-    
   }
 
   [id]::before {
@@ -42,6 +41,10 @@
       font-weight: 300;
       margin-top: 1rem;
       color: $black;
+
+      span {
+        margin-bottom: 0.3rem;
+      }
     }
 
     svg {
@@ -150,6 +153,7 @@
   position: relative;
   top: -2px;
   border: 1px dashed $dark-grey;
+  background-color: rgba($blue, 0.03);;
 
   @media (min-width: 900px) {
     display: inline-block;
@@ -166,6 +170,7 @@
   position: relative;
   top: -2px;
   border: 1px dashed $dark-grey;
+  background-color: rgba($blue, 0.03);;
 }
 
 .ttr {
@@ -177,4 +182,5 @@
   position: relative;
   top: -2px;
   border: 1px dashed $dark-grey;
+  background-color: rgba($blue, 0.03);
 }
