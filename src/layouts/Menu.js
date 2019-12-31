@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
+import { StaticQuery, graphql } from "gatsby"
 import { MdHome, MdMenu, MdWork, MdMoreVert, MdFormatQuote, MdWeb } from 'react-icons/md' 
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 
 import style from './Menu.module.scss'
 
-const Menu = ({ path }) => {
+const Menu = ({ path, image }) => {
 
   const [showSidebar, setShowSidebar] = useState(false)
 
@@ -15,6 +17,7 @@ const Menu = ({ path }) => {
           <button className={style.toggle} onClick={() => setShowSidebar(true)} title='Show sidebar'>
             <MdMenu />
           </button>
+          <Img fixed={image.fixed} className={style.avatar} />
           <Link 
             to='/' 
             className={style.home} 
@@ -120,5 +123,25 @@ const Menu = ({ path }) => {
   )
 }
 
-export default Menu
+
+export default (props) => (
+  <StaticQuery
+    query={query}
+    render={(data => (
+      <Menu {...props} image={data.image.childImageSharp} />
+    ))}
+  />
+)
+
+const query = graphql`
+  query {
+    image: file(relativePath: { eq: "cbetta.jpg" }) {
+      childImageSharp {
+        fixed(width: 20) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+  }
+`;
 

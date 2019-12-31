@@ -61,6 +61,22 @@
   }
 }
 
+.avatar {
+  z-index: 1;
+  position: relative;
+  border-radius: 10px;
+  top: 3px;
+  display: none !important;  
+}
+
+[data-path="/"] .avatar {
+  display: inline-block !important;
+
+  @media (min-width: 900px) {
+    display: none !important;
+  }
+}
+
 .homeActive {
   display: none;
 }
