@@ -1,6 +1,6 @@
 @import '../../css/variables.scss';
 
-.style {
+.list {
   margin: 3em 0;
   position: relative;
 
@@ -29,4 +29,9 @@
       top: 0.75rem;
     }
   }
+}
+
+.description {
+  border-bottom: 1px dashed rgba($grey, 0.4);
+  margin-bottom: 2em;
 }
