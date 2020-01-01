@@ -17,12 +17,12 @@ export default ({ data: { site, article } }) => (
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content={`${site.siteMetadata.siteUrl}${article.fields.slug}/twitter-card.jpg`} />
-      <meta name="twitter:title" content={article.frontmatter.title} />
+      <meta name="twitter:title" content={`${article.frontmatter.title} - Cristiano Betta`} />
       <meta name="twitter:description" content={article.excerpt}  />
       <meta name="twitter:site" content='@cbetta'  /> 
 
       <meta property="og:url" content={`${site.siteMetadata.siteUrl}${article.fields.slug}/`} />
-      <meta property="og:title" content={article.frontmatter.title} />
+      <meta property="og:title" content={`${article.frontmatter.title} - Cristiano Betta`} />
       <meta property="og:description" content={article.excerpt} />
       <meta property="og:image" content={`${site.siteMetadata.siteUrl}${article.fields.slug}/twitter-card.jpg`} />
       <meta property="og:image:url" content={`${site.siteMetadata.siteUrl}${article.fields.slug}/twitter-card.jpg`} />
