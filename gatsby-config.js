@@ -178,7 +178,7 @@ const PWA = [
   {
     resolve: `gatsby-plugin-offline`,
     options: {
-        navigateFallbackWhitelist: [],
+      navigateFallbackWhitelist: [/\/$/],
     }
   }
 ]
