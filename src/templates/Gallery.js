@@ -11,10 +11,10 @@ export default ({ data: { site, gallery }, path }) => (
     <Helmet>
       <title>{gallery.frontmatter.title}</title>
       <meta name="description" content={ gallery.excerpt } />
-      {/* <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:image"
-        content={`${site.siteMetadata.siteUrl}${path}twitter-card.jpg`} /> */}
+        content={`${site.siteMetadata.siteUrl}${path}twitter-card.jpg`} />
     </Helmet>
     <Gallery {...gallery} />
   </Layout>
