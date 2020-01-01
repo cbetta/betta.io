@@ -7,7 +7,7 @@ import Flag from 'react-world-flags'
 
 export default ({ url, conference, conference_url, title, country, date, icon }) => {
   
-  const [expired, setExpired] = useState(false)
+  const [expired, setExpired] = useState(true)
   
   useEffect(() => {
     const isExpired = Date.parse(date) <= Date.now()
