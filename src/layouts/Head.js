@@ -9,7 +9,8 @@ const Head = ({ site: { siteMetadata}, path }) => (
     <meta name="description" content={ siteMetadata.description } />
     <html lang='en-US' />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://www.google-analytics.com" />    
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="alternate" type="application/rss+xml" href="https://betta.io/atom.xml" />
   </Helmet>
 )
 
