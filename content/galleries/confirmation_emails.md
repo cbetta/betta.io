@@ -1,6 +1,7 @@
 ---
 title: Confirmation Emails
 icon: Mail
+tags: dx, email, confirmation, developer experience
 ---
 
 Confirmation emails are sent out to confirm the user's email address.

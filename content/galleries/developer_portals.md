@@ -1,6 +1,7 @@
 ---
 title: Developer Landing Pages
 icon: FileText
+tags: dx, developer experience, landing pages, design
 ---
 
 A dedicated developer portal or landing page can serve as a way

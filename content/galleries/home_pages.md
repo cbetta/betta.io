@@ -1,6 +1,7 @@
 ---
 title: Home Pages
 icon: Home
+tags: dx, developer experience, home pages, landing pages, developers, design
 ---
 
 The initial home page is often catered to fit the needs of developers

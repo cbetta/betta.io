@@ -1,6 +1,7 @@
 ---
 title: First-time use dashboards
 icon: Zap
+tags: dx, developer experience, dashboard, first time, onboarding
 ---
 
 Providing a custom first-time use experience right after a developer

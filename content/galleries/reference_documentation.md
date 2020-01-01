@@ -1,6 +1,7 @@
 ---
 title: Reference Documentation
 icon: Code
+tags: dx, developer experience, documentation, reference, api
 ---
 
 The reference documentation is an important tool to the experienced

@@ -111,27 +111,32 @@ const Feed = [
   {
     resolve: `gatsby-plugin-feed`,
     options: {
+      query: `{
+        site {
+          siteMetadata {
+            title
+            description
+            siteUrl
+            site_url: siteUrl
+          }
+        }
+      }`,
       feeds: [
         {
           query: `
             {
               allMarkdownRemark(
                 sort: { order: DESC, fields: [frontmatter___date] }
-                filter: {
-                  fileAbsolutePath: { regex: "/blog/" }
-                }
               ) {
-                edges {
-                  node {
-                    excerpt
-                    html
-                    frontmatter {
-                      title
-                      date
-                    }
-                    fields {
-                      slug
-                    }
+                nodes {
+                  excerpt
+                  html
+                  frontmatter {
+                    title
+                    date
+                  }
+                  fields {
+                    slug
                   }
                 }
               }
@@ -139,30 +144,18 @@ const Feed = [
           `,
           output: `/atom.xml`,
           title: "Cristiano Betta",
-          setup: ({
-            query: {
-              site: { siteMetadata },
-            },
-          }) => {
-            return {
-              title: siteMetadata.title,
-              description: siteMetadata.description,
-              feed_url: siteMetadata.siteUrl + `/atom.xml`,
-              site_url: siteMetadata.siteUrl,
-              generator: `GatsbyJS`,
-            }
-          },
-          serialize: ({ query: { site, allMarkdownRemark } }) =>
-            allMarkdownRemark.edges.map(({ node }) => {
-              return {
-                title: node.frontmatter.title,
+          match: "^/blog/",
+          serialize: ({ query: { site, allMarkdownRemark } }) => {
+            return allMarkdownRemark.nodes.map(node => {
+              return Object.assign({}, node.frontmatter, {
                 description: node.excerpt,
+                date: node.frontmatter.date,
                 url: site.siteMetadata.siteUrl + node.fields.slug,
                 guid: site.siteMetadata.siteUrl + node.fields.slug,
                 custom_elements: [{ "content:encoded": node.html }],
-                author: site.siteMetadata.name,
-              }
-            }),
+              })
+            })
+          }
         },
       ],
     },

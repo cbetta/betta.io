@@ -1,6 +1,7 @@
 ---
 title: Welcome Emails
 icon: Inbox
+tags: dx, developer experience, emails, welcome, onboarding
 ---
 
 Welcome emails are an essential tool for managing user retention.

@@ -1,6 +1,7 @@
 ---
 title: ReadMes
 icon: Github
+tags: dx, developer experience, github, documentation, readmes, design, content
 ---
 
 The README for the publicly available SDKs and libraries for a

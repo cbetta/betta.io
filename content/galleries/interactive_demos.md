@@ -1,6 +1,7 @@
 ---
 title: Interactive Demos
 icon: MousePointer
+tags: dx, developer experience, samples, demos, examples
 ---
 
 An interactive demonstration of product's features can be the
