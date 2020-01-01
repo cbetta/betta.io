@@ -127,6 +127,10 @@ const Feed = [
             {
               allMarkdownRemark(
                 sort: { order: DESC, fields: [frontmatter___date] }
+                filter: {
+                  frontmatter: { draft: { ne: true } }
+                  fileAbsolutePath: { regex: "content/blog/" }
+                }
               ) {
                 nodes {
                   excerpt
