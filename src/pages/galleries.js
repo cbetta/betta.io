@@ -6,7 +6,7 @@ import List from "../components/galleries/List"
 
 export default ({ data, path }) => (
   <Layout path={path}>
-    <List galleries={data.galleries.nodes} title='Blog' />
+    <List galleries={data.galleries.nodes} />
   </Layout>
 )
 
