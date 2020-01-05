@@ -16,4 +16,4 @@ Deployment of the master branch is automatic via Netlify.
 
 ## License
 
-This library is released under the [MIT License][LICENSE].
+This library is released under the [MIT License](LICENSE).
