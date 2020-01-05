@@ -58,8 +58,8 @@ const Markdown = [
           resolve: `gatsby-remark-images`,
           options: {
             maxWidth: 600,
-            withWebp: true,
-            tracedSVG: true,
+            // withWebp: true,
+            // tracedSVG: true,
             quality: 50
           },
         },
@@ -74,28 +74,28 @@ const Markdown = [
           },
         },
         "gatsby-remark-copy-linked-files",
-        {
-          resolve: `gatsby-remark-social-cards`,
-          options: {
-            title: {
-              style: "bold",
-              color: "black",
-              size: 48
-            },
-            meta: {
-              parts: [
-                "Cristiano Betta",
-                " - ",
-                { field: "date", format: "mmmm dS, yyyy"},
-              ],
-              color: 'black',
-              size: 32
-            },
-            xMargin: 30,
-            yMargin: 30,
-            background: "#fefefe"
-          }
-        }
+        // {
+        //   resolve: `gatsby-remark-social-cards`,
+        //   options: {
+        //     title: {
+        //       style: "bold",
+        //       color: "black",
+        //       size: 48
+        //     },
+        //     meta: {
+        //       parts: [
+        //         "Cristiano Betta",
+        //         " - ",
+        //         { field: "date", format: "mmmm dS, yyyy"},
+        //       ],
+        //       color: 'black',
+        //       size: 32
+        //     },
+        //     xMargin: 30,
+        //     yMargin: 30,
+        //     background: "#fefefe"
+        //   }
+        // }
       ],
     },
   },
