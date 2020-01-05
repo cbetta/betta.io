@@ -27,3 +27,10 @@ If you already worked with me or Hoopy, you now enjoy access to a wider range of
 Today, interest in developer experience and developer relations is growing so fast that it’s nearly impossible for companies to hire the right expertise in-house. By Hoopy and Work Betta working together you’ll have access to more than we could ever offer alone.
 
 We'd love to hear your thoughts? [Book an initial chat](mailto:cristiano@hoopy.io) with us today.
+
+
+## Registration Info
+
+Work Betta Ltd is registered in England and Wales with company number 10168553.
+
+20-22 Wenlock Road, London, England, N1 7GU.
