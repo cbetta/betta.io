@@ -58,10 +58,10 @@ const Menu = ({ path, image }) => {
 
             <ul>
               <li>
-                <a href='https://gr4vy.com' 
+                <a href='https://developer.box.com' 
                   onClick={() => setShowSidebar(false)}>
                     <FiMoreVertical />
-                    Gr4vy
+                    Box Developer Docs
                 </a>
               </li>
               <li>
@@ -95,10 +95,24 @@ const Menu = ({ path, image }) => {
                 </a>
               </li>
               <li>
+                <a href='https://github.com/cbetta' 
+                  onClick={() => setShowSidebar(false)}>
+                    <FiMoreVertical />
+                    GitHub
+                </a>
+              </li>
+              <li>
                 <a href='https://linkedin.com/in/cbetta' 
                   onClick={() => setShowSidebar(false)}>
                     <FiMoreVertical />
                     LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href='https://youtube.com/cbetta' 
+                  onClick={() => setShowSidebar(false)}>
+                    <FiMoreVertical />
+                    YouTube
                 </a>
               </li>
             </ul>
